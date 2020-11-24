@@ -66,6 +66,6 @@ export const secretRoom = {
   id: 'secretRoom',
   displayName: 'Unconferencing: Alexa\'s Secret Room',
   shortName: 'Secret Room',
-  description: 'You have finally made it here. <br/><br/>We encourage you to use this space to talk "face-to-face" using <a href="https://cognizantcorp.webex.com/meet/Alexandra.Anton" target="_blank">Alexa\'s Webex room for this room</a>.<br/><br/>This is a room for unconferencing! The other unconferencing rooms are [[Minetown->minetown]], [[Oracle->oracle]], [[Castle->castle]], [[Sokoban->sokoban]], and [[Astral Plane->astralPlane]]. Or you can go back down to the [[unconferencing lobby->unconference]].',
+  description: 'You have finally made it here. <br/><iframe src="https://open.spotify.com/embed/track/4Dg5moVCTqxAb7Wr8Dq2T5" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><br/>We encourage you to use this space to talk "face-to-face" using <a href="https://cognizantcorp.webex.com/meet/Alexandra.Anton" target="_blank">Alexa\'s Webex room for this room</a>.<br/><br/>This is a room for unconferencing! The other unconferencing rooms are [[Minetown->minetown]], [[Oracle->oracle]], [[Castle->castle]], [[Sokoban->sokoban]], and [[Astral Plane->astralPlane]]. Or you can go back down to the [[unconferencing lobby->unconference]].',
   hasNoteWall: true
 }
