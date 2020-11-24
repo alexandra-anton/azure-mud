@@ -1,8 +1,8 @@
-name: Build and Deploy to GH Pages
+name: Build and Deploy Customised Space to GH Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main-customised]
 
 jobs:
   build:
