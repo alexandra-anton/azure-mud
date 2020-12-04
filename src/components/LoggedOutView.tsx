@@ -10,7 +10,7 @@ export default function LoggedOutView () {
       <main role="main">
         <p>
           This is a social space for attendees of{' '}
-          <a href='https://roguelike.club'>Roguelike Celebration</a>, a
+          <a href='https://roguelike.club'>Christmas story in Covid times</a>, a
           community-generated weekend of talks, games, and conversations about
           roguelikes and related topics, including procedural generation and
           game design. It&apos;s for fans, players, developers, scholars, and
