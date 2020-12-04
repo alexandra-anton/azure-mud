@@ -29,8 +29,7 @@ export default function LoggedOutView () {
           href={`${
             config.SERVER_HOSTNAME
           }/.auth/login/google?post_login_redirect_url=${encodeURIComponent(
-            document.referrer
-            //window.location.href
+            window.location.href
           )}`}
         >
           Log In With Google
