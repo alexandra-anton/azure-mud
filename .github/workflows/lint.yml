@@ -1,7 +1,10 @@
 name: Linting and Validation Checks Customised
 
 on:
-  workflow_dispatch
+  push:
+    branches: [main-original]
+  pull_request:
+    branches: [main-original]
 
 jobs:
   build:
