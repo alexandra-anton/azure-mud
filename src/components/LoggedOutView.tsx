@@ -5,7 +5,7 @@ export default function LoggedOutView () {
   return (
     <div>
       <header role="banner">
-        <h1>Welcome to Roguelike Celebration 2020!</h1>
+        <h1>Welcome to a Netcentric Christmas story in Covid times!</h1>
       </header>
       <main role="main">
         <p>
