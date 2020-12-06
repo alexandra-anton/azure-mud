@@ -16,7 +16,7 @@ export const unconference = {
 
 export const minetown = {
   id: 'minetown',
-  displayName: 'Unconferencing: Minetown',
+  displayName: 'Afara la Tigara',
   shortName: 'minetown',
   description: 'The clink of picks and sound of distant crashing rock forms a percussive backbeat to this underground town square. Dozens of candles are set into the walls, casting the space in a warm glow. A fountain stands in the center of the square, along with a large sign reading "NO SPLASHING"<br/><br/>We encourage you to use this space to talk "face-to-face" using <a href="https://us02web.zoom.us/j/87156694099?pwd=bVN4WHZTeG9NREk0VFMwQk9DRExaZz09" target="_blank">the Zoom meeting for this room</a>, which you can access at any time during the conference. (Passcode 302165)<br/><br/>This is a room for unconferencing! The other unconferencing rooms are [[Oracle->oracle]], [[Castle->castle]], [[Vlad\'s Tower->tower]], [[Sokoban->sokoban]], and [[Astral Plane->astralPlane]]. Or you can climb the stairs back up to the [[unconferencing lobby->unconference]].',
   hasNoteWall: true

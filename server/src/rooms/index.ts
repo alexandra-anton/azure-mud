@@ -116,7 +116,7 @@ const indexRoomData: { [name: string]: Room } = {
   },
   statue: {
     id: 'statue',
-    displayName: '@-sign Statue',
+    displayName: 'Peretele de Pluta',
     shortName: 'the statue',
     description: `A memorial to countless adventurers who have helped build this social space.<br/><br/>A plaque on the statue shows a list of <a href="https://github.com/lazerwalker/azure-mud/graphs/contributors" target="_blank" rel="noreferrer">code contributors</a>.<br/>There's also a suggestion wall for people to add comments about the social space.
       From here, you can reach the [[kitchen]], the [[bar]], the [[theater]], or the [[North Showcase Hall->northShowcaseHall]]. You can also climb into the [[shipping container->shippingContainer]].`,
@@ -131,8 +131,8 @@ const indexRoomData: { [name: string]: Room } = {
   },
   shippingContainer: {
     id: 'shippingContainer',
-    displayName: 'Shipping Container',
-    shortName: 'the shipping container',
+    displayName: 'Elevator A',
+    shortName: 'the elevator A',
     description: `
       It's not quite clear why there's a shipping container in the middle of the space. Seems pretty chill, though? Somebody's set up a makeshift bench.<br/><br/>
       After you climb out, you can get back to the [[bar]], the [[theater]], the [[kitchen]], or the [[@-sign statue->statue]].`,
