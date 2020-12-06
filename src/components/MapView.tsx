@@ -258,8 +258,8 @@ const clickableAreas: ClickableArea[] = [
   },
   {
     roomId: 'shippingContainer',
-    x: 25,
-    y: 34,
+    x: 34,
+    y: 25,
     width: 13,
     height: 5
   },

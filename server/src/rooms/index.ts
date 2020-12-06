@@ -109,8 +109,8 @@ const indexRoomData: { [name: string]: Room } = {
   },
   lounge: {
     id: 'lounge',
-    displayName: 'Lounge',
-    shortName: 'the lounge',
+    displayName: 'Elevator B',
+    shortName: 'elevator B',
     description: 'A chill space to hang away from the hustle and bustle of the main space. Comfy chairs, TVs showing the latest scores in some incomprehensible splort, and a fridge full of La Croix.<br/><br/>From here, you can get to the [[drawing room->loungeDungeonDrawingRoom]], the [[dance floor->danceFloor]], or the [[kitchen]].',
     allowsMedia: true
   },
@@ -147,16 +147,16 @@ const indexRoomData: { [name: string]: Room } = {
   },
   foyer: {
     id: 'foyer',
-    displayName: 'Haunted Foyer',
-    shortName: 'the haunted foyer',
+    displayName: 'Reception',
+    shortName: 'the reception',
     description: `A grand opulent foyer leading into the theater. A chill runs down your spine as you walk in; something just feels <em>off</em> about this place.<br/><br/>
     You can see a [[swag table->swag]] in the corner, and can also leave to the [[theater]] or the [[west showcase hall->westShowcaseHall]].`,
     specialFeatures: [SpecialFeature.RainbowDoor, SpecialFeature.DullDoor]
   },
   swag: {
     id: 'swag',
-    displayName: 'Swag Table',
-    shortName: 'the swag table',
+    displayName: 'Reception Bar',
+    shortName: 'the reception bar',
     description: `A table covered in a giant messy pile of mismatched swag. At the top of the pile, you see items such as [[Roguelike Celebration socks->item]], [[a +1 longbow->item]], [[an unidentified scroll->item]], and (surprisingly!) [[a tiny puppy->item]].<br/><br/>
     There are also a whole bunch of absolutely beautiful <a href="https://roguelike-celebration.myshopify.com/" target="_blank" rel="noreferrer">conference t-shirts</a> (actual physical shirts!) available <a href="https://roguelike-celebration.myshopify.com/" target="_blank" rel="noreferrer">for sale</a>.
     <br/><br/>
@@ -164,7 +164,7 @@ const indexRoomData: { [name: string]: Room } = {
   },
   atelier: {
     id: 'atelier',
-    displayName: 'Artists\' Atelier',
+    displayName: 'Pets Zone',
     shortName: 'the artists\' atelier',
     description: `A bright sun-lit space for an artist to work. In the corner of the room are crates full of [[fresh pixels->item]] of all colors, waiting to be placed on a canvas. A screen on one wall shows a rotating slideshow of works by <a href=https://christen.carrd.co/ target=_blank>Christen Alqueza</a>, who also made the overlays and background for the livestream. In the middle of the room is a giant contraption made of various [[pieces of scrap metal->item]]; you can't honestly tell whether it's intended to be art or just leftover scrap.<br/><br/>
     From here, you can get to the [[west showcase hall->westShowcaseHall]], the [[engineer's work room->workbench]], or the [[proc-gen study->study]].`
@@ -186,8 +186,8 @@ const indexRoomData: { [name: string]: Room } = {
   },
   workbench: {
     id: 'workbench',
-    displayName: 'Engineer\'s Workbench',
-    shortName: 'the engineer\'s workbench',
+    displayName: 'Coltul Vesel',
+    shortName: 'the happy corner',
     description: `A cluttered workspace that clearly belongs to someone who loves to tinker. A dim hum fills the room from server racks sitting in the corner, and there are blinking lights coming from every crevice. A blueprint sitting on the workbench outlines intricate plans for something called an 'entity-component system'.<br/><br/>
     From here, you can get to the [[proc-gen study->study]] or the [[artists' atelier->atelier]].`
   },

@@ -1,7 +1,7 @@
 export default {
   id: 'eastShowcaseHall',
-  displayName: 'East Showcase Hall',
-  shortName: 'the east showcase hall',
+  displayName: 'Tineretului',
+  shortName: 'the Tineretului',
   description: `
       A number of booths line the sides of the hall.<br/><br/>
       Here you can see Roundguard by Andrea Roberts, Nongunz: Doppelganger Edition by Mike Corrigan, Ultimate ADOM: Caverns of Chaos by Thomas Biskup and Team ADOM, and Cantrip by Joeri Bakker.<br/><br/>
