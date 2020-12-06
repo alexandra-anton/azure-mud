@@ -1,7 +1,7 @@
 export default {
   id: 'westShowcaseHall',
-  displayName: 'West Showcase Hall',
-  shortName: 'the west showcase hall',
+  displayName: 'Nostalgia Dance Floor',
+  shortName: 'the Nostalgia dance floor',
   description: `
       A number of booths line the sides of the hall.<br/><br/>
       Here you can see Computer Dungeon Slash: ZZT by KKairos, Peglin by Red Nexus Games, AutoFire by Patrick Lipo, and Lords of Cyberspace by Christopher Swenson (port), Mark Peterson (original author).<br/><br/>
