@@ -86,16 +86,16 @@ const indexRoomData: { [name: string]: Room } = {
   },
   kitchenTableB: {
     id: 'kitchenTableB',
-    displayName: 'Kitchen Table B',
-    shortName: 'table B in the kitchen',
+    displayName: 'Kitchen Fussball Table',
+    shortName: 'fussball table in the kitchen',
     description: `A rustic wooden picnic table in the kitchen.
       From here, you can see tables [[A->kitchenTableA]] or [[C->kitchenTableC]], and the [[general kitchen area->kitchen]].`,
     allowsMedia: true
   },
   kitchenTableC: {
     id: 'kitchenTableC',
-    displayName: 'Kitchen Table C',
-    shortName: 'table C in the kitchen',
+    displayName: 'Kitchen Table B',
+    shortName: 'table B in the kitchen',
     description: `A rustic wooden picnic table in the kitchen. For some reason this table and *only* this table contains a basket loaded with [[fortune cookies->getFortune]], and a sign next to it reading "Roguelike Celebration is not responsible for any consequences of taking advice from a cookie - so help yourself!"<br/><br/>
       From here, you can see tables [[A->kitchenTableA]] or [[B->kitchenTableB]], and the [[general kitchen area->kitchen]]`,
     allowsMedia: true
