@@ -2,7 +2,7 @@ import northShowcaseHall from './northShowcaseHall'
 import southShowcaseHall from './southShowcaseHall'
 import eastShowcaseHall from './eastShowcaseHall'
 import westShowcaseHall from './westShowcaseHall'
-import { unconference, minetown, oracle, tower, castle, sokoban, astralPlane } from './unconfRooms'
+import { unconference, minetown, oracle, tower, castle, sokoban, astralPlane, phoneBooth1, phoneBooth2, bran } from './unconfRooms'
 import theater from './theater'
 import { loungeDungeonRoomData } from './loungeDungeon'
 
@@ -62,6 +62,9 @@ const indexRoomData: { [name: string]: Room } = {
   castle,
   sokoban,
   astralPlane,
+  phoneBooth1,
+  phoneBooth2,
+  bran,
   kitchen: {
     id: 'kitchen',
     displayName: 'Kitchen',

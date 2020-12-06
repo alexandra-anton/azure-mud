@@ -61,3 +61,27 @@ export const astralPlane = {
   description: 'Your steps feel lighter in this glowing realm among the clouds. The majestic rays of golden light and pure sweet air would make it almost heavenly - if not for the awkward company of several strange and intimidating characters further inside by the three great temples. The way they keep shooting you suspicious glances and murmering to themselves gives you the distinct feeling they don\'t think you should be here.<br/><br/>We encourage you to use this space to talk "face-to-face" using <a href="https://us02web.zoom.us/j/85608238055?pwd=MXIvWHQ2OS85MlFFeHVucHQ1R3g1QT09" target="_blank">the Zoom meeting for this room</a>, which you can access at any time during the conference. (Passcode 753544)<br/><br/>This is a room for unconferencing! The other unconferencing rooms are [[Minetown->minetown]], [[Oracle->oracle]], [[Castle->castle]], [[Vlad\'s Tower->tower]], and [[Sokoban->sokoban]]. Or you can float back down to the [[unconferencing lobby->unconference]].',
   hasNoteWall: true
 }
+
+export const phoneBooth1 = {
+  id: 'phoneBooth1',
+  displayName: 'Unconferencing: Phone Booth 1',
+  shortName: 'phone booth 1',
+  description: 'Your steps feel lighter in this glowing realm among the clouds. The majestic rays of golden light and pure sweet air would make it almost heavenly - if not for the awkward company of several strange and intimidating characters further inside by the three great temples. The way they keep shooting you suspicious glances and murmering to themselves gives you the distinct feeling they don\'t think you should be here.<br/><br/>We encourage you to use this space to talk "face-to-face" using <a href="https://us02web.zoom.us/j/85608238055?pwd=MXIvWHQ2OS85MlFFeHVucHQ1R3g1QT09" target="_blank">the Zoom meeting for this room</a>, which you can access at any time during the conference. (Passcode 753544)<br/><br/>This is a room for unconferencing! The other unconferencing rooms are [[Minetown->minetown]], [[Oracle->oracle]], [[Castle->castle]], [[Vlad\'s Tower->tower]], and [[Sokoban->sokoban]]. Or you can float back down to the [[unconferencing lobby->unconference]].',
+  hasNoteWall: true
+}
+
+export const phoneBooth2 = {
+  id: 'phoneBooth2',
+  displayName: 'Unconferencing: Phone Booth 2',
+  shortName: 'phone booth 2',
+  description: 'Your steps feel lighter in this glowing realm among the clouds. The majestic rays of golden light and pure sweet air would make it almost heavenly - if not for the awkward company of several strange and intimidating characters further inside by the three great temples. The way they keep shooting you suspicious glances and murmering to themselves gives you the distinct feeling they don\'t think you should be here.<br/><br/>We encourage you to use this space to talk "face-to-face" using <a href="https://us02web.zoom.us/j/85608238055?pwd=MXIvWHQ2OS85MlFFeHVucHQ1R3g1QT09" target="_blank">the Zoom meeting for this room</a>, which you can access at any time during the conference. (Passcode 753544)<br/><br/>This is a room for unconferencing! The other unconferencing rooms are [[Minetown->minetown]], [[Oracle->oracle]], [[Castle->castle]], [[Vlad\'s Tower->tower]], and [[Sokoban->sokoban]]. Or you can float back down to the [[unconferencing lobby->unconference]].',
+  hasNoteWall: true
+}
+
+export const bran = {
+  id: 'bran',
+  displayName: 'Unconferencing: Bran',
+  shortName: 'Bran',
+  description: 'Your steps feel lighter in this glowing realm among the clouds. The majestic rays of golden light and pure sweet air would make it almost heavenly - if not for the awkward company of several strange and intimidating characters further inside by the three great temples. The way they keep shooting you suspicious glances and murmering to themselves gives you the distinct feeling they don\'t think you should be here.<br/><br/>We encourage you to use this space to talk "face-to-face" using <a href="https://us02web.zoom.us/j/85608238055?pwd=MXIvWHQ2OS85MlFFeHVucHQ1R3g1QT09" target="_blank">the Zoom meeting for this room</a>, which you can access at any time during the conference. (Passcode 753544)<br/><br/>This is a room for unconferencing! The other unconferencing rooms are [[Minetown->minetown]], [[Oracle->oracle]], [[Castle->castle]], [[Vlad\'s Tower->tower]], and [[Sokoban->sokoban]]. Or you can float back down to the [[unconferencing lobby->unconference]].',
+  hasNoteWall: true
+}
