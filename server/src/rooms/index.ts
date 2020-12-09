@@ -78,7 +78,7 @@ const indexRoomData: { [name: string]: Room } = {
     id: 'kitchenTableA',
     displayName: 'Kitchen Table A',
     shortName: 'table A in the kitchen',
-    description: `A rustic wooden picnic table in the kitchen.
+    description: `TEST COMMIT DEPLOY A rustic wooden picnic table in the kitchen.
       From here, you can see tables [[B->kitchenTableB]] or [[C->kitchenTableC]], and the [[general kitchen area->kitchen]].`,
     allowsMedia: true
   },
