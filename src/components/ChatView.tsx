@@ -47,6 +47,7 @@ export default function ChatView (props: { messages: Message[], roomId: string, 
   }
 
   function isDifferentRoom(m: Message) {
+    console.log('Filtering', m);
     if (isChatMessage(m)) { return m.roomId === props.roomId }
     return false;
   }
