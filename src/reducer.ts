@@ -207,7 +207,7 @@ export default (oldState: State, action: Action): State => {
 
   if (action.type === ActionType.ChatMessage) {
     // skip adding message to messages[] if we're not in the same room ?
-    if (action.value.roomId && action.value.roomId !== state.roomId) return;
+    if (action.value.roomId && action.value.roomId !== state.roomId) return state;
     addMessage(state,
       createChatMessage(action.value.messageId, action.value.name, action.value.message, state.roomId)
     )
