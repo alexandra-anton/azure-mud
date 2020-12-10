@@ -386,7 +386,8 @@ export default (oldState: State, action: Action): State => {
     } else if (beginsWithSlash) {
       sendChatMessage(messageId, trimmedMessage)
     } else {
-      sendChatMessage(messageId, action.value)
+      sendChatMessage(messageId, action.value, state.roomId)
+      // add message is UI message
       addMessage(state, createChatMessage(messageId, state.userId, action.value, state.roomId))
     }
   }

@@ -246,17 +246,19 @@ interface ChatMessageAction {
     messageId: string;
     name: string;
     message: string;
+    roomId: string;
   };
 }
 
 export const ChatMessageAction = (
   messageId: string,
   name: string,
-  message: string
+  message: string,
+  roomId?: string,
 ): ChatMessageAction => {
   return {
     type: ActionType.ChatMessage,
-    value: { messageId, name, message }
+    value: { messageId, name, message, roomId }
   }
 }
 
