@@ -387,7 +387,7 @@ export default (oldState: State, action: Action): State => {
       sendChatMessage(messageId, trimmedMessage)
     } else {
       sendChatMessage(messageId, action.value)
-      // addMessage(state, createChatMessage(messageId, state.userId, action.value, state.roomId))
+      addMessage(state, createChatMessage(messageId, state.userId, action.value, state.roomId))
     }
   }
 

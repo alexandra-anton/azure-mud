@@ -114,7 +114,7 @@ const sendChatMessage: AuthenticatedEndpointFunction = async (user: User, inputs
       {
         groupName: user.roomId,
         target: 'chatMessage',
-        arguments: [inputs.id, user.id, message]
+        arguments: [inputs.id, user.id, message, user.roomId]
       }
     ],
     httpResponse: { status: 200 }
