@@ -206,6 +206,8 @@ export default (oldState: State, action: Action): State => {
   }
 
   if (action.type === ActionType.ChatMessage) {
+    console.log('We are in', state.roomId);
+    console.log('Message came from', action.value.roomId);
     addMessage(state,
       createChatMessage(action.value.messageId, action.value.name, action.value.message, state.roomId)
     )
