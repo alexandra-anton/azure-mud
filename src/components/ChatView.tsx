@@ -46,7 +46,7 @@ export default function ChatView (props: { messages: Message[], roomId: string, 
     return message.type === MessageType.Chat
   }
 
-  function isDifferentRoom(m: Message) {
+  function isSameRooom(m: Message) {
     console.log('Filtering', m);
     if (isChatMessage(m)) { return m.roomId === props.roomId }
     return false;
@@ -61,7 +61,7 @@ export default function ChatView (props: { messages: Message[], roomId: string, 
       )
   }
   const messagesAfterMovementFilter = props.messages.filter((msg) => {
-    return !shouldRemoveMessage(msg) && !isDifferentRoom(msg)
+    return !shouldRemoveMessage(msg) && isSameRooom(msg)
   })
 
   return (

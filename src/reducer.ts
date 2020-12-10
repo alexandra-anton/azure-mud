@@ -206,8 +206,8 @@ export default (oldState: State, action: Action): State => {
   }
 
   if (action.type === ActionType.ChatMessage) {
-    console.log('We are in', state.roomId);
-    console.log('Message came from', action.value.roomId);
+    // skip adding message to messages[] if we're not in the same room ?
+    if (action.value.roomId && action.value.roomId !== state.roomId) return;
     addMessage(state,
       createChatMessage(action.value.messageId, action.value.name, action.value.message, state.roomId)
     )
