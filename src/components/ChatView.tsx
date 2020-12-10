@@ -49,7 +49,7 @@ export default function ChatView (props: { messages: Message[], roomId: string, 
   function isSameRooom(m: Message) {
     console.log('Filtering', m);
     if (isChatMessage(m)) { return m.roomId === props.roomId }
-    return false;
+    return true;
   }
 
   // This message filtering logic is kinda ugly and hard to read
