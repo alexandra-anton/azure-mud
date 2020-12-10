@@ -207,7 +207,7 @@ export default (oldState: State, action: Action): State => {
 
   if (action.type === ActionType.ChatMessage) {
     addMessage(state,
-      createChatMessage(action.value.messageId, action.value.name, action.value.message)
+      createChatMessage(action.value.messageId, action.value.name, action.value.message, state.roomId)
     )
   }
 
@@ -387,7 +387,7 @@ export default (oldState: State, action: Action): State => {
       sendChatMessage(messageId, trimmedMessage)
     } else {
       sendChatMessage(messageId, action.value)
-      addMessage(state, createChatMessage(messageId, state.userId, action.value))
+      addMessage(state, createChatMessage(messageId, state.userId, action.value, state.roomId))
     }
   }
 
