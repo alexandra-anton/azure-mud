@@ -277,7 +277,8 @@ async function connectSignalR (userId: string, dispatch: Dispatch<Action>) {
     console.log('Received chat', otherId, message, 'in', roomId)
     console.log(otherId, message, userId)
     if (otherId === userId) return
-
+    // ignore if roomId does not match current room
+    // if (roomId !== )
     dispatch(ChatMessageAction(messageId, otherId, message, roomId))
   })
 
