@@ -42,8 +42,8 @@ export default function ChatView (props: { messages: Message[], roomId: string, 
     }
   })
 
-  function isChatMessage(o: any): o is ChatMessage {
-    return 'roomId' in o
+  function isChatMessage(message: Message): message is ChatMessage {
+    return message.type === MessageType.Chat
   }
 
   function isDifferentRoom(m: Message) {
@@ -54,14 +54,14 @@ export default function ChatView (props: { messages: Message[], roomId: string, 
 
   // This message filtering logic is kinda ugly and hard to read
   function shouldRemoveMessage (m: Message) {
-    return isMovementMessage(m) && isDifferentRoom(m) &&
+    return isMovementMessage(m) &&
       (
         props.serverSettings.movementMessagesHideRoomIds.includes(m.roomId) ||
         m.numUsersInRoom > props.serverSettings.movementMessagesHideThreshold
       )
   }
   const messagesAfterMovementFilter = props.messages.filter((msg) => {
-    return !shouldRemoveMessage(msg)
+    return !shouldRemoveMessage(msg) && !isDifferentRoom(msg)
   })
 
   return (
