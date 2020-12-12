@@ -18,7 +18,8 @@ export enum SpecialFeature {
   RainbowDoor = 'RAINBOW_DOOR',
   DullDoor = 'DULL_DOOR',
   FullRoomIndex = 'FULL_ROOM_INDEX',
-  VendingMachine = 'VENDING_MACHINE'
+  VendingMachine = 'VENDING_MACHINE',
+  SeriousFood = 'SERIOUS_FOOD'
 }
 
 export interface Room {
@@ -69,10 +70,32 @@ const indexRoomData: { [name: string]: Room } = {
     id: 'kitchen',
     displayName: 'Kitchen',
     shortName: 'the kitchen',
-    description: `A series of long picnic tables made of rustic wood abut a stainless steel kitchen island. There are empty samovars of coffee and tea sitting on the counter and a well-picked-over catering tray that, based on the crumbs, once contained pastries.<br/><br/>
-    There is, however, a curious-looking vending machine labelled "Munxip's Magnifient Munchies" and a button you can press marked [[Get Random Food->generateFood]].
+    description: `You enter the kitchen.  A lively, cheerful energy greets you the moment you close the door. It’s like you’re back to your aunt’s house on Christmas morning with everybody moving about getting ready for the first feast of the day. The heavy stench of cold sausages and caltaboș helps with that, too. Warm those up a bit before eating, don’t be an animal.<br/><br/>
+    There are two tables you can sit at, labelled [[A->kitchenTableA]] and [[B->kitchenTableC]].
     <br/><br/>
-      There are three tables you can sit at, labelled [[A->kitchenTableA]], [[B->kitchenTableB]], and [[C->kitchenTableC]]. You can also walk over to the [[lounge]], the [[bar]], the [[dance floor->danceFloor]], the [[@-sign statue->statue]] or grab a seat in the [[main theater area->theater]]. Finally, you can climb into the [[shipping container->shippingContainer]].`,
+      You can also join the [[Fußball->kitchenTableB]] table or, if you’d like a little snack of refreshing beverage before the meal, you can get something from the [[Vending Machine->generateFood]] (card payment is working again!).
+      From here you can walk over to the [[MOPS->tower]] or [[Support->oracle]] areas and see who you encounter there.
+    <br/></br>
+    Or you can have a seat on the leather couch and enjoy some Christmas music:
+    <br/></br>
+    <style>
+        .video-js {
+            border: 10px;
+            border-color: aliceblue;
+        }
+    </style>
+    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+    <video id="my-video" class="video-js" controls autoplay preload="auto" poster="images/christmas-story/poster.jpg" fluid
+            data-setup="{}">
+            <source src="https://streaming.radiostreamlive.com/radiosantaclaus_devices" type="video/mp4" />
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+            </p>
+    </video>
+    <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+    <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://www.radiosantaclaus.com/live" target="_blank" style="color: #cccccc; text-decoration: none;">Radio Santa Claus</a></div><br/>`,
     allowsMedia: true,
     hasNoteWall: true
   },
@@ -80,24 +103,28 @@ const indexRoomData: { [name: string]: Room } = {
     id: 'kitchenTableA',
     displayName: 'Kitchen Table A',
     shortName: 'table A in the kitchen',
-    description: `A rustic wooden picnic table in the kitchen.
-      From here, you can see tables [[B->kitchenTableB]] or [[C->kitchenTableC]], and the [[general kitchen area->kitchen]].`,
+    description: `You get closer to the first table. There’s nothing on it, so you can only assume this is where you bring the food from the other table in order to eat it. Such a well thought-out system.
+      From here, you can see tables [[the Fussball Table->kitchenTableB]] or [[B->kitchenTableC]], and the [[general kitchen area->kitchen]].`,
     allowsMedia: true
   },
   kitchenTableB: {
     id: 'kitchenTableB',
     displayName: 'Kitchen Fussball Table',
     shortName: 'fussball table in the kitchen',
-    description: `A rustic wooden picnic table in the kitchen.
-      From here, you can see tables [[A->kitchenTableA]] or [[C->kitchenTableC]], and the [[general kitchen area->kitchen]].`,
+    description: `As you aproach the table the only thing you can hear is a never-ending sequence of bangs and from time to time "Damn this ball is not round anymore". You can't really see what is happening because some unknown individuals are there and they are closely looking at 8 guys how they professionaly maneuver the mini football players and make the ball reach the goal.
+    <br/><br/>
+    <a href="https://www.haxball.com/" target="_blank">Haxball</a> is the online version of the old childhood game \'Fotbal cu nasturi\'. Create a private room, share its name and password in the chat and play with your fellow friends and have fun. It's not exacly <a href="https://ncchat.slack.com/archives/CB8S5V2M7" target="_blank">Fußball</a> but it comes pretty close.
+    <br/><br/>
+      From here, you can see tables [[A->kitchenTableA]] or [[B->kitchenTableC]], and the [[general kitchen area->kitchen]].`,
     allowsMedia: true
   },
   kitchenTableC: {
     id: 'kitchenTableC',
     displayName: 'Kitchen Table B',
     shortName: 'table B in the kitchen',
-    description: `A rustic wooden picnic table in the kitchen. For some reason this table and *only* this table contains a basket loaded with [[fortune cookies->getFortune]], and a sign next to it reading "Roguelike Celebration is not responsible for any consequences of taking advice from a cookie - so help yourself!"<br/><br/>
-      From here, you can see tables [[A->kitchenTableA]] or [[B->kitchenTableB]], and the [[general kitchen area->kitchen]]`,
+    description: `You arrive at the second table. There is A LOT of food. Like, a lot. Who on earth is going to eat all this?<br/><br/>
+    Well, someone has to step up and be a hero. Get [[something->generateSeriousFood]] to eat.<br/><br/>
+      From here, you can see tables [[A->kitchenTableA]] or [[the Fussball Table->kitchenTableB]], and the [[general kitchen area->kitchen]]`,
     allowsMedia: true
   },
   bar: {
