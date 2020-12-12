@@ -185,11 +185,11 @@ const presenceMapping = [
   'shippingContainer', // Elevator A 07
   'theater', // Ateneu 08
   'atelier', // Pets Zone 09
-  'statue', //Peretele de pluta 10
+  'southShowcaseHall', //Peretele de pluta 10
   'northShowcaseHall', // Yellow Table 11
   //'westShowcaseHall', //---hidden---
   'eastShowcaseHall', // Tineretului 12
-  'southShowcaseHall', // TNB 13
+  'statue', // TNB 13
   //'study', //---not used--- 15
   'swag', // Reception Bar 14
   'foyer', // Reception 15
@@ -264,7 +264,7 @@ const clickableAreas: ClickableArea[] = [
     height: 5
   },
   {
-    roomId: 'statue',
+    roomId: 'southShowcaseHall',
     x: 0,
     y: 43,
     width: 29,
@@ -320,7 +320,7 @@ const clickableAreas: ClickableArea[] = [
     height: 5
   },
   {
-    roomId: 'southShowcaseHall',
+    roomId: 'statue',
     x: 47,
     y: 30,
     width: 13,
