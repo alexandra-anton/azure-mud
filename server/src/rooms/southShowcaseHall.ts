@@ -1,7 +1,7 @@
 export default {
   id: 'southShowcaseHall',
-  displayName: 'TNB',
-  shortName: 'the TNB',
+  displayName: 'Peretele de pluta',
+  shortName: 'the wall',
   description: `
       A number of booths line the sides of the hall.<br/><br/>
       Here you can see Fuzz Force: Spook Squad by Alan Igle, Mech@mor Showdown by Seth Alter, Rift Wizard by Dylan White, and Happy Grumps by Glenn LaBarre.<br/><br/>
