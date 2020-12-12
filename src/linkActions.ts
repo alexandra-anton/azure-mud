@@ -5,6 +5,9 @@ export const linkActions = {
   generateFood: () => {
     pickUpRandomItemFromList('vendingMachineFood')
   },
+  generateSeriousFood: () => {
+    pickUpRandomItemFromList('seriousFood')
+  },
   pickUpPuppy: () => {
     pickUpItem('a tiny puppy')
   },

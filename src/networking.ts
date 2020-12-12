@@ -123,6 +123,10 @@ export async function dropItem () {
   await callAzureFunction('pickUpItem', { drop: true })
 }
 
+export async function eatItem () {
+  await callAzureFunction('pickUpItem', { eat: true })
+}
+
 // Post-it notes
 
 export async function addNoteToWall (message: string) {

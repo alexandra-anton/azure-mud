@@ -36,7 +36,7 @@ const pickUpItem: AuthenticatedEndpointFunction = async (user: User, inputs: any
         }
       }
     }
-  } else if (inputs.drop) {
+  } else if (inputs.drop || inputs.eat) {
     item = undefined
   } else {
     return {
@@ -46,8 +46,8 @@ const pickUpItem: AuthenticatedEndpointFunction = async (user: User, inputs: any
       }
     }
   }
-
-  const actionString = (item ? `picks up ${item}.` : `drops ${oldItem}.`)
+ 
+  const actionString = (item ? `picks up ${item}.` : ((inputs.eat) ? `eats ${oldItem}.` : `drops ${oldItem}.`))
 
   const newProfile = await updateUserProfile(user.id, { item })
 
