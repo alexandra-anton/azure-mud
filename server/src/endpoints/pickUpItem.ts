@@ -47,7 +47,7 @@ const pickUpItem: AuthenticatedEndpointFunction = async (user: User, inputs: any
     }
   }
  
-  const actionString = (item ? `picks up ${item}.` : ((inputs.eat) ? `eats ${oldItem}.` : `drops ${oldItem}.`))
+  const actionString = (item ? `picks up ${item.replace('office cat', 'the office cat')}.` : ((inputs.eat) ? `eats ${oldItem}.` : `drops ${oldItem.replace('office cat', 'the office cat')}.`))
 
   const newProfile = await updateUserProfile(user.id, { item })
 
