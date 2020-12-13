@@ -147,14 +147,16 @@ const eatHeldFood = () => {
 }
 
   if (user.item) {
+    const customButtonAction = user.item.includes('green toy snake') ? 'Throw it against the floor' : 'Drop it'
     if (isKitchenTableA) {
       if (isSeriousFood(user.item))
         return <span>Luckily enough, you do happen to have {user.item}. <button className='link-styled-button' onClick={eatHeldFood}>Go eat it</button>.</span>
-      else 
-        return <span>Since you don’t have any food with you, it’s starting to feel a bit awkward just sitting around here. Go to get some food, or stay here some more. You are holding {user.item.replace('office cat','the office cat')}. <button className='link-styled-button' onClick={dropHeldItem}>Drop it</button>.</span>
+      else {
+        return <span>Since you don’t have any food with you, it’s starting to feel a bit awkward just sitting around here. Go to get some food, or stay here some more. You are holding {user.item.replace('office cat','the office cat').replace('green toy snake','a green toy snake')}. <button className='link-styled-button' onClick={dropHeldItem}>{customButtonAction}</button>.</span>
+      }
     }
     else  
-      return <span>You are holding {user.item.replace('office cat','the office cat')}. <button className='link-styled-button' onClick={dropHeldItem}>Drop it</button>.</span>
+      return <span>You are holding {user.item.replace('office cat','the office cat').replace('green toy snake','a green toy snake')}. <button className='link-styled-button' onClick={dropHeldItem}>{customButtonAction}</button>.</span>
   } else {
     if (isKitchenTableA) {
       return <span>Since you don’t have any food with you, it’s starting to feel a bit awkward just sitting around here. Go to get some food, or stay here some more.</span>
@@ -194,7 +196,7 @@ const PresenceView = (props: { users?: string[]; userId?: string, videoUsers: st
         <span key={`room-presence-${id}`}>
           <NameView userId={u} id={id} key={id} />
           {videoUsers && videoUsers.includes(u) ? <FaVideo /> : null}
-          {user.item ? ` (holding ${user.item.replace('office cat', 'the office cat')})` : null}
+          {user.item ? ` (holding ${user.item.replace('office cat', 'the office cat').replace('green toy snake','a green toy snake')})` : null}
         </span>
       )
     })

@@ -17,5 +17,6 @@ export default [
   'cinnamon-spiced apple juice',
   'Nespresso coffee',
   'a cup of the good coffee',
-  'a tasty latte'
+  'a tasty latte',
+  'green toy snake'
 ]

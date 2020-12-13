@@ -76,19 +76,13 @@ const indexRoomData: { [name: string]: Room } = {
     <br/><br/>
     From here you can walk over to the [[MOPS->tower]] or [[Support->oracle]] areas and see who you encounter there. Or you can use the wall to share with us what's your favourite Christmas treat.
     <br/></br>
-    <div style="width: 100%; align: center;">
-    
-    <video id="my-video" class="video-js" controls autoplay preload="auto"
-            data-setup="{}">
-            <source src="https://streaming.radiostreamlive.com/radiosantaclaus_devices" type="video/mp4" />
-            <p class="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a
-                web browser that
-                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-            </p>
-    </video><script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+    <div style="width: 100%">
+            <video class="showcase-video" controls style="margin: auto; width: 420px; height: 50px;">
+                <source src="https://streaming.radiostreamlive.com/radiosantaclaus_devices" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
     </div>
-    <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://www.radiosantaclaus.com/live" target="_blank" style="color: #cccccc; text-decoration: none;">  Radio Santa Claus</a> · live from North Pole</div><br/>`,
+    <div style="width: 100%; font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://www.radiosantaclaus.com/live" target="_blank" style="color: #cccccc; text-decoration: none;">  Radio Santa Claus</a> · live from North Pole</div><br/>`,
     allowsMedia: true,
     hasNoteWall: true
   },
@@ -147,14 +141,32 @@ const indexRoomData: { [name: string]: Room } = {
     id: 'danceFloor',
     displayName: 'Dance Floor',
     shortName: 'the dance floor',
-    description: 'The ping-pong table has been pushed to the side for a makeshift dance floor. Colourful skeletons raise and lower their arms to the beat of chiptune music coming from a DJ booth near the wall. The DJ smoothly transitions between old favourites and requests from years past.<br/><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/511460973&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/funkip" title="Funkip ♥" target="_blank" style="color: #cccccc; text-decoration: none;">Funkip ♥</a> · <a href="https://soundcloud.com/funkip/roguelike-celebration-2018-saturday-night" title="Roguelike Celebration 2018" target="_blank" style="color: #cccccc; text-decoration: none;">Roguelike Celebration 2018</a></div><br/><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/699462760&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/funkip" title="Funkip ♥" target="_blank" style="color: #cccccc; text-decoration: none;">Funkip ♥</a> · <a href="https://soundcloud.com/funkip/rand-gen-mem" title="💖 Roguelike Celebration 2019 Mix" target="_blank" style="color: #cccccc; text-decoration: none;">💖 Roguelike Celebration 2019 Mix</a></div><br/><br/>From here, you can reach the [[Nostalgia Dance Floor->westShowcaseHall]], the [[kitchen]], or the [[bar]].',
+    description: `Unexpectedly once you step into this room the rythm starts pumping in your veins and your limbs seem to move on their own. You glance from side to side and notice the DJ booth near the wall and from it curiously hang face masks - it must be the Covid effect.
+    <br/><br/>
+    <div id="dance-floor-showcase" class="showcase-container">
+        <div id="discord-entry" class="showcase-entry" style="display: inline-flex;">
+          <div id="discord-text">
+            <p><a href="https://mihararyosuke.com/gesuido" target="_blank">Gesuido</a>, by 
+              <a href="https://twitter.com/oinariman" target="_blank" rel="nofollow noopener noreferrer">Ryosuke Mihara</a>
+            </p>
+            <p>Gesuido is a Roguelike game for iPhone that's not too dissimilar in gameplay to the original Rogue, but it features early 
+              Macintosh-style black and white tile graphics and cute illustrated magic cards. The game is still developing, but I’ve made a beta 
+              version available for Roguelike Celebration 2020 attendees. Feedbacks are welcome. You can find it 
+              <a href="https://testflight.apple.com/join/3tcSPCbC" target="_blank">here</a>!
+            </p>
+          </div>
+          <iframe src="https://discord.com/widget?id=780867772749840384&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+    </div>
+    <br/><br/>
+    From here, you can reach the [[Nostalgia Dance Floor->westShowcaseHall]], grab a drink from the [[bar]] or head back to [[the MM area->unconference]].`,
     hasNoteWall: true,
     noteWallData: {
-      roomWallDescription: 'There is a chalkboard that says "BOOKMARKS" on the top.',
-      noteWallButton: 'Add a link',
-      addNoteLinkText: 'add a link',
+      roomWallDescription: 'There is a board next to the DJ that says "PLAYLISTS" on the top.',
+      noteWallButton: 'Add a playlist link',
+      addNoteLinkText: 'add a playlist link',
       addNotePrompt: 'What would you like to link to?',
-      noteWallDescription: 'Links to slides, videos, files, and articles of interest.'
+      noteWallDescription: 'Links to people\'s playlists.'
     }
   },
   shippingContainer: {
