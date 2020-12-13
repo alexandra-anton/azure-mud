@@ -70,22 +70,15 @@ const indexRoomData: { [name: string]: Room } = {
     id: 'kitchen',
     displayName: 'Kitchen',
     shortName: 'the kitchen',
-    description: `You enter the kitchen.  A lively, cheerful energy greets you the moment you close the door. It’s like you’re back to your aunt’s house on Christmas morning with everybody moving about getting ready for the first feast of the day. The heavy stench of cold sausages and caltaboș helps with that, too. Warm those up a bit before eating, don’t be an animal.<br/><br/>
-    There are two tables you can sit at, labelled [[A->kitchenTableA]] and [[B->kitchenTableC]].
+    description: `A series of long, white, tables spread across the glass-walled kitchen await the first guests. As Christmas music fills the room, along the smell of fresh brewed coffee, you notice familiar items. The fridge is filled with [[cinnamon-spiced apple juice->item]] and the espresso maker sits patiently in its corner, in case you missed the [[Nespresso coffee->item]].
     <br/><br/>
-      You can also join the [[Fußball->kitchenTableB]] table or, if you’d like a little snack of refreshing beverage before the meal, you can get something from the [[Vending Machine->generateFood]] (card payment is working again!).
-      From here you can walk over to the [[MOPS->tower]] or [[Support->oracle]] areas and see who you encounter there.
+    There are two tables you can sit at, labelled [[A->kitchenTableA]] and [[B->kitchenTableC]]. You can also join the [[Fußball->kitchenTableB]] table or, if you’d like a little snack or refreshing beverage before moving to more serious food, you can get something from the [[Vending Machine->generateFood]] (card payment is working again!).
+    <br/><br/>
+    From here you can walk over to the [[MOPS->tower]] or [[Support->oracle]] areas and see who you encounter there. Or you can use the wall to share with us what's your favourite Christmas treat.
     <br/></br>
-    Or you can have a seat on the leather couch and enjoy some Christmas music:
-    <br/></br>
-    <style>
-        .video-js {
-            border: 10px;
-            border-color: aliceblue;
-        }
-    </style>
-    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
-    <video id="my-video" class="video-js" controls autoplay preload="auto" poster="images/christmas-story/poster.jpg" fluid
+    <div style="width: 100%; align: center;">
+    
+    <video id="my-video" class="video-js" controls autoplay preload="auto"
             data-setup="{}">
             <source src="https://streaming.radiostreamlive.com/radiosantaclaus_devices" type="video/mp4" />
             <p class="vjs-no-js">
@@ -93,9 +86,9 @@ const indexRoomData: { [name: string]: Room } = {
                 web browser that
                 <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
             </p>
-    </video>
-    <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
-    <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://www.radiosantaclaus.com/live" target="_blank" style="color: #cccccc; text-decoration: none;">Radio Santa Claus</a></div><br/>`,
+    </video><script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+    </div>
+    <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://www.radiosantaclaus.com/live" target="_blank" style="color: #cccccc; text-decoration: none;">  Radio Santa Claus</a> · live from North Pole</div><br/>`,
     allowsMedia: true,
     hasNoteWall: true
   },

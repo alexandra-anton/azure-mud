@@ -1,7 +1,7 @@
 var tracery = require('tracery-grammar')
 
 export const actionString = (item: string) => {
-  return `The ancient vending machine whirrs and sputters for a few seconds before spitting out ${item}.`
+  return `The vending machine whirrs and sputters for a few seconds before spitting out ${item}.`
 }
 
 export const generate = () => {
@@ -9,10 +9,10 @@ export const generate = () => {
     origin: [
       '#adjective# #food#',
       '#adjective# #food#',
-      '#adjective# #food#',
-      '#adjective# #food#',
-      '#food#',
-      '#adjective# #food##postAdjective#'
+      '#adjective# #beverage#',
+      '#adjective# #food##postAdjectiveFood#',
+      '#adjective# #food##postAdjectiveFood#',
+      '#adjective# #beverage##postAdjectiveBeverage#'
     ],
     adjective: [
       'a fresh',
@@ -26,35 +26,45 @@ export const generate = () => {
       'a hefty'
     ],
     food: [
-      'slime mold',
-      'meal ration',
+      'Turbo bubblegum',
+      'chicken sandwich',
+      'turkey sandwich',
+      'grilled cheese sandwich',
+      'salam de biscuiti',
+      'nougat',
+      'bag of Bake Rolls',
+      'bag of chips',
+      'Mars bar',
+      'Twix bar',
+      'Lembas bread',
+      'Knoppers bar',
+      'Granola bar',
       'apple',
-      'orange',
-      'pomegranate',
-      'döner kebab',
-      'donair',
-      'hamburger',
-      'pizza',
-      'kobold corpse',
-      'bagged sandwich',
-      'cup of soup',
-      'loaf of bread',
-      'lembas wafer',
-      'Cloaca Surprise',
-      'gnomish candy',
-      'choko',
-      'fig',
-      'cheesecake',
-      'plump helmet mince',
-      'bunch of grapes',
-      'guava',
-      'pancake'
+      'banana'
     ],
-    postAdjective: [
+    beverage: [
+      'bottle of yoghurt',
+      'bottle of sana',
+      'can of Red Bull',
+      'can of Coca Cola',
+      'can of Coca Cola Zero',
+      'can of Fanta',
+      'can of Sprite',
+      'bottle of Lipton'
+    ],
+    postAdjectiveFood: [
       ', still in the wrapper',
       ' with a bite taken out of it',
       ' past its expiration date',
       ' that smells AMAZING',
+      ', still frozen',
+      ', with a sauce packet attached',
+      ', with an @ on the packaging'
+    ],
+    postAdjectiveBeverage: [
+      ' with a sip taken out of it',
+      ' past its expiration date',
+      ' that tastes AMAZING',
       ', still frozen',
       ', with a sauce packet attached',
       ', with an @ on the packaging'
