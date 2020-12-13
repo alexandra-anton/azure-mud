@@ -147,40 +147,52 @@ const indexRoomData: { [name: string]: Room } = {
     id: 'danceFloor',
     displayName: 'Dance Floor',
     shortName: 'the dance floor',
-    description: 'The ping-pong table has been pushed to the side for a makeshift dance floor. Colourful skeletons raise and lower their arms to the beat of chiptune music coming from a DJ booth near the wall. The DJ smoothly transitions between old favourites and requests from years past.<br/><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/511460973&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/funkip" title="Funkip ♥" target="_blank" style="color: #cccccc; text-decoration: none;">Funkip ♥</a> · <a href="https://soundcloud.com/funkip/roguelike-celebration-2018-saturday-night" title="Roguelike Celebration 2018" target="_blank" style="color: #cccccc; text-decoration: none;">Roguelike Celebration 2018</a></div><br/><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/699462760&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/funkip" title="Funkip ♥" target="_blank" style="color: #cccccc; text-decoration: none;">Funkip ♥</a> · <a href="https://soundcloud.com/funkip/rand-gen-mem" title="💖 Roguelike Celebration 2019 Mix" target="_blank" style="color: #cccccc; text-decoration: none;">💖 Roguelike Celebration 2019 Mix</a></div><br/><br/>From here, you can reach the [[Nostalgia Dance Floor->westShowcaseHall]], the [[kitchen]], or the [[bar]].'
+    description: 'The ping-pong table has been pushed to the side for a makeshift dance floor. Colourful skeletons raise and lower their arms to the beat of chiptune music coming from a DJ booth near the wall. The DJ smoothly transitions between old favourites and requests from years past.<br/><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/511460973&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/funkip" title="Funkip ♥" target="_blank" style="color: #cccccc; text-decoration: none;">Funkip ♥</a> · <a href="https://soundcloud.com/funkip/roguelike-celebration-2018-saturday-night" title="Roguelike Celebration 2018" target="_blank" style="color: #cccccc; text-decoration: none;">Roguelike Celebration 2018</a></div><br/><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/699462760&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/funkip" title="Funkip ♥" target="_blank" style="color: #cccccc; text-decoration: none;">Funkip ♥</a> · <a href="https://soundcloud.com/funkip/rand-gen-mem" title="💖 Roguelike Celebration 2019 Mix" target="_blank" style="color: #cccccc; text-decoration: none;">💖 Roguelike Celebration 2019 Mix</a></div><br/><br/>From here, you can reach the [[Nostalgia Dance Floor->westShowcaseHall]], the [[kitchen]], or the [[bar]].',
+    hasNoteWall: true,
+    noteWallData: {
+      roomWallDescription: 'There is a chalkboard that says "BOOKMARKS" on the top.',
+      noteWallButton: 'Add a link',
+      addNoteLinkText: 'add a link',
+      addNotePrompt: 'What would you like to link to?',
+      noteWallDescription: 'Links to slides, videos, files, and articles of interest.'
+    }
   },
   shippingContainer: {
     id: 'shippingContainer',
     displayName: 'Elevator A',
     shortName: 'the elevator A',
     description: `
-      It's not quite clear why there's a shipping container in the middle of the space. Seems pretty chill, though? Somebody's set up a makeshift bench.<br/><br/>
-      After you climb out, you can get back to the [[bar]], the [[theater]], the [[kitchen]], or the [[@-sign statue->statue]].`,
+      It's not quite clear what's wrong with this elevator, you push the button and nothing happens. In the past, somebody even fell with it all the way to the main lobby. Seems pretty scary, no?<br/><br/>
+      After you hurry to come out of it, you can wait for [[elevator B->lounge]] or get back to [[foyer]].`,
     allowsMedia: true
   },
   entryway: {
     id: 'entryway',
-    displayName: 'Registration Desk',
+    displayName: 'Downstairs Registration Desk',
     shortName: 'the registration desk',
-    description: 'A big banner reads \'Welcome to Roguelike Celebration 2020!\' Once you\'ve got your bearings about you, you can move to the [[foyer]].',
+    description: 'A big banner reads \'Welcome back to the Bucharest Netcentric office!\' Once you\'ve got your bearings about you, you can move to the [[foyer]].',
     hidden: true
   },
   foyer: {
     id: 'foyer',
     displayName: 'Reception',
     shortName: 'the reception',
-    description: `A grand opulent foyer leading into the theater. A chill runs down your spine as you walk in; something just feels <em>off</em> about this place.<br/><br/>
-    You can see a [[swag table->swag]] in the corner, and can also leave to the [[theater]] or the [[west showcase hall->westShowcaseHall]].`,
+    description: `A familiar, purple, sight awaits you the moment you step off the elevator. Welcome back to the office! 
+    A partially decorated [[Christmas Tree->study]] sits in the corner, with scattered decorations around it - someone really needs to finish setting up these lights!
+    <br/><br/>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3uycy7s-kvc?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br/><br/>
+    You can see the coffee machine sitting on the [[reception bar->swag]] in the corner, and can also leave towards the HR area, join the main party in Ateneu, or the guys in Coltul Vesel for a chat. Or take [[elevator A->shippingContainer]] or [[elevator B->lounge]] to get outside.<br/><br/>`,
     specialFeatures: [SpecialFeature.RainbowDoor, SpecialFeature.DullDoor]
   },
   swag: {
     id: 'swag',
     displayName: 'Reception Bar',
     shortName: 'the reception bar',
-    description: `A table covered in a giant messy pile of mismatched swag. At the top of the pile, you see items such as [[Roguelike Celebration socks->item]], [[a +1 longbow->item]], [[an unidentified scroll->item]], and (surprisingly!) [[a tiny puppy->item]].<br/><br/>
-    There are also a whole bunch of absolutely beautiful <a href="https://roguelike-celebration.myshopify.com/" target="_blank" rel="noreferrer">conference t-shirts</a> (actual physical shirts!) available <a href="https://roguelike-celebration.myshopify.com/" target="_blank" rel="noreferrer">for sale</a>.
+    description: `The well-known bar covered in a giant messy pile of mismatched swag. At the top of the pile, you see items such as [[a purple Netcentric t-shirt->item]], [[a purple Christmas tree decoration->item]], [[a #makeNetcentricAFunPlanceToWork sticker->item]], [[a \'Keep Calm and Do Your Tempo\' sticker->item]], and (surprisingly!) [[an unidentified piece of candy->item]].<br/><br/>
+    The coffee machine is also working and you can prepare yourself [[a cup of the good coffee->item]] or [[a tasty latte->item]]. 
     <br/><br/>
-    From here, you can walk back to the rest of the [[foyer]].`
+    From here, you can walk back to the rest of the [[Reception->foyer]].`
   },
   atelier: {
     id: 'atelier',
@@ -194,18 +206,13 @@ const indexRoomData: { [name: string]: Room } = {
   },
   study: {
     id: 'study',
-    displayName: 'Procedural Generation Study',
-    shortName: 'the proc-gen study',
-    description: `A comfy and cozy library that is curiously shaped like a hexagon. One side of the room has a couple of well-worn leather armchairs, while the other four walls are filled top-to-bottom with books. The majority of them are apparent gibberish, but many of them contain insightful writings about the art of procedural content generation.<br/><br/>
-    From here, you can get to the the [[engineer's workbench->workbench]] or the [[artists' atelier->atelier]].`,
-    hasNoteWall: true,
-    noteWallData: {
-      roomWallDescription: 'There is a chalkboard that says "BOOKMARKS" on the top.',
-      noteWallButton: 'Add a link',
-      addNoteLinkText: 'add a link',
-      addNotePrompt: 'What would you like to link to?',
-      noteWallDescription: 'Links to slides, videos, files, and articles of interest.'
-    }
+    displayName: 'Christmas Tree',
+    shortName: 'the Christmas tree',
+    description: `A comfy and cozy couch awaits you, to sit back, listen to some tradional romanian Christmas carols and admire the talent of your colleagues who decorated the tree. Even if it's not yet finished. 
+    <br/><br/>Or you could pick up the tinsel from the floor and <a href="https://www.abcya.com/games/make-a-christmas-tree" target="_blank" rel="noreferrer">show</a> them what you've got. If you're feeling particularly inspired, you could even add your final work-of-art to the <a href="https://photos.app.goo.gl/9r7SbhgQstsJioGH7" target="_blank" rel="noreferrer">Christmas tree collection</a>. <br/><br/>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3HXk4rRa09o?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br/><br/>
+    From here, you can walk back to the rest of the [[Reception->foyer]].`
   },
   workbench: {
     id: 'workbench',
