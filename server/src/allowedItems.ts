@@ -12,5 +12,7 @@ export default [
   'Planepacked',
   'the Tourist',
   'the Berlin Interpretation',
-  'the Walls Are Shifting'
+  'the Walls Are Shifting',
+  'cinnamon-spiced apple juice',
+  'Nespresso coffee'
 ]
