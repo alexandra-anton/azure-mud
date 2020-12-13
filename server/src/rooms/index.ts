@@ -192,9 +192,12 @@ const indexRoomData: { [name: string]: Room } = {
   atelier: {
     id: 'atelier',
     displayName: 'Pets Zone',
-    shortName: 'the artists\' atelier',
-    description: `A bright sun-lit space for an artist to work. In the corner of the room are crates full of [[fresh pixels->item]] of all colors, waiting to be placed on a canvas. A screen on one wall shows a rotating slideshow of works by <a href=https://christen.carrd.co/ target=_blank>Christen Alqueza</a>, who also made the overlays and background for the livestream. In the middle of the room is a giant contraption made of various [[pieces of scrap metal->item]]; you can't honestly tell whether it's intended to be art or just leftover scrap.<br/><br/>
-    From here, you can get to the [[west showcase hall->westShowcaseHall]], the [[engineer's work room->workbench]], or the [[proc-gen study->study]].`
+    shortName: 'the pets zone',
+    description: `Woof! This sun-lit corner of the office is perfect for our little furry friends to run around! The desks have all been set aside, leaving an empty space filled with pet games, colourful balls and squeaky toys. The [[office cat->item]] looks down from the cat tree, judgementally, as [[a cheerful puppy->item]] takes down <a href="https://photos.app.goo.gl/udUNPw68BeoFSNjHA" target="_blank" rel="noreferrer">a photo from the wall</a>, and runs away with it.
+    <br/><br/>
+    You can’t honestly say if this happy chaos is intended or not, but all pets are welcome here to join in the fun!
+    <br/><br/> 
+    From here, you can get to the [[Acvariu->castle]], or join the rest of the gang in the [[MM area->unconference]].`
   },
   study: {
     id: 'study',
