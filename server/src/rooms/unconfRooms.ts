@@ -41,8 +41,14 @@ export const tower = {
 export const castle = {
   id: 'castle',
   displayName: 'Acvariu',
-  shortName: 'castle',
-  description: 'A foreboding castle stands before you, surrounded by a moat that ripples with unseen shapes swimming beneath the surface. The front of the castle is taken up by a large drawbridge that is currently raised, preventing you from venturing inside. Strangely, a pile of discarded musical instruments is piled on shore by where the bridge would presumably open - and the area directly beneath the bridge\'s landing zone is smeared with what you hope is ketchup.<br/><br/>We encourage you to use this space to talk "face-to-face" using <a href="https://us02web.zoom.us/j/83231990219?pwd=RGo5cEdveXIyNzJaS0xxdXJsZjRNQT09" target="_blank">the Zoom meeting for this room</a>, which you can access at any time during the conference. (Passcode 390551)<br/><br/>This is a room for unconferencing! The other unconferencing rooms are [[Minetown->minetown]], [[Oracle->oracle]], [[Vlad\'s Tower->tower]], [[Sokoban->sokoban]], and [[Astral Plane->astralPlane]]. Or you can go back to the [[unconferencing lobby->unconference]].',
+  shortName: 'the aquarium',
+  description: `The moment you step through the glass doors, cheerful voices overlap with this strange music. Where is this coming from?
+  <br/>
+  Around you, the desks are littered with abandoned notebooks, pens, and last year’s tree decorations. Someone should really put these away in January! A [[green toy snake->item]] is on the floor, chairs and backpacks spread chaotically around.
+  <br/>
+  A Christmas tree has been set up in the corner, and crumpled wrapping paper reminds us of last week’s party.
+  <br/>
+  If you really have to leave this cosy place, you can head over to [[elevator A->shippingContainer]], [[elevator B->lounge]], [[bran]], or join the rest of the team in the [[MM area->unconference]].`,
   hasNoteWall: true
 }
 
