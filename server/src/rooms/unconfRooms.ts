@@ -64,7 +64,7 @@ export const castle = {
 export const sokoban = {
   id: 'sokoban',
   displayName: 'Sys Eng Corner',
-  shortName: 'sokoban',
+  shortName: 'the sys eng corner',
   description: 'This strange room is made up of blue walls with large circular pits dotting the floor, accompanied by many boulders of matching size. The boulders are strangely easy to roll from place to place - and even stranger is how often moving a boulder reveals a flattened snack underneath. Something about being in this room fills you with a subtle feeling of frustration.<br/><br/>We encourage you to use this space to talk "face-to-face" using <a href="https://us02web.zoom.us/j/88300705663?pwd=ZTZ6N2x0Sks4a21qTTlSREt5NGJhQT09" target="_blank">the Zoom meeting for this room</a>, which you can access at any time during the conference. (Passcode 418594)<br/><br/>This is a room for unconferencing! The other unconferencing rooms are [[Minetown->minetown]], [[Oracle->oracle]], [[Castle->castle]], [[Vlad\'s Tower->tower]], and [[Astral Plane->astralPlane]]. Or you can go back to the [[unconferencing lobby->unconference]].',
   hasNoteWall: true
 }
@@ -81,7 +81,7 @@ export const astralPlane = {
 
 export const phoneBooth1 = {
   id: 'phoneBooth1',
-  displayName: 'First Phone Booth',
+  displayName: '1st Phone Booth',
   shortName: 'the first phone booth',
   description: `Ah, a moment of solitude! As you step into the transparent privacy of the phone booth, you set your laptop down and take a sip out of your coffee. What was the next meeting about?
   <br/><br/>
