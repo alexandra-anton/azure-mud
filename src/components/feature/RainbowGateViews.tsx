@@ -50,7 +50,7 @@ export default function RainbowGateModalView () {
           heard of synesthesia before, yes, no, no, I&apos;m aware.</p>
         <p>Look, Dragos, I told you, I&apos;m an engineer, not Santa Claus.</p>
         <p>Okay there&apos;s a reason why I put that sign up, we&apos;ll just have to deal with these nosy people coming through here until
-          we figure out who delivers everybody's presents and then -
+          we figure out who delivers everybody&apos;'s presents and then -
         </p>
         <p>Yes, yes, okay, look, thanks for dropping by, sorry we&apos;re a little bit busy, would you mind just closing the curtains and
           being on your way? Yes, thank you. We appreciate it.</p>
@@ -61,7 +61,7 @@ export default function RainbowGateModalView () {
       <div>
         <h1>Oh, it&apos;s you again.</h1>
         <p>Oh, hey, not to be, uh, not to be touchy or anything but we&apos;d appreciate it if you stopped opening this curtain.
-          You might not notice but uh, you&apos;re kind of ruining everybody&apos;s surprise and it's going to be really annoying to 
+          You might not notice but uh, you&apos;re kind of ruining everybody&apos;s surprise and it&apos;'s going to be really annoying to
           fix it, so...we would really appreciate if you stopped.
         </p>
       </div>
