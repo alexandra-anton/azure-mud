@@ -1,7 +1,7 @@
 var tracery = require('tracery-grammar')
 
 export const actionString = (item: string) => {
-  return `You get ...${item}.`
+  return `You get ...     ${item}.`
 }
 
 const seriousFoodList = [

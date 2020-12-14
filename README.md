@@ -15,7 +15,7 @@ On the frontend, it's a rich single-page webapp built in TypeScript and React, u
 
 ## Setting up a development environment
 
-### Frontend Dev
+### Frontend Dev 
 
 1. Clone this repo
 

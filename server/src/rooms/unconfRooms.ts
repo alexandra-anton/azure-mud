@@ -24,9 +24,14 @@ export const minetown = {
 
 export const oracle = {
   id: 'oracle',
-  displayName: 'Support',
-  shortName: 'support',
-  description: 'This peaceful space is decorated with burbling fountains, stately marble columns, and finely carved statues of centaurs in various poses. A small temple is the focal point, but the doors are currently closed and barred, with a stern note on the door reading "The oracle is in no mood for consultations." A smaller, more hastily written sign underneath, reads "Tea time @ Vlad\'s, be back soon!"<br/><br/>We encourage you to use this space to talk "face-to-face" using <a href="https://us02web.zoom.us/j/85830277530?pwd=RDNFTnNMSFdhVExya0pYOUJRRDNOUT09" target="_blank">the Zoom meeting for this room</a>, which you can access at any time during the conference. (Passcode 984338)<br/><br/>This is a room for unconferencing! The other unconferencing rooms are [[Minetown->minetown]], [[Castle->castle]], [[Vlad\'s Tower->tower]], [[Sokoban->sokoban]], and [[Astral Plane->astralPlane]]. Or you can go back to the [[unconferencing lobby->unconference]].',
+  displayName: 'Support Area',
+  shortName: 'the support area',
+  description: `You enter the support area. Your colleagues that normally inhabit this space might or might not be around here (unless you’re one of them, hello!), as they are human beings that can move around the party too. Yet their energy still permeates this space. If you close your eyes, you can almost hear the faint echo of an accordion riff or the sudden shouting of a bad word. You also feel the sudden urge to burst into laughter.
+  Here, you can try to shout \'Milioane!\'. The mystical energy of the support area will answer you. “De lumini pe stradă! Milioane! De tălpi pe zăpadă! Magaziiiine pliiiine de jucăăăăăriiiii!”.
+  <br/><br>
+  Congratulations, now you will have this song stuck in you head all day.
+  <br/><br/>
+  We encourage you to use this space to talk \'face-to-face\' using the Webex meeting for this room, which you can access at any time until Christmas.`,
   hasNoteWall: true
 }
 
@@ -34,7 +39,11 @@ export const tower = {
   id: 'tower',
   displayName: 'MOPS',
   shortName: 'MOPS',
-  description: 'Squeaking bats and howling wolves give a festive October ambiance to this gothic tower, as you stand in the center courtyard. Small niches holding antique weaponry or suits of armour surround the yard, which can function as uncomfortably crowded break out rooms in a pinch. From far above you can hear two voices laughing, one Greek and one Transylvanian - but the reclining dragon by the stairs opens a warning eye if you venture too close.<br/><br/>We encourage you to use this space to talk "face-to-face" using <a href="https://us02web.zoom.us/j/83018980256?pwd=R21NU2lsV2UxTXRKeW52WU43bGJwUT09" target="_blank">the Zoom meeting for this room</a>, which you can access at any time during the conference. (Passcode 955148)<br/><br/>This is a room for unconferencing! The other unconferencing rooms are [[Minetown->minetown]], [[Oracle->oracle]], [[Castle->castle]], [[Sokoban->sokoban]], and [[Astral Plane->astralPlane]]. Or you can go back down to the [[unconferencing lobby->unconference]].',
+  description: `Soft blankets and piles of books give a homey ambiance to this corner of the office, as you stand by the desks, looking around. You can hear a couple of giggly voices from behind the computer screens, as they cheerfully talk about their colour-coded spreadsheets.
+  <br/><br/>
+  We encourage you to use this space to talk \'face-to-face\' using the Webex meeting for this room, which you can access at any time until Christmas.
+  <br/><br/>
+  You can walk away towards the Kitchen or join in the conversation in Coltul Vesel.`,
   hasNoteWall: true
 }
 
@@ -44,9 +53,9 @@ export const castle = {
   shortName: 'the aquarium',
   description: `The moment you step through the glass doors, cheerful voices overlap with this strange music. Where is this coming from?
   <br/>
-  Around you, the desks are littered with abandoned notebooks, pens, and last year’s tree decorations. Someone should really put these away in January! A [[green toy snake->item]] is on the floor, chairs and backpacks spread chaotically around.
+  Around you, the desks are littered with abandoned notebooks, pens, and last year\’s tree decorations. Someone should really put these away in January! A [[green toy snake->item]] is on the floor, chairs and backpacks spread chaotically around.
   <br/>
-  A Christmas tree has been set up in the corner, and crumpled wrapping paper reminds us of last week’s party.
+  A Christmas tree has been set up in the corner, and crumpled wrapping paper reminds us of last week\’s party.
   <br/>
   If you really have to leave this cosy place, you can head over to [[elevator A->shippingContainer]], [[elevator B->lounge]], [[bran]], or join the rest of the team in the [[MM area->unconference]].`,
   hasNoteWall: true
@@ -62,25 +71,35 @@ export const sokoban = {
 
 export const astralPlane = {
   id: 'astralPlane',
-  displayName: 'HR Area',
-  shortName: 'HR area',
-  description: 'Your steps feel lighter in this glowing realm among the clouds. The majestic rays of golden light and pure sweet air would make it almost heavenly - if not for the awkward company of several strange and intimidating characters further inside by the three great temples. The way they keep shooting you suspicious glances and murmering to themselves gives you the distinct feeling they don\'t think you should be here.<br/><br/>We encourage you to use this space to talk "face-to-face" using <a href="https://us02web.zoom.us/j/85608238055?pwd=MXIvWHQ2OS85MlFFeHVucHQ1R3g1QT09" target="_blank">the Zoom meeting for this room</a>, which you can access at any time during the conference. (Passcode 753544)<br/><br/>This is a room for unconferencing! The other unconferencing rooms are [[Minetown->minetown]], [[Oracle->oracle]], [[Castle->castle]], [[Vlad\'s Tower->tower]], and [[Sokoban->sokoban]]. Or you can float back down to the [[unconferencing lobby->unconference]].',
+  displayName: 'TM Area',
+  shortName: 'the TM area',
+  description: `As you enter, the hustle and bustle of this busy office corner becomes apparent. The printer's constant hum lingers in the air, with people coming over all day, picking up their paperwork, then going back to their desks to install the latest drivers (sigh!). As you take a look around, you notice some familiar faces on the Peretele de Pluta, and you reminisce about last year's Christmas party.
+  <br/><br/>
+  Unphased by the constant commotion, the team is ready to answer never-ending "How do I... ?" questions with a smile, point us in the right direction, or just lend you a stapler - whatever you need! Always happy for a quick chat over a steaming cup of coffee, you can join them in the conference call, or you can just say Hi! as you step into Tineretului for your next meeting. `,
   hasNoteWall: true
 }
 
 export const phoneBooth1 = {
   id: 'phoneBooth1',
-  displayName: 'Phone Booth 1',
-  shortName: 'phone booth 1',
-  description: 'Your steps feel lighter in this glowing realm among the clouds. The majestic rays of golden light and pure sweet air would make it almost heavenly - if not for the awkward company of several strange and intimidating characters further inside by the three great temples. The way they keep shooting you suspicious glances and murmering to themselves gives you the distinct feeling they don\'t think you should be here.<br/><br/>We encourage you to use this space to talk "face-to-face" using <a href="https://us02web.zoom.us/j/85608238055?pwd=MXIvWHQ2OS85MlFFeHVucHQ1R3g1QT09" target="_blank">the Zoom meeting for this room</a>, which you can access at any time during the conference. (Passcode 753544)<br/><br/>This is a room for unconferencing! The other unconferencing rooms are [[Minetown->minetown]], [[Oracle->oracle]], [[Castle->castle]], [[Vlad\'s Tower->tower]], and [[Sokoban->sokoban]]. Or you can float back down to the [[unconferencing lobby->unconference]].',
+  displayName: 'First Phone Booth',
+  shortName: 'the first phone booth',
+  description: `Ah, a moment of solitude! As you step into the transparent privacy of the phone booth, you set your laptop down and take a sip out of your coffee. What was the next meeting about?
+  <br/><br/>
+  It’s time to put on the headphones and join the Zoom meeting for this room, which you can access at any time during the conference. (Passcode 753544)
+  <br/><br/>
+  You can always head back into Support area or into Bran, and join the rest of your team.`,
   hasNoteWall: true
 }
 
 export const phoneBooth2 = {
   id: 'phoneBooth2',
-  displayName: 'Phone Booth 2',
-  shortName: 'phone booth 2',
-  description: 'Your steps feel lighter in this glowing realm among the clouds. The majestic rays of golden light and pure sweet air would make it almost heavenly - if not for the awkward company of several strange and intimidating characters further inside by the three great temples. The way they keep shooting you suspicious glances and murmering to themselves gives you the distinct feeling they don\'t think you should be here.<br/><br/>We encourage you to use this space to talk "face-to-face" using <a href="https://us02web.zoom.us/j/85608238055?pwd=MXIvWHQ2OS85MlFFeHVucHQ1R3g1QT09" target="_blank">the Zoom meeting for this room</a>, which you can access at any time during the conference. (Passcode 753544)<br/><br/>This is a room for unconferencing! The other unconferencing rooms are [[Minetown->minetown]], [[Oracle->oracle]], [[Castle->castle]], [[Vlad\'s Tower->tower]], and [[Sokoban->sokoban]]. Or you can float back down to the [[unconferencing lobby->unconference]].',
+  displayName: '2nd Phone Booth',
+  shortName: 'the 2nd phone booth',
+  description: `Ah, a moment of solitude! As you step into the transparent privacy of the phone booth, you set your laptop down and take a sip out of your coffee. What was the next meeting about?
+  <br/><br/>
+  It’s time to put on the headphones and join the Zoom meeting for this room, which you can access at any time during the conference. (Passcode 753544)
+  <br/><br/>
+  You can always head back into Support area or into Bran, and join the rest of your team.`,
   hasNoteWall: true
 }
 
@@ -88,6 +107,8 @@ export const bran = {
   id: 'bran',
   displayName: 'Bran',
   shortName: 'Bran',
-  description: 'Your steps feel lighter in this glowing realm among the clouds. The majestic rays of golden light and pure sweet air would make it almost heavenly - if not for the awkward company of several strange and intimidating characters further inside by the three great temples. The way they keep shooting you suspicious glances and murmering to themselves gives you the distinct feeling they don\'t think you should be here.<br/><br/>We encourage you to use this space to talk "face-to-face" using <a href="https://us02web.zoom.us/j/85608238055?pwd=MXIvWHQ2OS85MlFFeHVucHQ1R3g1QT09" target="_blank">the Zoom meeting for this room</a>, which you can access at any time during the conference. (Passcode 753544)<br/><br/>This is a room for unconferencing! The other unconferencing rooms are [[Minetown->minetown]], [[Oracle->oracle]], [[Castle->castle]], [[Vlad\'s Tower->tower]], and [[Sokoban->sokoban]]. Or you can float back down to the [[unconferencing lobby->unconference]].',
+  description: `You briefly check the calendar and you feel instantly relieved - you did book the conference room! As you gently nudge the previous occupants to leave, you sit down with your laptop, turn on the TV, and join the meeting. Just 2 minutes late, no one will notice (smile)
+  <br/><br/>
+  When your call is over, you check your calendar again, unsure about your next item - is that the 1on1 PSL touchpoint you had in Phone booth 1? Or was it the badge interview in Phone Booth 2? While you make up your mind, loud discussions start in the Acvariu, and you feel more than tempted to join them for a chat instead.`,
   hasNoteWall: true
 }
