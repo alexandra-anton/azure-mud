@@ -2,7 +2,7 @@ name: Build and Deploy to GH Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main-christmas-story]
 
 jobs:
   build:
