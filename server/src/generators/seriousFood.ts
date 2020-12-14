@@ -1,9 +1,6 @@
 var tracery = require('tracery-grammar')
 
 export const actionString = (item: string) => {
-// somecraphere
-
-
   return `You get ...     ${item}.`
 }
 
