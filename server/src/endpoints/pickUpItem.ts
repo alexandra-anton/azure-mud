@@ -36,7 +36,7 @@ const pickUpItem: AuthenticatedEndpointFunction = async (user: User, inputs: any
         }
       }
     }
-  } else if (inputs.drop) {
+  } else if (inputs.drop || inputs.eat) {
     item = undefined
   } else {
     return {
@@ -46,8 +46,19 @@ const pickUpItem: AuthenticatedEndpointFunction = async (user: User, inputs: any
       }
     }
   }
-
-  const actionString = (item ? `picks up ${item}.` : `drops ${oldItem}.`)
+  
+  const actionString = (item ? 
+    `picks up ${item.replace('office cat', 'the office cat').replace('green toy snake','a green toy snake')}.` : 
+    (
+      (inputs.eat) ? 
+      `eats ${oldItem}.` : 
+      (
+        (oldItem.includes('green toy snake')) ? 
+        `throws the green toy snake against the floor.` : 
+        `drops ${oldItem.replace('office cat', 'the office cat')}.`
+      )
+    )
+  )
 
   const newProfile = await updateUserProfile(user.id, { item })
 

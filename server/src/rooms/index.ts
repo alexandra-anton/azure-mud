@@ -2,7 +2,7 @@ import northShowcaseHall from './northShowcaseHall'
 import southShowcaseHall from './southShowcaseHall'
 import eastShowcaseHall from './eastShowcaseHall'
 import westShowcaseHall from './westShowcaseHall'
-import { unconference, minetown, oracle, tower, secretRoom, castle, sokoban, astralPlane } from './unconfRooms'
+import { unconference, minetown, oracle, tower, castle, sokoban, astralPlane, phoneBooth1, phoneBooth2, bran } from './unconfRooms'
 import theater from './theater'
 import { loungeDungeonRoomData } from './loungeDungeon'
 
@@ -18,7 +18,8 @@ export enum SpecialFeature {
   RainbowDoor = 'RAINBOW_DOOR',
   DullDoor = 'DULL_DOOR',
   FullRoomIndex = 'FULL_ROOM_INDEX',
-  VendingMachine = 'VENDING_MACHINE'
+  VendingMachine = 'VENDING_MACHINE',
+  SeriousFood = 'SERIOUS_FOOD'
 }
 
 export interface Room {
@@ -63,14 +64,26 @@ const indexRoomData: { [name: string]: Room } = {
   castle,
   sokoban,
   astralPlane,
+  phoneBooth1,
+  phoneBooth2,
+  bran,
   kitchen: {
     id: 'kitchen',
     displayName: 'Kitchen',
     shortName: 'the kitchen',
-    description: `A series of long picnic tables made of rustic wood abut a stainless steel kitchen island. There are empty samovars of coffee and tea sitting on the counter and a well-picked-over catering tray that, based on the crumbs, once contained pastries.<br/><br/>
-    There is, however, a curious-looking vending machine labelled "Munxip's Magnifient Munchies" and a button you can press marked [[Get Random Food->generateFood]].
+    description: `A series of long, white, tables spread across the glass-walled kitchen await the first guests. As Christmas music fills the room, along the smell of fresh brewed coffee, you notice familiar items. The fridge is filled with [[cinnamon-spiced apple juice->item]] and the espresso maker sits patiently in its corner, in case you missed the [[Nespresso coffee->item]].
     <br/><br/>
-      There are three tables you can sit at, labelled [[A->kitchenTableA]], [[B->kitchenTableB]], and [[C->kitchenTableC]]. You can also walk over to the [[lounge]], the [[bar]], the [[dance floor->danceFloor]], the [[@-sign statue->statue]] or grab a seat in the [[main theater area->theater]]. Finally, you can climb into the [[shipping container->shippingContainer]].`,
+    There are two tables you can sit at, labelled [[A->kitchenTableA]] and [[B->kitchenTableC]]. You can also join the [[Fußball->kitchenTableB]] table or, if you’d like a little snack or refreshing beverage before moving to more serious food, you can get something from the [[Vending Machine->generateFood]] (card payment is working again!).
+    <br/><br/>
+    From here you can walk over to the [[MOPS->tower]] or [[Support->oracle]] areas and see who you encounter there. Or you can use the wall to share with us what's your favourite Christmas treat.
+    <br/></br>
+    <div style="width: 100%">
+            <video class="showcase-video" controls style="margin: auto; width: 420px; height: 50px;">
+                <source src="https://streaming.radiostreamlive.com/radiosantaclaus_devices" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+    </div>
+    <div style="width: 100%; font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://www.radiosantaclaus.com/live" target="_blank" style="color: #cccccc; text-decoration: none;">  Radio Santa Claus</a> · live from North Pole</div><br/>`,
     allowsMedia: true,
     hasNoteWall: true
   },
@@ -78,24 +91,28 @@ const indexRoomData: { [name: string]: Room } = {
     id: 'kitchenTableA',
     displayName: 'Kitchen Table A',
     shortName: 'table A in the kitchen',
-    description: `TEST COMMIT DEPLOY A rustic wooden picnic table in the kitchen.
-      From here, you can see tables [[B->kitchenTableB]] or [[C->kitchenTableC]], and the [[general kitchen area->kitchen]].`,
+    description: `You get closer to the first table. There’s nothing on it, so you can only assume this is where you bring the food from the other table in order to eat it. Such a well thought-out system.
+      From here, you can see tables [[the Fussball Table->kitchenTableB]] or [[B->kitchenTableC]], and the [[general kitchen area->kitchen]].`,
     allowsMedia: true
   },
   kitchenTableB: {
     id: 'kitchenTableB',
-    displayName: 'Kitchen Table B',
-    shortName: 'table B in the kitchen',
-    description: `A rustic wooden picnic table in the kitchen.
-      From here, you can see tables [[A->kitchenTableA]] or [[C->kitchenTableC]], and the [[general kitchen area->kitchen]].`,
+    displayName: 'Kitchen Fussball Table',
+    shortName: 'fussball table in the kitchen',
+    description: `As you aproach the table the only thing you can hear is a never-ending sequence of bangs and from time to time "Damn this ball is not round anymore". You can't really see what is happening because some unknown individuals are there and they are closely looking at 8 guys how they professionaly maneuver the mini football players and make the ball reach the goal.
+    <br/><br/>
+    <a href="https://www.haxball.com/" target="_blank">Haxball</a> is the online version of the old childhood game \'Fotbal cu nasturi\'. Create a private room, share its name and password in the chat and play with your fellow friends and have fun. It's not exacly <a href="https://ncchat.slack.com/archives/CB8S5V2M7" target="_blank">Fußball</a> but it comes pretty close.
+    <br/><br/>
+      From here, you can see tables [[A->kitchenTableA]] or [[B->kitchenTableC]], and the [[general kitchen area->kitchen]].`,
     allowsMedia: true
   },
   kitchenTableC: {
     id: 'kitchenTableC',
-    displayName: 'Kitchen Table C',
-    shortName: 'table C in the kitchen',
-    description: `A rustic wooden picnic table in the kitchen. For some reason this table and *only* this table contains a basket loaded with [[fortune cookies->getFortune]], and a sign next to it reading "Roguelike Celebration is not responsible for any consequences of taking advice from a cookie - so help yourself!"<br/><br/>
-      From here, you can see tables [[A->kitchenTableA]] or [[B->kitchenTableB]], and the [[general kitchen area->kitchen]]`,
+    displayName: 'Kitchen Table B',
+    shortName: 'table B in the kitchen',
+    description: `You arrive at the second table. There is A LOT of food. Like, a lot. Who on earth is going to eat all this?<br/><br/>
+    Well, someone has to step up and be a hero. Get [[something->generateSeriousFood]] to eat.<br/><br/>
+      From here, you can see tables [[A->kitchenTableA]] or [[the Fussball Table->kitchenTableB]], and the [[general kitchen area->kitchen]]`,
     allowsMedia: true
   },
   bar: {
@@ -107,15 +124,15 @@ const indexRoomData: { [name: string]: Room } = {
   },
   lounge: {
     id: 'lounge',
-    displayName: 'Lounge',
-    shortName: 'the lounge',
+    displayName: 'Elevator B',
+    shortName: 'elevator B',
     description: 'A chill space to hang away from the hustle and bustle of the main space. Comfy chairs, TVs showing the latest scores in some incomprehensible splort, and a fridge full of La Croix.<br/><br/>From here, you can get to the [[drawing room->loungeDungeonDrawingRoom]], the [[dance floor->danceFloor]], or the [[kitchen]].',
     allowsMedia: true
   },
   statue: {
     id: 'statue',
-    displayName: '@-sign Statue',
-    shortName: 'the statue',
+    displayName: 'TNB',
+    shortName: 'the TNB',
     description: `A memorial to countless adventurers who have helped build this social space.<br/><br/>A plaque on the statue shows a list of <a href="https://github.com/lazerwalker/azure-mud/graphs/contributors" target="_blank" rel="noreferrer">code contributors</a>.<br/>There's also a suggestion wall for people to add comments about the social space.
       From here, you can reach the [[kitchen]], the [[bar]], the [[theater]], or the [[North Showcase Hall->northShowcaseHall]]. You can also climb into the [[shipping container->shippingContainer]].`,
     hasNoteWall: true,
@@ -125,67 +142,95 @@ const indexRoomData: { [name: string]: Room } = {
     id: 'danceFloor',
     displayName: 'Dance Floor',
     shortName: 'the dance floor',
-    description: 'The ping-pong table has been pushed to the side for a makeshift dance floor. Colourful skeletons raise and lower their arms to the beat of chiptune music coming from a DJ booth near the wall. The DJ smoothly transitions between old favourites and requests from years past.<br/><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/511460973&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/funkip" title="Funkip ♥" target="_blank" style="color: #cccccc; text-decoration: none;">Funkip ♥</a> · <a href="https://soundcloud.com/funkip/roguelike-celebration-2018-saturday-night" title="Roguelike Celebration 2018" target="_blank" style="color: #cccccc; text-decoration: none;">Roguelike Celebration 2018</a></div><br/><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/699462760&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/funkip" title="Funkip ♥" target="_blank" style="color: #cccccc; text-decoration: none;">Funkip ♥</a> · <a href="https://soundcloud.com/funkip/rand-gen-mem" title="💖 Roguelike Celebration 2019 Mix" target="_blank" style="color: #cccccc; text-decoration: none;">💖 Roguelike Celebration 2019 Mix</a></div><br/><br/>From here, you can reach the [[lounge]], the [[kitchen]], or the [[bar]].'
+    description: `Unexpectedly once you step into this room the rythm starts pumping in your veins and your limbs seem to move on their own. You glance from side to side and notice the DJ booth near the wall and from it curiously hang face masks - it must be the Covid effect.
+    <br/><br/>
+    <div id="dance-floor-showcase" class="showcase-container">
+        <div id="discord-entry" class="showcase-entry" style="display: inline-flex;">
+          <div id="discord-text">
+            <p><a href="https://mihararyosuke.com/gesuido" target="_blank">Gesuido</a>, by 
+              <a href="https://twitter.com/oinariman" target="_blank" rel="nofollow noopener noreferrer">Ryosuke Mihara</a>
+            </p>
+            <p>Gesuido is a Roguelike game for iPhone that's not too dissimilar in gameplay to the original Rogue, but it features early 
+              Macintosh-style black and white tile graphics and cute illustrated magic cards. The game is still developing, but I’ve made a beta 
+              version available for Roguelike Celebration 2020 attendees. Feedbacks are welcome. You can find it 
+              <a href="https://testflight.apple.com/join/3tcSPCbC" target="_blank">here</a>!
+            </p>
+          </div>
+          <iframe src="https://discord.com/widget?id=780867772749840384&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+    </div>
+    <br/><br/>
+    From here, you can reach the [[Nostalgia Dance Floor->westShowcaseHall]], grab a drink from the [[bar]] or head back to [[the MM area->unconference]].`,
+    hasNoteWall: true,
+    noteWallData: {
+      roomWallDescription: 'There is a board next to the DJ that says "PLAYLISTS" on the top.',
+      noteWallButton: 'Add a playlist link',
+      addNoteLinkText: 'add a playlist link',
+      addNotePrompt: 'What would you like to link to?',
+      noteWallDescription: 'Links to people\'s playlists.'
+    }
   },
   shippingContainer: {
     id: 'shippingContainer',
-    displayName: 'Shipping Container',
-    shortName: 'the shipping container',
+    displayName: 'Elevator A',
+    shortName: 'the elevator A',
     description: `
-      It's not quite clear why there's a shipping container in the middle of the space. Seems pretty chill, though? Somebody's set up a makeshift bench.<br/><br/>
-      After you climb out, you can get back to the [[bar]], the [[theater]], the [[kitchen]], or the [[@-sign statue->statue]].`,
+      It's not quite clear what's wrong with this elevator, you push the button and nothing happens. In the past, somebody even fell with it all the way to the main lobby. Seems pretty scary, no?<br/><br/>
+      After you hurry to come out of it, you can wait for [[elevator B->lounge]] or get back to [[foyer]].`,
     allowsMedia: true
   },
   entryway: {
     id: 'entryway',
-    displayName: 'Registration Desk',
+    displayName: 'Downstairs Registration Desk',
     shortName: 'the registration desk',
-    description: 'A big banner reads \'Welcome to Roguelike Celebration 2020!\' Once you\'ve got your bearings about you, you can move to the [[foyer]].',
+    description: 'A big banner reads \'Welcome back to the Bucharest Netcentric office!\' Once you\'ve got your bearings about you, you can move to the [[foyer]].',
     hidden: true
   },
   foyer: {
     id: 'foyer',
-    displayName: 'Haunted Foyer',
-    shortName: 'the haunted foyer',
-    description: `A grand opulent foyer leading into the theater. A chill runs down your spine as you walk in; something just feels <em>off</em> about this place.<br/><br/>
-    You can see a [[swag table->swag]] in the corner, and can also leave to the [[theater]] or the [[west showcase hall->westShowcaseHall]].`,
+    displayName: 'Reception',
+    shortName: 'the reception',
+    description: `A familiar, purple, sight awaits you the moment you step off the elevator. Welcome back to the office! 
+    A partially decorated [[Christmas Tree->study]] sits in the corner, with scattered decorations around it - someone really needs to finish setting up these lights!
+    <br/><br/>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3uycy7s-kvc?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br/><br/>
+    You can see the coffee machine sitting on the [[reception bar->swag]] in the corner, and can also leave towards the HR area, join the main party in Ateneu, or the guys in Coltul Vesel for a chat. Or take [[elevator A->shippingContainer]] or [[elevator B->lounge]] to get outside.<br/><br/>`,
     specialFeatures: [SpecialFeature.RainbowDoor, SpecialFeature.DullDoor]
   },
   swag: {
     id: 'swag',
-    displayName: 'Swag Table',
-    shortName: 'the swag table',
-    description: `A table covered in a giant messy pile of mismatched swag. At the top of the pile, you see items such as [[Roguelike Celebration socks->item]], [[a +1 longbow->item]], [[an unidentified scroll->item]], and (surprisingly!) [[a tiny puppy->item]].<br/><br/>
-    There are also a whole bunch of absolutely beautiful <a href="https://roguelike-celebration.myshopify.com/" target="_blank" rel="noreferrer">conference t-shirts</a> (actual physical shirts!) available <a href="https://roguelike-celebration.myshopify.com/" target="_blank" rel="noreferrer">for sale</a>.
+    displayName: 'Reception Bar',
+    shortName: 'the reception bar',
+    description: `The well-known bar covered in a giant messy pile of mismatched swag. At the top of the pile, you see items such as [[a purple Netcentric t-shirt->item]], [[a purple Christmas tree decoration->item]], [[a #makeNetcentricAFunPlanceToWork sticker->item]], [[a \'Keep Calm and Do Your Tempo\' sticker->item]], and (surprisingly!) [[an unidentified piece of candy->item]].<br/><br/>
+    The coffee machine is also working and you can prepare yourself [[a cup of the good coffee->item]] or [[a tasty latte->item]]. 
     <br/><br/>
-    From here, you can walk back to the rest of the [[foyer]].`
+    From here, you can walk back to the rest of the [[Reception->foyer]].`
   },
   atelier: {
     id: 'atelier',
-    displayName: 'Artists\' Atelier',
-    shortName: 'the artists\' atelier',
-    description: `A bright sun-lit space for an artist to work. In the corner of the room are crates full of [[fresh pixels->item]] of all colors, waiting to be placed on a canvas. A screen on one wall shows a rotating slideshow of works by <a href=https://christen.carrd.co/ target=_blank>Christen Alqueza</a>, who also made the overlays and background for the livestream. In the middle of the room is a giant contraption made of various [[pieces of scrap metal->item]]; you can't honestly tell whether it's intended to be art or just leftover scrap.<br/><br/>
-    From here, you can get to the [[west showcase hall->westShowcaseHall]], the [[engineer's work room->workbench]], or the [[proc-gen study->study]].`
+    displayName: 'Pets Zone',
+    shortName: 'the pets zone',
+    description: `Woof! This sun-lit corner of the office is perfect for our little furry friends to run around! The desks have all been set aside, leaving an empty space filled with pet games, colourful balls and squeaky toys. The [[office cat->item]] looks down from the cat tree, judgementally, as [[a cheerful puppy->item]] takes down <a href="https://photos.app.goo.gl/udUNPw68BeoFSNjHA" target="_blank" rel="noreferrer">a photo from the wall</a>, and runs away with it.
+    <br/><br/>
+    You can’t honestly say if this happy chaos is intended or not, but all pets are welcome here to join in the fun!
+    <br/><br/> 
+    From here, you can get to the [[Acvariu->castle]], or join the rest of the gang in the [[MM area->unconference]].`
   },
   study: {
     id: 'study',
-    displayName: 'Procedural Generation Study',
-    shortName: 'the proc-gen study',
-    description: `A comfy and cozy library that is curiously shaped like a hexagon. One side of the room has a couple of well-worn leather armchairs, while the other four walls are filled top-to-bottom with books. The majority of them are apparent gibberish, but many of them contain insightful writings about the art of procedural content generation.<br/><br/>
-    From here, you can get to the the [[engineer's workbench->workbench]] or the [[artists' atelier->atelier]].`,
-    hasNoteWall: true,
-    noteWallData: {
-      roomWallDescription: 'There is a chalkboard that says "BOOKMARKS" on the top.',
-      noteWallButton: 'Add a link',
-      addNoteLinkText: 'add a link',
-      addNotePrompt: 'What would you like to link to?',
-      noteWallDescription: 'Links to slides, videos, files, and articles of interest.'
-    }
+    displayName: 'Christmas Tree',
+    shortName: 'the Christmas tree',
+    description: `A comfy and cozy couch awaits you, to sit back, listen to some tradional romanian Christmas carols and admire the talent of your colleagues who decorated the tree. Even if it's not yet finished. 
+    <br/><br/>Or you could pick up the tinsel from the floor and <a href="https://www.abcya.com/games/make-a-christmas-tree" target="_blank" rel="noreferrer">show</a> them what you've got. If you're feeling particularly inspired, you could even add your final work-of-art to the <a href="https://photos.app.goo.gl/9r7SbhgQstsJioGH7" target="_blank" rel="noreferrer">Christmas tree collection</a>. <br/><br/>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3HXk4rRa09o?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br/><br/>
+    From here, you can walk back to the rest of the [[Reception->foyer]].`
   },
   workbench: {
     id: 'workbench',
-    displayName: 'Engineer\'s Workbench',
-    shortName: 'the engineer\'s workbench',
+    displayName: 'Coltul Vesel',
+    shortName: 'the happy corner',
     description: `A cluttered workspace that clearly belongs to someone who loves to tinker. A dim hum fills the room from server racks sitting in the corner, and there are blinking lights coming from every crevice. A blueprint sitting on the workbench outlines intricate plans for something called an 'entity-component system'.<br/><br/>
     From here, you can get to the [[proc-gen study->study]] or the [[artists' atelier->atelier]].`
   },

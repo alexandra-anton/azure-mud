@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Room } from '../room'
 import {
   moveToRoom,
-  getNetworkMediaChatStatus, pickUpRandomItemFromList, pickUpItem, dropItem
+  getNetworkMediaChatStatus, pickUpRandomItemFromList, pickUpItem, dropItem, eatItem, sendChatMessage
 } from '../networking'
 import NameView from './NameView'
 import { DispatchContext, UserMapContext } from '../App'
@@ -18,7 +18,11 @@ import { FullRoomIndexRoomView } from './feature/FullRoomIndexViews'
 import { linkActions } from '../linkActions'
 import { useContext } from 'react'
 
+import {isSeriousFood} from '../../server/src/generators/seriousFood'
+import { v4 as uuidv4 } from 'uuid'
+
 const VIDEO_CHAT_MAX_SIZE = 8
+let isKitchenTableA = false
 
 interface Props {
   room: Room;
@@ -69,9 +73,15 @@ export default function RoomView (props: Props) {
     if (room.noteWallData) {
       noteWallView = <div>{room.noteWallData.roomWallDescription} <button onClick={showNoteWall}>{room.noteWallData.noteWallButton}</button></div>
     } else {
-      noteWallView = <div>One of the walls has space for attendees to put up sticky notes. <button onClick={showNoteWall}>View note wall</button></div>
+      noteWallView = <div>One of the walls has space for Netcentricos to put up sticky notes. <button onClick={showNoteWall}>View note wall</button></div>
     }
   }
+
+  if (room && room.id === 'kitchenTableA') {
+    isKitchenTableA = true
+  }
+  else  
+  isKitchenTableA = false
 
   let videoChatButton
   // if (room && room.allowsMedia) {
@@ -131,10 +141,28 @@ const HeldItemView = () => {
     dropItem()
   }
 
+const eatHeldFood = () => {
+  eatItem()
+  sendChatMessage(uuidv4(), '/get fortune cookie')
+}
+
   if (user.item) {
-    return <span>You are holding {user.item}. <button className='link-styled-button' onClick={dropHeldItem}>Drop it</button>.</span>
+    const customButtonAction = user.item.includes('green toy snake') ? 'Throw it against the floor' : 'Drop it'
+    if (isKitchenTableA) {
+      if (isSeriousFood(user.item))
+        return <span>Luckily enough, you do happen to have {user.item}. <button className='link-styled-button' onClick={eatHeldFood}>Go eat it</button>.</span>
+      else {
+        return <span>Since you don’t have any food with you, it’s starting to feel a bit awkward just sitting around here. Go to get some food, or stay here some more. You are holding {user.item.replace('office cat','the office cat').replace('green toy snake','a green toy snake')}. <button className='link-styled-button' onClick={dropHeldItem}>{customButtonAction}</button>.</span>
+      }
+    }
+    else  
+      return <span>You are holding {user.item.replace('office cat','the office cat').replace('green toy snake','a green toy snake')}. <button className='link-styled-button' onClick={dropHeldItem}>{customButtonAction}</button>.</span>
   } else {
-    return null
+    if (isKitchenTableA) {
+      return <span>Since you don’t have any food with you, it’s starting to feel a bit awkward just sitting around here. Go to get some food, or stay here some more.</span>
+    }
+    else 
+      return null
   }
 }
 
@@ -168,7 +196,7 @@ const PresenceView = (props: { users?: string[]; userId?: string, videoUsers: st
         <span key={`room-presence-${id}`}>
           <NameView userId={u} id={id} key={id} />
           {videoUsers && videoUsers.includes(u) ? <FaVideo /> : null}
-          {user.item ? ` (holding ${user.item})` : null}
+          {user.item ? ` (holding ${user.item.replace('office cat', 'the office cat').replace('green toy snake','a green toy snake')})` : null}
         </span>
       )
     })

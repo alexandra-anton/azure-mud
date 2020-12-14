@@ -1,10 +1,11 @@
 export default [
-  'Roguelike Celebration socks',
-  'a +1 longbow',
-  'an unidentified scroll',
-  'a tiny puppy',
-  'fresh pixels',
-  'pieces of scrap metal',
+  'a purple Netcentric t-shirt',
+  'a purple Christmas tree decoration',
+  'an unidentified piece of candy',
+  'a #makeNetcentricAFunPlanceToWork sticker',
+  'a \'Keep Calm and Do Your Tempo\' sticker',
+  'a cheerful puppy',
+  'office cat',
   'a wand of digging',
   'a Proof of Stremf',
   'a shotgun',
@@ -12,5 +13,10 @@ export default [
   'Planepacked',
   'the Tourist',
   'the Berlin Interpretation',
-  'the Walls Are Shifting'
+  'the Walls Are Shifting',
+  'cinnamon-spiced apple juice',
+  'Nespresso coffee',
+  'a cup of the good coffee',
+  'a tasty latte',
+  'green toy snake'
 ]

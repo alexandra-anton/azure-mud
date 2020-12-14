@@ -118,7 +118,7 @@ export default function ProfileView (props: { user: PublicUser, whispers: Whispe
             {description}
           </p>
 
-          {user.item ? <p>{user.username} is currently holding {user.item}</p> : null}
+          {user.item ? <p>{user.username} is currently holding {user.item.replace('office cat', 'the office cat').replace('green toy snake','a green toy snake')}</p> : null}
 
           <p>
             {twitterHandle}

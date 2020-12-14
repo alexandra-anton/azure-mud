@@ -5,26 +5,17 @@ export default function LoggedOutView () {
   return (
     <div>
       <header role="banner">
-        <h1>Welcome to Roguelike Celebration 2020!</h1>
+        <h1>A Christmas story in Covid times</h1>
       </header>
       <main role="main">
         <p>
           This is a social space for attendees of{' '}
-          <a href='https://roguelike.club'>Roguelike Celebration</a>, a
+          <a href='https://roguelike.club'>Christmas story in Covid times</a>, a
           community-generated weekend of talks, games, and conversations about
           roguelikes and related topics, including procedural generation and
           game design. It&apos;s for fans, players, developers, scholars, and
           everyone else!
         </p>
-        <a
-          href={`${
-            config.SERVER_HOSTNAME
-          }/.auth/login/twitter?post_login_redirect_url=${encodeURIComponent(
-            window.location.href
-          )}`}
-        >
-          Log In With Twitter
-        </a><br/>
         <a
           href={`${
             config.SERVER_HOSTNAME

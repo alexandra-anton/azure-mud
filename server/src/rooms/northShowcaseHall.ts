@@ -1,7 +1,7 @@
 export default {
   id: 'northShowcaseHall',
-  displayName: 'North Showcase Hall',
-  shortName: 'the north showcase hall',
+  displayName: 'Yellow Table',
+  shortName: 'the yellow table',
   description: `
       A number of booths line the sides of the hall.<br/><br/>
       Here you can see Gesuido by Ryosuke Mihara, Project Earth by Michael Taylor, and WizardWarsIO by quantompotato.<br/><br/>
@@ -63,6 +63,6 @@ export default {
       </div>
 
 
-      You can exit to the [[west hall->westShowcaseHall]], [[east hall->eastShowcaseHall]], or head up to the [[bar]] or [[@-sign statue->statue]].`,
+      You can head to the [[kitchen->kitchen]], [[MOPS->kitchen]], , [[Coltul Vesel->kitchen]], or head up to the [[Reception->foyer]].`,
   allowsMedia: true
 }
