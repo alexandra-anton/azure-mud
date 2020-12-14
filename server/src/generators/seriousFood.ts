@@ -1,34 +1,74 @@
 var tracery = require('tracery-grammar')
 
 export const actionString = (item: string) => {
-  return `You get ...${item}.`
-}
-
-const seriousFoodList = [
-  'an assortment of tobă, lebăr and caltaboș, with a bit of mustard on the side',
-  'vegetarian sarmale, with mushrooms, lentils and rice',
-  'two fat papanași swimming in sour cream and cranberry jam',
-  'a shaorma',
-  'some pork roast, marinated in a little bit of chilli and smoked paprika',
-  'some pork roast that was left way too much in the oven',
-  'șorici',
-  'some slices of vegetarian nutloaf, with walnuts, sweet potatoes and mushrooms caramelized in soy sauce',
-  'Stollen cake',
-  'a wonderfully sour ciorbă, with fresh tăiței',
-  'pasta from downstairs',
-  'cozonaaaaaac :partyparrot:'
-]
-
-export const isSeriousFood = (item: string) => {
-  return seriousFoodList.includes(item);
+  return `The vending machine whirrs and sputters for a few seconds before spitting out ${item}.`
 }
 
 export const generate = () => {
   var grammar = tracery.createGrammar({
     origin: [
-      '#food#'
+      '#adjective# #food#',
+      '#adjective# #food#',
+      '#adjective# #beverage#',
+      '#adjective# #food##postAdjectiveFood#',
+      '#adjective# #food##postAdjectiveFood#',
+      '#adjective# #beverage##postAdjectiveBeverage#'
     ],
-    food: seriousFoodList
+    adjective: [
+      'a fresh',
+      'a pungent',
+      'an aromatic',
+      'a seared',
+      'a moist',
+      'a chunky',
+      'a smooth',
+      'a delicate',
+      'a hefty'
+    ],
+    food: [
+      'Turbo bubblegum',
+      'chicken sandwich',
+      'turkey sandwich',
+      'grilled cheese sandwich',
+      'salam de biscuiti',
+      'nougat',
+      'bag of Bake Rolls',
+      'bag of chips',
+      'Mars bar',
+      'Twix bar',
+      'Lembas bread',
+      'Knoppers bar',
+      'Granola bar',
+      'apple',
+      'banana'
+    ],
+    beverage: [
+      'bottle of yoghurt',
+      'bottle of sana',
+      'can of Red Bull',
+      'can of Coca Cola',
+      'can of Coca Cola Zero',
+      'can of Fanta',
+      'can of Sprite',
+      'bottle of Lipton'
+    ],
+    postAdjectiveFood: [
+      ', still in the wrapper',
+      ' with a bite taken out of it',
+      ' past its expiration date',
+      ' that smells AMAZING',
+      ', still frozen',
+      ', with a sauce packet attached',
+      ', with an @ on the packaging'
+    ],
+    postAdjectiveBeverage: [
+      ' with a sip taken out of it',
+      ' past its expiration date',
+      ' that tastes AMAZING',
+      ', still frozen',
+      ', with a sauce packet attached',
+      ', with an @ on the packaging'
+    ]
   })
 
   grammar.addModifiers(tracery.baseEngModifiers)
