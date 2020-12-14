@@ -2,7 +2,7 @@ name: Build and Deploy Customised Space to GH Pages
 
 on:
   push:
-    branches: [main-customised]
+    branches: [main-customised-addition]
 
 jobs:
   build:

@@ -2,9 +2,9 @@ name: Linting and Validation Checks Customised
 
 on:
   push:
-    branches: [main-customised]
+    branches: [main-customised-addition]
   pull_request:
-    branches: [main-customised]
+    branches: [main-customised-addition]
 
 jobs:
   build:
