@@ -124,15 +124,17 @@ export interface ChatMessage {
   messageId: string;
   userId: string;
   message: string;
+  roomId: string;
   timestamp: Date;
 }
 
 export const createChatMessage = (
   messageId: string,
   userId: string,
-  message: string
+  message: string,
+  roomId: string
 ): ChatMessage => {
-  return { type: MessageType.Chat, messageId, userId, message, timestamp: new Date() }
+  return { type: MessageType.Chat, messageId, userId, roomId, message, timestamp: new Date() }
 }
 
 export interface WhisperMessage {

@@ -177,7 +177,7 @@ export async function moveToRoom (roomId: string) {
   }
 }
 
-export async function sendChatMessage (id: string, text: string) {
+export async function sendChatMessage (id: string, text: string, roomId?: string) {
   // If it's over the character limit
   if (text.length > MESSAGE_MAX_LENGTH) {
     console.log(`Sorry, can't send messages over ${MESSAGE_MAX_LENGTH} characters!`)
@@ -188,7 +188,8 @@ export async function sendChatMessage (id: string, text: string) {
     'sendChatMessage',
     {
       id: id,
-      text: text
+      text: text,
+      roomId: roomId
     }
   )
 
@@ -276,12 +277,13 @@ async function connectSignalR (userId: string, dispatch: Dispatch<Action>) {
   })
 
   // We use otherId/name basically interchangably here.
-  connection.on('chatMessage', (messageId, otherId, message) => {
-    console.log('Received chat', otherId, message)
+  connection.on('chatMessage', (messageId, otherId, message, roomId) => {
+    console.log('Received chat', otherId, message, 'in', roomId)
     console.log(otherId, message, userId)
     if (otherId === userId) return
-
-    dispatch(ChatMessageAction(messageId, otherId, message))
+    // ignore if roomId does not match current room
+    // if (roomId !== )
+    dispatch(ChatMessageAction(messageId, otherId, message, roomId))
   })
 
   connection.on('mods', (otherId, message) => {

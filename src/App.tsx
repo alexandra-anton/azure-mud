@@ -294,7 +294,7 @@ const App = () => {
                     roomData={state.roomData}
                   />
                 ) : null}
-                <ChatView messages={state.messages} autoscrollChat={state.autoscrollChat} serverSettings={state.serverSettings} />
+                <ChatView messages={state.messages} roomId={state.roomId} autoscrollChat={state.autoscrollChat} serverSettings={state.serverSettings} />
                 <InputView
                   prepopulated={state.prepopulatedInput}
                   sendMessage={(message) =>
