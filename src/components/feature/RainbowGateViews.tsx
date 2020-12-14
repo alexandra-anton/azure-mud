@@ -32,7 +32,6 @@ export const RainbowGateRoomView = () => {
 
 export default function RainbowGateModalView () {
   const { userMap, myId } = useContext(UserMapContext)
-
   const [visits, setVisits] = useState(0)
 
   useEffect(() => {
