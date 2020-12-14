@@ -1,0 +1,27 @@
+name: Linting and Validation Checks
+
+on:
+  push:
+    branches: [main-christmas-story]
+  pull_request:
+    branches: [main-christmas-story]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2.1.0
+
+      - name: build
+        run: npm run build
+
+      - name: lint
+        run: npm run lint
+
+      - name: lintRooms
+        run: npm run lint-rooms
+
+      - name: typecheck
+        run: npm run typecheck
