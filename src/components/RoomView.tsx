@@ -18,7 +18,7 @@ import { FullRoomIndexRoomView } from './feature/FullRoomIndexViews'
 import { linkActions } from '../linkActions'
 import { useContext } from 'react'
 
-import {isSeriousFood} from '../../server/src/generators/seriousFood'
+// import {isSeriousFood} from '../../server/src/generators/seriousFood'
 import { v4 as uuidv4 } from 'uuid'
 
 const VIDEO_CHAT_MAX_SIZE = 8
@@ -145,6 +145,7 @@ const eatHeldFood = () => {
   eatItem()
   sendChatMessage(uuidv4(), '/get fortune cookie')
 }
+  const isSeriousFood = (i) => { return true };
 
   if (user.item) {
     const customButtonAction = user.item.includes('green toy snake') ? 'Throw it against the floor' : 'Drop it'
