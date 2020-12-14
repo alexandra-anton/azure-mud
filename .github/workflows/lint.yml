@@ -2,9 +2,9 @@ name: Linting and Validation Checks
 
 on:
   push:
-    branches: [main-christmas-story]
+    branches: [main]
   pull_request:
-    branches: [main-christmas-story]
+    branches: [main]
 
 jobs:
   build:
