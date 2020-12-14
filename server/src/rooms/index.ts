@@ -91,13 +91,13 @@ const indexRoomData: { [name: string]: Room } = {
     displayName: 'Kitchen Table A',
     shortName: 'table A in the kitchen',
     description: `You get closer to the first table. There’s nothing on it, so you can only assume this is where you bring the food from the other table in order to eat it. Such a well thought-out system.
-      From here, you can see tables [[the Fussball Table->kitchenTableB]] or [[B->kitchenTableC]], and the [[general kitchen area->kitchen]].`,
+      From here, you can see tables [[the Fußball Table->kitchenTableB]] or [[B->kitchenTableC]], and the [[general kitchen area->kitchen]].`,
     allowsMedia: true
   },
   kitchenTableB: {
     id: 'kitchenTableB',
-    displayName: 'Kitchen Fussball Table',
-    shortName: 'fussball table in the kitchen',
+    displayName: 'Kitchen Fußball Table',
+    shortName: 'fußball table in the kitchen',
     description: `As you aproach the table the only thing you can hear is a never-ending sequence of bangs and from time to time "Damn this ball is not round anymore". You can't really see what is happening because some unknown individuals are there and they are closely looking at 8 guys how they professionaly maneuver the mini football players and make the ball reach the goal.
     <br/><br/>
     <a href="https://www.haxball.com/" target="_blank">Haxball</a> is the online version of the old childhood game \'Fotbal cu nasturi\'. Create a private room, share its name and password in the chat and play with your fellow friends and have fun. It's not exacly <a href="https://ncchat.slack.com/archives/CB8S5V2M7" target="_blank">Fußball</a> but it comes pretty close.
@@ -111,14 +111,20 @@ const indexRoomData: { [name: string]: Room } = {
     shortName: 'table B in the kitchen',
     description: `You arrive at the second table. There is A LOT of food. Like, a lot. Who on earth is going to eat all this?<br/><br/>
     Well, someone has to step up and be a hero. Get [[something->generateSeriousFood]] to eat.<br/><br/>
-      From here, you can see tables [[A->kitchenTableA]] or [[the Fussball Table->kitchenTableB]], and the [[general kitchen area->kitchen]]`,
+      From here, you can see tables [[A->kitchenTableA]] or [[the Fußball Table->kitchenTableB]], and the [[general kitchen area->kitchen]]`,
     allowsMedia: true
   },
   bar: {
     id: 'bar',
     displayName: 'Bar',
     shortName: 'the bar',
-    description: 'A beautiful long bar with hundreds of bottles spanning up to the ceiling. A friendly bartender will happily make you whatever you want. A laminated sign on the bartop advertises tonight\'s specials: [[the Tourist->item]] (a non-alcoholic drink with lots of fruit and a fun umbrella), [[the Berlin Interpretation->item]] (a mojito made with some sort of hyper-caffeinated soda), and [[the Walls Are Shifting->item]] (a Long Island Iced Tea).<br/>A self-serve table has two coolers packed to the brim with potions. One is loaded with [[colourful potions->drinkPolymorph]] of many shapes and hues, and the other with [[plain potions of clear liquid->drinkCancellation]]<br/><br/>You\'re a stone\'s throw away from the [[kitchen]], the [[@-sign statue->statue]], the [[dance floor->danceFloor]], and the [[North Showcase Hall->northShowcaseHall]]. You can also crawl into the [[shipping container->shippingContainer]].',
+    description: `You approach the bar. There is atmospheric dim lighting and smooth music in the background. The bartender has tattooed forearms, a checkered shirt and a long, exquisitely groomed beard. 
+    <br/>You feel like this is the place where elegant people go to relax and savor a sophisticated drink. You get a little bit closer. The bartender smiles and greets you with a “Ho Ho Ho!”. 
+    <br/><br/>
+    He'll happily make you whatever you want. A laminated sign on the bartop advertises tonight\'s specials: [[a Naughty Rudolph Cocktail->item]], [[a Berry Merry Christmas Cocktail->item]], [[a gin and tonic with cinnamon infused syrup->item]] or [[a Japanese whisky on the rocks->item]].
+    <br/>A self-serve table behind the bartender has two cauldrons. One is loaded with [[a bubbling purple goo->drinkPolymorph]], and the other with [[plain hot chocolate->drinkCancellation]]<br/><br/>
+    You whisper to the bartender that you’re looking for an \'investment opportunity\'. The bartender\’s eyes light up and he gives you a mischievous smirk. \'Of course, please come with me\”. He takes you to a quiet corner of the office, and there you see them. The slot machines, the păcănele. The bartender opens a sack of tokens. You pull out your wallet. It's <a href="https://www.freeslots.com/" target="_blank">party time</a>.
+    <br/><br/>Go back to the [[dance floor->danceFloor]] or the [[MM area->unconference]]. The bar will probably be there next time you appear.`,
     allowsMedia: true
   },
   lounge: {

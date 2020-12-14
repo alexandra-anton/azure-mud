@@ -24,7 +24,7 @@ export async function polymorph (user: User, messageId: string): Promise<Result>
       {
         groupName: user.roomId,
         target: 'emote',
-        arguments: [messageId, user.id, 'drinks a colourful potion and changes form!']
+        arguments: [messageId, user.id, 'drinks from that bubbling purple goo and changes form!']
       },
       {
         groupName: user.id,
@@ -48,12 +48,12 @@ export async function cancellation (user: User, messageId: string): Promise<Resu
       {
         groupName: user.roomId,
         target: 'emote',
-        arguments: [messageId, user.id, 'drinks a clear potion and returns to normal.']
+        arguments: [messageId, user.id, 'drinks a cup of plain hot chocolate and returns to normal.']
       },
       {
         groupName: user.id,
         target: 'privateCommand',
-        arguments: ['You quaff the clear potion and return to your usual self.']
+        arguments: ['You quaff the cup of hot chocolate and return to your usual self.']
       },
       {
         target: 'usernameMap',
