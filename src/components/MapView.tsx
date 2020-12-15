@@ -49,8 +49,8 @@ export default function MapView (props: Props) {
     w = 8
     h = 13
   } else {
-    w = 10
-    h = 21
+    w = 11.61
+    h = 20
   }
 
   // Scroll to make sure that the user's location is visible
@@ -233,20 +233,20 @@ const clickableAreas: ClickableArea[] = [
     x: 38,
     y: 7,
     height: 3,
-    width: 12
+    width: 11
   },
   {
     roomId: 'kitchenTableB',
-    x: 40,
+    x: 41,
     y: 15,
     height: 3,
-    width: 13
+    width: 11
   },
   {
     roomId: 'kitchenTableC',
     x: 45,
     y: 11,
-    width: 12,
+    width: 11,
     height: 3
   },
   {
@@ -309,7 +309,7 @@ const clickableAreas: ClickableArea[] = [
     roomId: 'study',
     x: 1,
     y: 26,
-    width: 19,
+    width: 10,
     height: 5
   },
   {
@@ -377,7 +377,7 @@ const clickableAreas: ClickableArea[] = [
   },
   {
     roomId: 'astralPlane',
-    x: 6,
+    x: 5,
     y: 37,
     width: 24,
     height: 6
