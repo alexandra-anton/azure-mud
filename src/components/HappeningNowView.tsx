@@ -10,7 +10,7 @@ import { ScheduleEntries } from './ScheduleView'
 // Apparently reverse() does an actual reversal! WELL. All right then, Javascript.
 const ReversedScheduleEntries = [...ScheduleEntries].reverse()
 
-export default function HappeningNowView (props: { roomData: { [roomId: string]: Room }, entries: HappeningNowEntry[] }) {
+export default function HappeningNowView(props: { roomData: { [roomId: string]: Room }, entries: HappeningNowEntry[] }) {
   const dispatch = useContext(DispatchContext)
 
   // To test this functionality, just set it at some appropriate date in the conference time
@@ -41,7 +41,7 @@ export default function HappeningNowView (props: { roomData: { [roomId: string]:
 
   let currentlyScheduledElement
   if (currentlyScheduled) {
-    currentlyScheduledElement = <div id ='currently-scheduled-div'>
+    currentlyScheduledElement = <div id='currently-scheduled-div'>
       {currentlyScheduled.text}
       {currentlyScheduled.roomIds ? buildScheduledRoomList(currentlyScheduled.roomIds) : ''}
     </div>
