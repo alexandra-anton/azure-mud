@@ -201,7 +201,7 @@ const indexRoomData: { [name: string]: Room } = {
     description: `A familiar, purple, sight awaits you the moment you step off the elevator. Welcome back to the office! 
     A partially decorated [[Christmas Tree->study]] sits in the corner, with scattered decorations around it - someone really needs to finish setting up these lights!
     <br/><br/>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/3uycy7s-kvc?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div style='display: flex; align-items: center; justify-content: center;'><iframe width="400" height="225" src="https://www.youtube.com/embed/3uycy7s-kvc?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align='center' style="display: block;"></iframe></div>
     <br/><br/>
     You can see the coffee machine sitting on the [[reception bar->swag]] in the corner, and can also leave towards the HR area, join the main party in Ateneu, or the guys in Coltul Vesel for a chat. Or take [[elevator A->shippingContainer]] or [[elevator B->lounge]] to get outside.<br/><br/>`,
     specialFeatures: [SpecialFeature.RainbowDoor, SpecialFeature.DullDoor]
