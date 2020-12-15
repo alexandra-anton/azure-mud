@@ -198,7 +198,7 @@ const presenceMapping = [
   'oracle', // Support Area 19
   'castle', // Acvariu 20
   'sokoban', // Sys Eng Corner 21
-  'astralPlane', // * HR Area 22
+  'astralPlane', // * TM Area 22
   'tower', // MOPS 23
   'phoneBooth1', // * Phone Booth 24
   'phoneBooth2', // * Phone Booth 25
