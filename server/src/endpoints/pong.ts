@@ -5,7 +5,7 @@ const pong: EndpointFunction = async (inputs: any, log: LogFn) => {
   if (!inputs.userId) {
     return {
       httpResponse: {
-        status: 500,
+        status: 501,
         body: 'You did not include a user ID'
       }
     }
