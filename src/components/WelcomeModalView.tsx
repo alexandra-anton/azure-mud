@@ -3,13 +3,12 @@ import React from 'react'
 export default function WelcomeModalView(props: {}) {
   return (
     <div>
-      <h1>This isn&apos;t a normal chat/conf/game app!</h1>
-      <p>In this virtual studio space,
-        you can only send/receive messages <strong>in the room you are currently in</strong>. </p>
-      <p>You can move from virtual room to virtual room to talk to different people, explore and interact with your surroundings.</p>
-      <p>Our hope is to facilitate group conversations, to make this Christmas story feel a little more like a real-world interaction, and to give you a fun and playful space to explore with your fellow studio mates.</p>
-      <p>Happy wandering, and be wary of reading scrolls without identifying them first 😉</p>
-      <p>-The Christmas Story team</p>
+      <p>Welcome to the Netcentric virtual studio :tada: </p>
+      <p>Many of us wondered when we will be able to return to the office. We did some redecoration in the meantime and now it's ready again.</p>
+      <p>You can sip a coffee at the reception, take the elevator to a cigarette break, talk to other colleagues, explore unknown corners and interact with your surroundings.</p>
+      <p>Talk to each other off Slack and make this Christmas celebration feel a little more like a real-world interaction. </p>
+      <p>Happy wandering, and be wary of reading scrolls without identifying them first <span role="img" aria-label="wink">😉</span></p>
+      <p>-The Christmas Story Team</p>
     </div>
   )
 }
