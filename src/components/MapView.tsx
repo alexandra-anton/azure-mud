@@ -50,7 +50,7 @@ export default function MapView (props: Props) {
     h = 13
   } else {
     w = 11.61
-    h = 20
+    h = 21
   }
 
   // Scroll to make sure that the user's location is visible
