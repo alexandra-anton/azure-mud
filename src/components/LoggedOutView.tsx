@@ -5,7 +5,7 @@ export default function LoggedOutView() {
   return (
     <div>
       <header role="banner">
-        <h1>A Christmas story in Covid times 🎅</h1>
+        <h1>A Christmas story in Covid times <span role="img" aria-label="santa">🎅</span></h1>
       </header>
       <main role="main">
         <p>
