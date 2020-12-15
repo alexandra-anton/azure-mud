@@ -109,7 +109,7 @@ export default function MapView (props: Props) {
 
   return <div className='map' style={{ position: 'relative', margin: '15px' }}>
     {clickableDivs}
-    <pre><code style={{ letterSpacing: '2px', fontFamily: 'IBM Plex Mono' }}>
+    <pre><code style={{ letterSpacing: '0px', fontFamily: 'IBM Plex Mono' }}>
       {map}
     </code></pre>
   </div>
