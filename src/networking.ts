@@ -294,9 +294,9 @@ async function connectSignalR (userId: string, dispatch: Dispatch<Action>) {
     dispatch(DeleteMessageAction(modId, targetMessageId))
   })
 
-  connection.on('playerEntered', (name, fromId, fromName) => {
+  connection.on('playerEntered', (name, toId, toName, fromId, fromName) => {
     if (name === userId) return
-    dispatch(PlayerEnteredAction(name, fromId, fromName))
+    dispatch(PlayerEnteredAction(name, toId, toName, fromId, fromName))
   })
 
   connection.on('myProfile', (profile) => {
@@ -319,9 +319,9 @@ async function connectSignalR (userId: string, dispatch: Dispatch<Action>) {
     dispatch(CommandMessageAction(message))
   })
 
-  connection.on('playerLeft', (name, toId, toName) => {
+  connection.on('playerLeft', (name, toId, toName, fromId, fromName) => {
     if (name === userId) return
-    dispatch(PlayerLeftAction(name, toId, toName))
+    dispatch(PlayerLeftAction(name, toId, toName, fromId, fromName))
   })
 
   connection.on('usernameMap', (map) => {

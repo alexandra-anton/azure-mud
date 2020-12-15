@@ -68,6 +68,8 @@ export const createDisconnectedMessage = (
 export interface EnteredMessage {
   type: MessageType.Entered;
   userId: string;
+  toId: string;
+  toName: string;
   fromId: string;
   fromName: string;
   roomId: string;
@@ -77,12 +79,14 @@ export interface EnteredMessage {
 
 export const createEnteredMessage = (
   userId: string,
+  toId: string,
+  toName: string,
   fromId: string,
   fromName: string,
   roomId: string,
   numUsersInRoom: number
 ): EnteredMessage => {
-  return { type: MessageType.Entered, userId, fromId, fromName, roomId, numUsersInRoom, timestamp: new Date() }
+  return { type: MessageType.Entered, userId, toId, toName, fromId, fromName, roomId, numUsersInRoom, timestamp: new Date() }
 }
 
 export interface LeftMessage {
@@ -90,13 +94,15 @@ export interface LeftMessage {
   userId: string;
   toId: string;
   toName: string;
+  fromId: string;
+  fromName: string;
   roomId: string;
   numUsersInRoom: number;
   timestamp: Date;
 }
 
-export const createLeftMessage = (userId: string, toId: string, toName: string, roomId: string, numUsersInRoom: number): LeftMessage => {
-  return { type: MessageType.Left, userId, toId, toName, roomId, numUsersInRoom, timestamp: new Date() }
+export const createLeftMessage = (userId: string, toId: string, toName: string, fromId: string, fromName: string, roomId: string, numUsersInRoom: number): LeftMessage => {
+  return { type: MessageType.Left, userId, toId, toName, fromId, fromName, roomId, numUsersInRoom, timestamp: new Date() }
 }
 
 export interface MovedRoomMessage {

@@ -193,16 +193,24 @@ export default (oldState: State, action: Action): State => {
     const roomData = state.roomData[state.roomId]
     if (!roomData.users.includes(action.value.name)) {
       roomData.users.push(action.value.name)
-      addMessage(state,
-        createEnteredMessage(action.value.name, action.value.fromId, action.value.fromName, state.roomId, roomData.users.length)
-      )
+      // only relay messages if player entered the same room you're in
+      if (action.value.toId && action.value.toId === state.roomId) {
+        addMessage(state,
+          createEnteredMessage(action.value.name, action.value.toId, action.value.toName, action.value.fromId, action.value.fromName, state.roomId, roomData.users.length)
+        )
+      }
     }
   }
 
   if (action.type === ActionType.PlayerLeft) {
     const roomData = state.roomData[state.roomId]
     roomData.users = roomData.users.filter((u) => u !== action.value.name)
-    addMessage(state, createLeftMessage(action.value.name, action.value.toId, action.value.toName, state.roomId, roomData.users.length))
+    // only relay messages if player left the same room you're in
+    if (action.value.fromId && action.value.fromId === state.roomId) {
+      addMessage(state,
+        createLeftMessage(action.value.name, action.value.toId, action.value.toName, action.value.fromId, action.value.fromName, state.roomId, roomData.users.length)
+      )
+    }
   }
 
   if (action.type === ActionType.ChatMessage) {

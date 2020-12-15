@@ -49,6 +49,7 @@ export default function ChatView (props: { messages: Message[], roomId: string, 
   function isSameRooom(m: Message) {
     console.log('Filtering', m);
     if (isChatMessage(m)) { return m.roomId === props.roomId }
+    if (isMovementMessage(m)) { return m.fromId === props.roomId || m.toId === props.roomId }
     return true;
   }
 
