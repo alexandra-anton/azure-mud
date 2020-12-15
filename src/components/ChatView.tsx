@@ -14,6 +14,9 @@ function isMovementMessage (message: Message): message is ConnectedMessage | Dis
     message.type === MessageType.Entered || message.type === MessageType.Left
 }
 
+function isEnterMessage (message: Message): message is EnteredMessage { return message.type === MessageType.Entered }
+function isLeftMessage (message: Message): message is LeftMessage { return message.type === MessageType.Left }
+
 export default function ChatView (props: { messages: Message[], roomId: string, autoscrollChat: Boolean, serverSettings: ServerSettings}) {
   const dispatch = useContext(DispatchContext)
 
@@ -47,9 +50,10 @@ export default function ChatView (props: { messages: Message[], roomId: string, 
   }
 
   function isSameRooom(m: Message) {
-    console.log('Filtering', m);
+    // console.log('Filtering', m);
     if (isChatMessage(m)) { return m.roomId === props.roomId }
-    if (isMovementMessage(m)) { return m.fromId === props.roomId || m.toId === props.roomId }
+    if (isLeftMessage(m)) { return m.fromId === props.roomId }
+    if (isEnterMessage(m)) { return m.toId === props.roomId }
     return true;
   }
 
