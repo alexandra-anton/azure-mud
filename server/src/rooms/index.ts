@@ -5,6 +5,7 @@ import westShowcaseHall from './westShowcaseHall'
 import { unconference, minetown, oracle, tower, castle, sokoban, astralPlane, phoneBooth1, phoneBooth2, bran } from './unconfRooms'
 import theater from './theater'
 import { loungeDungeonRoomData } from './loungeDungeon'
+import { elevatorQuestRoomData } from './elevatorQuest'
 
 export interface NoteWallData {
   roomWallDescription: string
@@ -131,7 +132,8 @@ const indexRoomData: { [name: string]: Room } = {
     id: 'lounge',
     displayName: 'Elevator B',
     shortName: 'elevator B',
-    description: 'A chill space to hang away from the hustle and bustle of the main space. Comfy chairs, TVs showing the latest scores in some incomprehensible splort, and a fridge full of La Croix.<br/><br/>From here, you can get to the [[drawing room->loungeDungeonDrawingRoom]], the [[dance floor->danceFloor]], or the [[kitchen]].',
+    description: `A chill space to hang away from the hustle and bustle of the main space.<br/><br/>
+    From here, you can get [[outside for a smoke->minetown]], to the [[first floor->loungeDungeonDrawingRoom]] or go to the [[parking lot->elevatorQuestSpawnPoint]]. You could also wait for [[elevator A->shippingContainer]] instead or go back to [[Reception->foyer]].`,
     allowsMedia: true
   },
   statue: {
@@ -184,14 +186,14 @@ const indexRoomData: { [name: string]: Room } = {
     shortName: 'the elevator A',
     description: `
       It's not quite clear what's wrong with this elevator, you push the button and nothing happens. In the past, somebody even fell with it all the way to the main lobby. Seems pretty scary, no?<br/><br/>
-      After you hurry to come out of it, you can wait for [[elevator B->lounge]] or get back to [[foyer]].`,
+      After you hurry to come out of it, you can wait for [[elevator B->lounge]] or get back to [[Reception->foyer]].`,
     allowsMedia: true
   },
   entryway: {
     id: 'entryway',
     displayName: 'Downstairs Registration Desk',
     shortName: 'the registration desk',
-    description: 'A big banner reads \'Welcome back to the Bucharest Netcentric office!\' Once you\'ve got your bearings about you, you can move to the [[foyer]].',
+    description: 'A big banner reads \'Welcome back to the Bucharest Netcentric office!\' Once you\'ve got your bearings about you, you can move to the [[Reception->foyer]].',
     hidden: true
   },
   foyer: {
@@ -239,8 +241,8 @@ const indexRoomData: { [name: string]: Room } = {
     id: 'workbench',
     displayName: 'Coltul Vesel',
     shortName: 'the happy corner',
-    description: `A cluttered workspace that clearly belongs to someone who loves to tinker. A dim hum fills the room from server racks sitting in the corner, and there are blinking lights coming from every crevice. A blueprint sitting on the workbench outlines intricate plans for something called an 'entity-component system'.<br/><br/>
-    From here, you can get to the [[proc-gen study->study]] or the [[artists' atelier->atelier]].`
+    description: `A cluttered workspace that clearly belongs to a cheerful bunch of people. A soft light fills this corner of the office from the ceiling high windows, while giggly voices discuss the latest news from behind one of the computer screens. A cute stuffed tiger sits on one of the desks, a reminder from last year’s summit - someone won the arcade games for sure!
+    From here, you can get to the MOPS area to say “Hi” or go to the Reception for a cup of coffee.`
   },
   hiddenPortalRoom: {
     id: 'hiddenPortalRoom',
@@ -255,5 +257,6 @@ const indexRoomData: { [name: string]: Room } = {
 
 export const roomData: { [name: string]: Room } = {
   ...indexRoomData,
-  ...loungeDungeonRoomData
+  ...loungeDungeonRoomData,
+  ...elevatorQuestRoomData
 }

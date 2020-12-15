@@ -2,15 +2,20 @@ export const unconference = {
   id: 'unconference',
   displayName: 'MM Area',
   shortName: 'the MM area',
-  description: 'Large hallway leading to the bar and the dancefloor.',
+  description: `You enter the Monthly Meeting area. As you take a look around the empty space and the scattered desks, you quickly notice that the meeting has already started! Still holding a slice of pizza, you can pull up the nearest chair and join the conference call.
+  <br/><br/>
+  A whiteboard has been set up in the corner, so please remember to share your ideas and comments! 
+  <br/><br/>
+  From here, if you’re anxious to get the party started, you can grab a drink at the bar, or show us your moves on the dancefloor.`,
   allowsMedia: true,
   hasNoteWall: true,
   noteWallData: {
-    roomWallDescription: 'One wall of this room is taken up by a large whiteboard titled "IMPRESSIONS AND SUGGESTIONS!" Smaller font clarifies "Write what you think about this space, what did you enjoy the most? Have fun!"',
-    noteWallButton: 'Impressions and suggestions',
-    addNoteLinkText: 'add an impression',
-    addNotePrompt: 'What would you like to suggest?',
-    noteWallDescription: 'Impressions and suggestions about this virtual space.'
+    roomWallDescription: `Ideas and Comments about A Christmas Story - Netcentric Bucharest Studio Edition!`,
+    noteWallButton: 'Ideas and Comments',
+    addNoteLinkText: 'add a comment',
+    addNotePrompt: 'What would you like to comment?',
+    noteWallDescription: `How did you like our virtual event? If you’d like, you can add an impression on this wall! 
+    For more detailed feedback, you can fill out <a href="https://forms.gle/2VnpxShj4ei8pxqA6" target="_blank" rel="noreferrer">this form</a> and share your ideas!`
   }
 }
 

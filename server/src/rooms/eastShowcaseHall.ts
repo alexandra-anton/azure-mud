@@ -21,6 +21,6 @@ export default {
         </div>
   </div>
   <br/><br/>
-You can exit to the [[north hall->northShowcaseHall]] or [[south hall->southShowcaseHall]], or head back to the [[foyer]].`,
+You can exit to the [[north hall->northShowcaseHall]] or [[south hall->southShowcaseHall]], or head back to the [[Reception->foyer]].`,
   allowsMedia: true
 }

@@ -50,7 +50,7 @@ export default function MapView (props: Props) {
     h = 13
   } else {
     w = 11.61
-    h = 20
+    h = 21
   }
 
   // Scroll to make sure that the user's location is visible
@@ -109,7 +109,7 @@ export default function MapView (props: Props) {
 
   return <div className='map' style={{ position: 'relative', margin: '15px' }}>
     {clickableDivs}
-    <pre><code style={{ letterSpacing: '2px', fontFamily: 'IBM Plex Mono' }}>
+    <pre><code style={{ letterSpacing: '2px', fontFamily: 'JetBrains Mono' }}>
       {map}
     </code></pre>
   </div>
