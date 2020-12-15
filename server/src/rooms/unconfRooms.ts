@@ -2,7 +2,7 @@ export const unconference = {
   id: 'unconference',
   displayName: 'MM Area',
   shortName: 'the MM area',
-  description: `Large hallway leading to the bar and the dancefloor.`,
+  description: 'Large hallway leading to the bar and the dancefloor.',
   allowsMedia: true,
   hasNoteWall: true,
   noteWallData: {
@@ -27,11 +27,11 @@ export const oracle = {
   displayName: 'Support Area',
   shortName: 'the support area',
   description: `You enter the support area. Your colleagues that normally inhabit this space might or might not be around here (unless you’re one of them, hello!), as they are human beings that can move around the party too. Yet their energy still permeates this space. If you close your eyes, you can almost hear the faint echo of an accordion riff or the sudden shouting of a bad word. You also feel the sudden urge to burst into laughter.
-  Here, you can try to shout \'Milioane!\'. The mystical energy of the support area will answer you. “De lumini pe stradă! Milioane! De tălpi pe zăpadă! Magaziiiine pliiiine de jucăăăăăriiiii!”.
+  Here, you can try to shout 'Milioane!'. The mystical energy of the support area will answer you. “De lumini pe stradă! Milioane! De tălpi pe zăpadă! Magaziiiine pliiiine de jucăăăăăriiiii!”.
   <br/><br>
   Congratulations, now you will have this song stuck in you head all day.
   <br/><br/>
-  We encourage you to use this space to talk \'face-to-face\' using the Webex meeting for this room, which you can access at any time until Christmas.`,
+  We encourage you to use this space to talk 'face-to-face' using the Webex meeting for this room, which you can access at any time until Christmas.`,
   hasNoteWall: true
 }
 
@@ -41,7 +41,7 @@ export const tower = {
   shortName: 'MOPS',
   description: `Soft blankets and piles of books give a homey ambiance to this corner of the office, as you stand by the desks, looking around. You can hear a couple of giggly voices from behind the computer screens, as they cheerfully talk about their colour-coded spreadsheets.
   <br/><br/>
-  We encourage you to use this space to talk \'face-to-face\' using the Webex meeting for this room, which you can access at any time until Christmas.
+  We encourage you to use this space to talk 'face-to-face' using the Webex meeting for this room, which you can access at any time until Christmas.
   <br/><br/>
   You can walk away towards the Kitchen or join in the conversation in Coltul Vesel.`,
   hasNoteWall: true
@@ -53,9 +53,9 @@ export const castle = {
   shortName: 'the aquarium',
   description: `The moment you step through the glass doors, cheerful voices overlap with this strange music. Where is this coming from?
   <br/>
-  Around you, the desks are littered with abandoned notebooks, pens, and last year\’s tree decorations. Someone should really put these away in January! A [[green toy snake->item]] is on the floor, chairs and backpacks spread chaotically around.
+  Around you, the desks are littered with abandoned notebooks, pens, and last year’s tree decorations. Someone should really put these away in January! A [[green toy snake->item]] is on the floor, chairs and backpacks spread chaotically around.
   <br/>
-  A Christmas tree has been set up in the corner, and crumpled wrapping paper reminds us of last week\’s party.
+  A Christmas tree has been set up in the corner, and crumpled wrapping paper reminds us of last week’s party.
   <br/>
   If you really have to leave this cosy place, you can head over to [[elevator A->shippingContainer]], [[elevator B->lounge]], [[bran]], or join the rest of the team in the [[MM area->unconference]].`,
   hasNoteWall: true
@@ -65,7 +65,7 @@ export const sokoban = {
   id: 'sokoban',
   displayName: 'Sys Eng Corner',
   shortName: 'the sys eng corner',
-  description: 'This strange room is made up of blue walls with large circular pits dotting the floor, accompanied by many boulders of matching size. The boulders are strangely easy to roll from place to place - and even stranger is how often moving a boulder reveals a flattened snack underneath. Something about being in this room fills you with a subtle feeling of frustration.<br/><br/>We encourage you to use this space to talk "face-to-face" using <a href="https://us02web.zoom.us/j/88300705663?pwd=ZTZ6N2x0Sks4a21qTTlSREt5NGJhQT09" target="_blank">the Zoom meeting for this room</a>, which you can access at any time during the conference. (Passcode 418594)<br/><br/>This is a room for unconferencing! The other unconferencing rooms are [[Minetown->minetown]], [[Oracle->oracle]], [[Castle->castle]], [[Vlad\'s Tower->tower]], and [[Astral Plane->astralPlane]]. Or you can go back to the [[unconferencing lobby->unconference]].',
+  description: 'This strange room is made up of blue walls with large circular pits dotting the floor, accompanied by many boulders of matching size. The boulders are strangely easy to roll from place to place - and even stranger is how often moving a boulder reveals a flattened snack underneath. Something about being in this room fills you with a subtle feeling of frustration.<br/><br/>We encourage you to use this space to talk "face-to-face" using <a href="https://us02web.zoom.us/j/88300705663?pwd=ZTZ6N2x0Sks4a21qTTlSREt5NGJhQT09" target="_blank">the Zoom meeting for this room</a>, which you can access at any time during the conference. (Passcode 418594)<br/><br/>This is a room for unconferencing! The other unconferencing rooms are [[Minetown->minetown]], [[Oracle->oracle]], [[Castle->castle]], [[Vlad\'s Tower-> tower]], and [[Astral Plane-> astralPlane]].Or you can go back to the[[unconferencing lobby -> unconference]].',
   hasNoteWall: true
 }
 

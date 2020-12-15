@@ -100,7 +100,7 @@ const indexRoomData: { [name: string]: Room } = {
     shortName: 'fußball table in the kitchen',
     description: `As you aproach the table the only thing you can hear is a never-ending sequence of bangs and from time to time "Damn this ball is not round anymore". You can't really see what is happening because some unknown individuals are there and they are closely looking at 8 guys how they professionaly maneuver the mini football players and make the ball reach the goal.
     <br/><br/>
-    <a href="https://www.haxball.com/" target="_blank">Haxball</a> is the online version of the old childhood game \'Fotbal cu nasturi\'. Create a private room, share its name and password in the chat and play with your fellow friends and have fun. It's not exacly <a href="https://ncchat.slack.com/archives/CB8S5V2M7" target="_blank">Fußball</a> but it comes pretty close.
+    <a href="https://www.haxball.com/" target="_blank">Haxball</a> is the online version of the old childhood game 'Fotbal cu nasturi'. Create a private room, share its name and password in the chat and play with your fellow friends and have fun. It's not exacly <a href="https://ncchat.slack.com/archives/CB8S5V2M7" target="_blank">Fußball</a> but it comes pretty close.
     <br/><br/>
       From here, you can see tables [[A->kitchenTableA]] or [[B->kitchenTableC]], and the [[general kitchen area->kitchen]].`,
     allowsMedia: true
@@ -121,9 +121,9 @@ const indexRoomData: { [name: string]: Room } = {
     description: `You approach the bar. There is atmospheric dim lighting and smooth music in the background. The bartender has tattooed forearms, a checkered shirt and a long, exquisitely groomed beard. 
     <br/>You feel like this is the place where elegant people go to relax and savor a sophisticated drink. You get a little bit closer. The bartender smiles and greets you with a “Ho Ho Ho!”. 
     <br/><br/>
-    He'll happily make you whatever you want. A laminated sign on the bartop advertises tonight\'s specials: [[a Naughty Rudolph Cocktail->item]], [[a Berry Merry Christmas Cocktail->item]], [[a gin and tonic with cinnamon infused syrup->item]] or [[a Japanese whisky on the rocks->item]].
+    He'll happily make you whatever you want. A laminated sign on the bartop advertises tonight's specials: [[a Naughty Rudolph Cocktail->item]], [[a Berry Merry Christmas Cocktail->item]], [[a gin and tonic with cinnamon infused syrup->item]] or [[a Japanese whisky on the rocks->item]].
     <br/>A self-serve table behind the bartender has two cauldrons. One is loaded with [[a bubbling purple goo->drinkPolymorph]], and the other with [[plain hot chocolate->drinkCancellation]]<br/><br/>
-    You whisper to the bartender that you’re looking for an \'investment opportunity\'. The bartender\’s eyes light up and he gives you a mischievous smirk. \'Of course, please come with me\”. He takes you to a quiet corner of the office, and there you see them. The slot machines, the păcănele. The bartender opens a sack of tokens. You pull out your wallet. It's <a href="https://www.freeslots.com/" target="_blank">party time</a>.
+    You whisper to the bartender that you’re looking for an 'investment opportunity'. The bartender’s eyes light up and he gives you a mischievous smirk. 'Of course, please come with me'. He takes you to a quiet corner of the office, and there you see them. The slot machines, the păcănele. The bartender opens a sack of tokens. You pull out your wallet. It's <a href="https://www.freeslots.com/" target="_blank">party time</a>.
     <br/><br/>Go back to the [[dance floor->danceFloor]] or the [[MM area->unconference]]. The bar will probably be there next time you appear.`,
     allowsMedia: true
   },
@@ -210,7 +210,7 @@ const indexRoomData: { [name: string]: Room } = {
     id: 'swag',
     displayName: 'Reception Bar',
     shortName: 'the reception bar',
-    description: `The well-known bar covered in a giant messy pile of mismatched swag. At the top of the pile, you see items such as [[a purple Netcentric t-shirt->item]], [[a purple Christmas tree decoration->item]], [[a #makeNetcentricAFunPlanceToWork sticker->item]], [[a \'Keep Calm and Do Your Tempo\' sticker->item]], and (surprisingly!) [[an unidentified piece of candy->item]].<br/><br/>
+    description: `The well-known bar covered in a giant messy pile of mismatched swag. At the top of the pile, you see items such as [[a purple Netcentric t-shirt->item]], [[a purple Christmas tree decoration->item]], [[a #makeNetcentricAFunPlanceToWork sticker->item]], [[a 'Keep Calm and Do Your Tempo' sticker->item]], and (surprisingly!) [[an unidentified piece of candy->item]].<br/><br/>
     The coffee machine is also working and you can prepare yourself [[a cup of the good coffee->item]] or [[a tasty latte->item]]. 
     <br/><br/>
     From here, you can walk back to the rest of the [[Reception->foyer]].`
