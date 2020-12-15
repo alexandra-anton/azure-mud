@@ -10,7 +10,7 @@ export default function LoggedOutView() {
       <main role="main">
         <p>
           This is a social space for attendees of{' '}
-          <a href='#'>Christmas story in Covid times</a>, a place where we can feel as close to our dear, very missed studio as possible. Feel free to click on the login link below so you can explore the the Xmas transforrmed studio and interact with our lovely coleagues.
+          <a href='#'>Christmas story in Covid times</a>, a place where we can feel as close to our dear, very missed studio as possible. Feel free to click on the login link below so you can explore the Xmas transformed studio and interact with our lovely colleagues.
         </p>
         <a
           href={`${config.SERVER_HOSTNAME
