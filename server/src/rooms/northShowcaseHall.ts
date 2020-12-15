@@ -3,66 +3,30 @@ export default {
   displayName: 'Yellow Table',
   shortName: 'the yellow table',
   description: `
-      A number of booths line the sides of the hall.<br/><br/>
-      Here you can see Gesuido by Ryosuke Mihara, Project Earth by Michael Taylor, and WizardWarsIO by quantompotato.<br/><br/>
-
-      <div id="north-showcase" class="showcase-container">
-        <div id="gesuido-entry" class="showcase-entry" style="display: inline-flex;">
-          <div id="gesuido-text">
-            <p><a href="https://mihararyosuke.com/gesuido" target="_blank">Gesuido</a>, by 
-              <a href="https://twitter.com/oinariman" target="_blank" rel="nofollow noopener noreferrer">Ryosuke Mihara</a>
-            </p>
-            <p>Gesuido is a Roguelike game for iPhone that's not too dissimilar in gameplay to the original Rogue, but it features early 
-              Macintosh-style black and white tile graphics and cute illustrated magic cards. The game is still developing, but I’ve made a beta 
-              version available for Roguelike Celebration 2020 attendees. Feedbacks are welcome. You can find it 
-              <a href="https://testflight.apple.com/join/3tcSPCbC" target="_blank">here</a>!
-            </p>
-          </div>
-          <img src="images/gesuido/gesuido_ss01.png" alt="Gesuido screenshot 1" style="width: 30%; object-fit: scale-down;">
-          <img src="images/gesuido/gesuido_ss02.png" alt="Gesuido screenshot 2" style="width: 30%; object-fit: scale-down;">
+  <div style="display: inline-flex; width: 100%;">
+    <div id="discord-text" style="width: 50%;">
+      <p>You enter a small room where a conference table quickly differentiates itself as the centre-piece of the space. No conferences are ever held here and the table isn't even yellow. Is this some kind of joke? Are you in the right place? You knew there was something here but you never actually walked in to check.</p>
+      <p>In case you enjoy games - and I mean serious digital games not offline board games <span role="img" aria-label="wink">😉</span> - this is the place to be. If you want to have a fight with your colleagues, play a game of DOTA2. If you want to remember the good old days, jump in for some CS. I hear kids these days play Valorant...</p>
+    </div>
+    <div style="width: 50%;"><iframe src="https://discord.com/widget?id=786890516183777280&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" align="right"></iframe></div>
+  </div><p></p>
+  <div class="showcase-container" style="width: 100%">
+    <div id="80s-entry" class="showcase-entry" style="width: 100%">
+      <div style="width: 100%">
+        <div style="width: 33%; display: inline-block; text-align: center;">
+          <img src="images/christmas-story/dota-2-header.jpg" alt="dota2" width="380" height="217" align="center" />
         </div>
-
-        <div id="project-earth-entry" class="showcase-entry">
-          <p><a href="https://axeforge.itch.io/project-earth" target="_blank">Project Earth</a>, by Michael Taylor</p>
-          <p>Project Earth is a tactical Roguelike where instead of finding your gear, you craft your gear! Enemies drop crafting
-          materials when defeated. The type of materials used affects the kinds of items you make.
-          </p>
-          <p>You can find the playable prototype, along with more about the game, here on
-            <a href="https://axeforge.itch.io/project-earth" target="_blank">itch.io</a>. Feel free to leave a comment!
-            Instructions on how to play are on the site.
-          </p>
-          <p>I can be contacted through discord. My discord username is AxeForge #0707. I'm on the following discord servers as well:</p>
-          <ul>
-            <li>roguelikes</li>
-            <li>Tangledeep</li>
-            <li>Dungeonfans Academy</li>
-            <li>Auto Combat Zone</li>
-            <li>Song of Syx</li>
-            <li>Ask GameDev</li>
-            <li>Rise to Ruins</li>
-            <li>Half Human Games</li>
-          </ul>
+        <div style="width: 32%; display: inline-block; text-align: center;">
+          <img src="images/christmas-story/capsule_616x353.jpg" alt="dota-underlords" width="380" height="217" align="center" />
         </div>
-
-        <div id="wizard-wars-io-entry" class="showcase-entry">
-          <h3><a href="https://github.com/WizardWarsIO" target="_blank">WizardWars.IO</a>, by R. Riley Holmes & quantumpotato</h3>
-          <strong>Rhythmic turnbased deathmatch!</strong>
-          <div>
-            <p>Multiplayer roguelike combat. Toss potions, zap wands, detonate bombs, dodge minotaurs and kill players to crown 
-              the leaderboard. <a href="http://206.189.227.251:8000" target="_blank">Play it online!</a>
-            </p>
-            <p>Press a number 1-9 to select an item. Press F + Arrow Keys to zap a wand or throw a potion. Press A to equip 
-              selected item. You can move and throw in 8 directions.
-            </p>
-          </div>
-          <img src="images/wizard-wars-io/0.png" alt="wizard wars io 0" style="width: 23%; object-fit: scale-down; max-height: 340px">
-          <img src="images/wizard-wars-io/1.png" alt="wizard wars io 1" style="width: 23%; object-fit: scale-down; max-height: 340px">
-          <img src="images/wizard-wars-io/2.png" alt="wizard wars io 2" style="width: 23%; object-fit: scale-down; max-height: 340px">
-          <img src="images/wizard-wars-io/3.png" alt="wizard wars io 3" style="width: 23%; object-fit: scale-down; max-height: 340px">
+        <div style="width: 33%; display: inline-block; text-align: center;">
+          <img src="images/christmas-story/unnamed-2.png" alt="cs-go" width="380" height="217" align="center" />
         </div>
       </div>
+    </div>
+  </div>
 
 
-      You can head to the [[kitchen->kitchen]], [[MOPS->kitchen]], , [[Coltul Vesel->kitchen]], or head up to the [[Reception->foyer]].`,
+      You can head to the [[Kitchen->kitchen]], [[MOPS->tower]], [[Coltul Vesel->workbench]], or head up to the [[Reception->foyer]].`,
   allowsMedia: true
 }

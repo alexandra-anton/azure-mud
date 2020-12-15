@@ -8,7 +8,7 @@ export default {
   <br/><br/>
   In one corner of the room, there is a purple paravane with golden stars on it. It\'s sitting next to a rack carrying what seems to be [[a pair of Christmassy pyjamas->item]]. Now you can cozy up and watch whatever is on the screen. Enjoy the slumber party! 
   <br/><br/>
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rh5vFhgl0Kg?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div id="gesuido-entry" style="display: flex; align-items: center; justify-content: center;"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rh5vFhgl0Kg?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
   <br/><br/>
   You can leave to the [[kitchen]], the [[bar]], the [[foyer]], the [[@-sign statue->statue]], the [[unconferencing rooms->unconference]], or clamber into the [[shipping container->shippingContainer]].`,
   allowsMedia: true

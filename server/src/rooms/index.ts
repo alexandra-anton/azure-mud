@@ -154,9 +154,9 @@ const indexRoomData: { [name: string]: Room } = {
     shortName: 'the dance floor',
     description: `Unexpectedly once you step into this room the rythm starts pumping in your veins and your limbs seem to move on their own. You glance from side to side and notice the DJ booth near the wall and from it curiously hang face masks - it must be the Covid effect.
     <br/><br/>
-    <div id="dance-floor-showcase" class="showcase-container">
-        <div id="discord-entry" class="showcase-entry" style="display: inline-flex;">
-          <div id="discord-text">
+    <div id="dance-floor-showcase" class="showcase-container" style="display: flex; width: 100%;">
+        <div id="discord-entry" class="showcase-entry" style="display: inline-flex; width: 100%;">
+          <div id="discord-text" style="width: 50%;">
             <p>Instructions for using Discord bot
             </p>
             <p>Steps for using Discord:
@@ -166,7 +166,7 @@ const indexRoomData: { [name: string]: Room } = {
             </ul>
             </p>
           </div>
-          <iframe src="https://discord.com/widget?id=780867772749840384&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+          <div style="width: 50%;"><iframe src="https://discord.com/widget?id=786890516183777280&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" align="right"></iframe></div>
         </div>
     </div>
     <br/><br/>
@@ -203,7 +203,7 @@ const indexRoomData: { [name: string]: Room } = {
     description: `A familiar, purple, sight awaits you the moment you step off the elevator. Welcome back to the office! 
     A partially decorated [[Christmas Tree->study]] sits in the corner, with scattered decorations around it - someone really needs to finish setting up these lights!
     <br/><br/>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/3uycy7s-kvc?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div style='display: flex; align-items: center; justify-content: center;'><iframe width="400" height="225" src="https://www.youtube.com/embed/3uycy7s-kvc?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align='center' style="display: block;"></iframe></div>
     <br/><br/>
     You can see the coffee machine sitting on the [[reception bar->swag]] in the corner, and can also leave towards the HR area, join the main party in Ateneu, or the guys in Coltul Vesel for a chat. Or take [[elevator A->shippingContainer]] or [[elevator B->lounge]] to get outside.<br/><br/>`,
     specialFeatures: [SpecialFeature.RainbowDoor, SpecialFeature.DullDoor]
@@ -233,7 +233,7 @@ const indexRoomData: { [name: string]: Room } = {
     shortName: 'the Christmas tree',
     description: `A comfy and cozy couch awaits you, to sit back, listen to some tradional romanian Christmas carols and admire the talent of your colleagues who decorated the tree. Even if it's not yet finished. 
     <br/><br/>Or you could pick up the tinsel from the floor and <a href="https://www.abcya.com/games/make-a-christmas-tree" target="_blank" rel="noreferrer">show</a> them what you've got. If you're feeling particularly inspired, you could even add your final work-of-art to the <a href="https://photos.app.goo.gl/9r7SbhgQstsJioGH7" target="_blank" rel="noreferrer">Christmas tree collection</a>. <br/><br/>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/3HXk4rRa09o?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div style="display: flex; align-items: center; justify-content: center;"><iframe width="400" height="225" src="https://www.youtube.com/embed/3HXk4rRa09o?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
     <br/><br/>
     From here, you can walk back to the rest of the [[Reception->foyer]].`
   },
