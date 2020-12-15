@@ -3,10 +3,10 @@ import { SpecialFeature } from ".";
 export const loungeDungeonRoomData = {
   loungeDungeonDrawingRoom: {
     id: 'loungeDungeonDrawingRoom',
-    displayName: 'Drawing Room',
-    shortName: 'the drawing room',
-    description: `A smaller, private room with a vintage wooden table in the center and eight antique chairs arranged around it. The floor is covered in thick, intricate carpets, and the walls feature ancient oak wainscoting. Sunlight pours in through four large windows, and through them you can grass over rolling green hills.<br/><br/>
-    You can return to the [[lounge]], or you can continue on into the [[bedroom->loungeDungeonBedroom]].`,
+    displayName: 'First Floor',
+    shortName: 'the first floor',
+    description: `You get off at the first floor and suddenly you're in a smaller, private room with a vintage wooden table in the center and eight antique chairs arranged around it. The floor is covered in thick, intricate carpets, and the walls feature ancient oak wainscoting. Sunlight pours in through four large windows, and through them you can grass over rolling green hills.<br/><br/>
+    You can return to the [[elevator->lounge]], or you can continue on into the [[bedroom->loungeDungeonBedroom]].`,
     hidden: true
   },
   loungeDungeonBedroom: {

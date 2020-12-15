@@ -5,6 +5,7 @@ import westShowcaseHall from './westShowcaseHall'
 import { unconference, minetown, oracle, tower, castle, sokoban, astralPlane, phoneBooth1, phoneBooth2, bran } from './unconfRooms'
 import theater from './theater'
 import { loungeDungeonRoomData } from './loungeDungeon'
+import { elevatorQuestRoomData } from './elevatorQuest'
 
 export interface NoteWallData {
   roomWallDescription: string
@@ -131,7 +132,8 @@ const indexRoomData: { [name: string]: Room } = {
     id: 'lounge',
     displayName: 'Elevator B',
     shortName: 'elevator B',
-    description: 'A chill space to hang away from the hustle and bustle of the main space. Comfy chairs, TVs showing the latest scores in some incomprehensible splort, and a fridge full of La Croix.<br/><br/>From here, you can get to the [[drawing room->loungeDungeonDrawingRoom]], the [[dance floor->danceFloor]], or the [[kitchen]].',
+    description: `A chill space to hang away from the hustle and bustle of the main space.<br/><br/>
+    From here, you can get [[outside for a smoke->minetown]], to the [[first floor->loungeDungeonDrawingRoom]] or go to the [[parking lot->elevatorQuestSpawnPoint]]. You could also wait for [[elevator A->shippingContainer]] instead or go back to [[Reception->foyer]].`,
     allowsMedia: true
   },
   statue: {
@@ -255,5 +257,6 @@ const indexRoomData: { [name: string]: Room } = {
 
 export const roomData: { [name: string]: Room } = {
   ...indexRoomData,
-  ...loungeDungeonRoomData
+  ...loungeDungeonRoomData,
+  ...elevatorQuestRoomData
 }
