@@ -22,6 +22,33 @@ export const elevatorQuestRoomData = {
     You hear a roar from the East, and the flickering light is getting brighter. You smell smoke in the air.
     <br/><br/>
     You calm the frenzied horse enough to try and disentangle him, but the knots are too tight. Another bellow cuts the night air, and it sounds far too close for comfort.
+    You have the option to [[abandon Freneculon->elevatorQuestAbandonFreneculon]] or [[keep trying->elevatorQuestKeepTrying]] to free him.
+    `,
+    hidden: true
+  },
+  elevatorQuestAbandonFreneculon: {
+    id: 'elevatorQuestAbandonFreneculon',
+    displayName: 'Abandon Freneculon',
+    shortName: 'abandon Freneculon',
+    description: `The bone-chilling bellow shakes you to your core, and you suddenly remember why you were lying on your back in the woods first place.
+    <br/><br/>
+    "Sorry old boy, but I just can't do it. Thanks for all the years of service." You pat your oldest friend and he looks into your eyes, horse tears brimming. You start to run, away from the quickly spreading fire, away from the bellowing creature to the east. Your cold heart thaws just enough to look back at your trusty steed, and you see him trying to free himself, whinnying in despair. [[Keep running->elevatorQuestKeepRunning]].
+    `,
+    hidden: true
+  },
+  elevatorQuestKeepRunning: {
+    id: 'elevatorQuestKeepRunning',
+    displayName: 'Keep Running',
+    shortName: 'keep running',
+    description: `You keep running, abandoning your trusted horse friend. You monster! Unfortunately, looking back was a bad idea: in your haste, your foot catches a root and you slam to the ground. Your already battered temple strikes a rock, and it's lights out forever.
+    `,
+    hidden: true
+  },
+  elevatorQuestKeepTrying: {
+    id: 'elevatorQuestKeepTrying',
+    displayName: 'Keep trying',
+    shortName: 'keep trying',
+    description: `No! There's no way you can abandon your horse friend at a time like this! You frantically struggle at the tangled mess, and manage to tear the reins free at last. You jump onto Freneculon's back and spur him onwards. You hear a crashing sound coming through the woods to the east, and the smell of smoke is getting stronger.
     `,
     hidden: true
   },
