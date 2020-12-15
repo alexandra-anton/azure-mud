@@ -123,7 +123,6 @@ export default function RoomView (props: Props) {
             : 'Loading current room...'
         }}
       />
-      {room && room.id === 'theater' ? <StreamEmbed /> : null }
       {room && room.specialFeatures && room.specialFeatures.includes(SpecialFeature.RainbowDoor) ? <RainbowGateRoomView /> : ''}
       {room && room.specialFeatures && room.specialFeatures.includes(SpecialFeature.DullDoor) ? <DullDoorRoomView /> : ''}
       {room && room.specialFeatures && room.specialFeatures.includes(SpecialFeature.FullRoomIndex) ? <FullRoomIndexRoomView /> : ''}

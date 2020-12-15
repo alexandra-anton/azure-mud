@@ -138,8 +138,11 @@ const indexRoomData: { [name: string]: Room } = {
     id: 'statue',
     displayName: 'TNB',
     shortName: 'the TNB',
-    description: `A memorial to countless adventurers who have helped build this social space.<br/><br/>A plaque on the statue shows a list of <a href="https://github.com/lazerwalker/azure-mud/graphs/contributors" target="_blank" rel="noreferrer">code contributors</a>.<br/>There's also a suggestion wall for people to add comments about the social space.
-      From here, you can reach the [[kitchen]], the [[bar]], the [[theater]], or the [[North Showcase Hall->northShowcaseHall]]. You can also climb into the [[shipping container->shippingContainer]].`,
+    description: `Here you are, in TNB, where you first see a tiny elf with a huge camera in his hands. You remember last year you were queuing the photo booth with some Christmasy props and drinks in your hands, waiting to take some pictures with your team.
+    <br/><br/>
+    No time for memories now, the elf is gesturing you and your team to hurry up and take a photo. You might want to look for your elf years or your Santa hat, to put on. If nothing in reach, a festive Webex virtual background or Snap camera filter will do.
+    <br/><br/>
+    Once you're done, post your photos <a href="https://photos.app.goo.gl/ps8bBJjwE1LTdL929" target="_blank">here</a>.`,
     hasNoteWall: true,
     allowsMedia: true
   },
@@ -152,13 +155,13 @@ const indexRoomData: { [name: string]: Room } = {
     <div id="dance-floor-showcase" class="showcase-container">
         <div id="discord-entry" class="showcase-entry" style="display: inline-flex;">
           <div id="discord-text">
-            <p><a href="https://mihararyosuke.com/gesuido" target="_blank">Gesuido</a>, by 
-              <a href="https://twitter.com/oinariman" target="_blank" rel="nofollow noopener noreferrer">Ryosuke Mihara</a>
+            <p>Instructions for using Discord bot
             </p>
-            <p>Gesuido is a Roguelike game for iPhone that's not too dissimilar in gameplay to the original Rogue, but it features early 
-              Macintosh-style black and white tile graphics and cute illustrated magic cards. The game is still developing, but I’ve made a beta 
-              version available for Roguelike Celebration 2020 attendees. Feedbacks are welcome. You can find it 
-              <a href="https://testflight.apple.com/join/3tcSPCbC" target="_blank">here</a>!
+            <p>Steps for using Discord:
+            <ul>
+              <li>step 1</li>
+              <li>step 2</li>
+            </ul>
             </p>
           </div>
           <iframe src="https://discord.com/widget?id=780867772749840384&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>

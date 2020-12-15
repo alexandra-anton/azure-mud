@@ -2,15 +2,15 @@ export const unconference = {
   id: 'unconference',
   displayName: 'MM Area',
   shortName: 'the MM area',
-  description: 'Winding corridors lead to a large dungeon-like room. Sticky notes and magic markers are piled up on tables along with assorted adventuring gear. White banners with blocky black text label several hallways leading to the unconferencing rooms - [[Minetown->minetown]], [[Oracle->oracle]], [[Sokoban->sokoban]], [[Castle->castle]], [[Vlad\'s Tower->tower]], and [[Astral Plane->astralPlane]]. You can also return back to the [[theater]].',
+  description: `Large hallway leading to the bar and the dancefloor.`,
   allowsMedia: true,
   hasNoteWall: true,
   noteWallData: {
-    roomWallDescription: 'One wall of this room is taken up by a large whiteboard titled "UNCONFERENCE TOPIC SUGGESTIONS!" Smaller font clarifies "Write what you want to chat with others about, and upvote topics you find interesting. Moderators will assign the top six topics rooms, 5 minutes into each unconference block. Have fun!"',
-    noteWallButton: 'Inspect the topics',
-    addNoteLinkText: 'suggest a topic',
+    roomWallDescription: 'One wall of this room is taken up by a large whiteboard titled "IMPRESSIONS AND SUGGESTIONS!" Smaller font clarifies "Write what you think about this space, what did you enjoy the most? Have fun!"',
+    noteWallButton: 'Impressions and suggestions',
+    addNoteLinkText: 'add an impression',
     addNotePrompt: 'What would you like to suggest?',
-    noteWallDescription: 'Topics for unconferencing discussion, ranked by upvotes.'
+    noteWallDescription: 'Impressions and suggestions about this virtual space.'
   }
 }
 

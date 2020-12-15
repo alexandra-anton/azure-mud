@@ -63,5 +63,6 @@ export default {
       </div>
 <br/><br/>
       From here, you can go back to the [[main dance floor->danceFloor]].`,
-  allowsMedia: true
+  allowsMedia: true,
+  hidden: true
 }

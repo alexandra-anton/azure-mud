@@ -19,5 +19,6 @@ export default [
   'Nespresso coffee',
   'a cup of the good coffee',
   'a tasty latte',
-  'green toy snake'
+  'green toy snake',
+  'a pair of Christmassy pyjamas'
 ]
