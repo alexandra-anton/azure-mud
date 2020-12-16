@@ -16,7 +16,7 @@ export const FullRoomIndexRoomView = () => {
   </div>
 }
 
-export default function FullRoomIndexModalView(props: { rooms: Room[] }) {
+export default function FullRoomIndexModalView (props: { rooms: Room[] }) {
   return (
     <div>
       <h1>Unerring Teleport</h1>
