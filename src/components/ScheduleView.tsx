@@ -1,10 +1,4 @@
 import React from 'react'
-import { moveToRoom } from '../networking'
-
-import { Room } from '../room'
-interface Props {
-  rooms: Room[]
-}
 
 export interface ScheduleEntry {
   time: Date,
@@ -53,7 +47,8 @@ export const ScheduleEntries = [
   // ScheduleEntry('17:00', 2, 'Lightning Talks 3: Lee Tusman, Alexander Martin, Josh Grams, Adrian Herbez, Younès Rabii, Duke Dougal', ['theater']),
   // ScheduleEntry('18:00', 2, 'Closing Announcements', ['theater']),
   // ScheduleEntry('18:15', 2, 'Unconferencing #4', ['unconference']),
-  // ScheduleEntry('19:30', 2, 'Wrap')]
+  // ScheduleEntry('19:30', 2, 'Wrap')
+]
 
 export default function ScheduleView() {
   const formatter = new Intl.DateTimeFormat('en', { hour: 'numeric', minute: 'numeric' })
@@ -71,7 +66,7 @@ export default function ScheduleView() {
           <td className='segment'>{r.text}</td>
           <td className='segment'>{r.description}</td>
           <td className='segment'>
-            <RoomListItem room={r} key={`room-sidebar-${r.id}`} />
+            {/* <RoomListItem room={r} key={`room-sidebar-${r.id}`} /> */}
           </td>
         </tr>
       )]
@@ -91,20 +86,3 @@ export default function ScheduleView() {
   )
 }
 
-const RoomListItem = (props: { room: Room }) => {
-  const { room } = props
-
-  const onClick = () => {
-    moveToRoom(room.id)
-  }
-  const userCount = room.users ? `(${room.users.length})` : ''
-  const videoIcon = room.videoUsers && room.videoUsers.length > 0 ? <FaVideo /> : ''
-
-  return (
-    <li style={{ listStyle: 'none' }}>
-      <button onClick={onClick} className="link-styled-button">
-        <strong>{room.name}</strong> {userCount} {videoIcon}
-      </button>
-    </li>
-  )
-}
