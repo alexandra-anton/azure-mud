@@ -27,7 +27,7 @@ export default {
   </div>
 
 
-      You can head to the [[Kitchen->kitchen]], [[MOPS->tower]], [[Coltul Vesel->workbench]], or head up to the [[Reception->foyer]].`,
+      From here you can head to the [[kitchen->kitchen]] or walk over to [[MOPS->tower]].`,
   allowsMedia: true,
   hasNoteWall: true,
   noteWallData: {

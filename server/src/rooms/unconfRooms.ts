@@ -40,7 +40,7 @@ export const oracle = {
   <br/><br/>
   We encourage you to use this space to talk 'face-to-face' using the <a href="https://cognizantcorp.webex.com/cognizantcorp/j.php?MTID=m268b61a60a66bacafc5606b9bf5d8408" target="_blank">Webex</a> meeting for this room, which you can access at any time until Christmas. 
   <br/><br/>If you have some memories you want to share with the others, add them <a href="https://photos.app.goo.gl/dqboZ56SYbyyvfg78" target="_blank">here</a> and have a good laugh (or cry). Or you could just leave a note on the wall.
-  <br/><br/>From here, you can go back to the [[kitchen->kitchen]] or go to [[phone booth 1->phoneBooth1]], [[phone booth 2->phoneBooth2]] or [[Bran->bran]]`,
+  <br/><br/>From here, you can go back to the [[kitchen->kitchen]] or go to [[phone booth 1->phoneBooth1]], [[phone booth 2->phoneBooth2]] or [[Bran->bran]].`,
   hasNoteWall: true
 }
 
@@ -112,9 +112,9 @@ export const phoneBooth1 = {
   shortName: 'the first phone booth',
   description: `Ah, a moment of solitude! As you step into the transparent privacy of the phone booth, you set your laptop down and take a sip out of your coffee. What was the next meeting about?
   <br/><br/>
-  It’s time to put on the headphones and join the Zoom meeting for this room, which you can access at any time during the conference. (Passcode 753544)
+  It’s time to put on the headphones and join the <a href="https://cognizantcorp.webex.com/cognizantcorp/j.php?MTID=me3941ac3256e948a0046fbed28725cc7" target="_blank">Webex</a> meeting for this room, which you can access at any time until Christmas.
   <br/><br/>
-  You can always head back into Support area or into Bran, and join the rest of your team.`,
+  You can always head back to the [[Support area->oracle]], [[phone booth 2->phoneBooth2]] or into [[Bran->bran]], and join the rest of your team.`,
   hasNoteWall: true
 }
 
@@ -124,9 +124,9 @@ export const phoneBooth2 = {
   shortName: 'the 2nd phone booth',
   description: `Ah, a moment of solitude! As you step into the transparent privacy of the phone booth, you set your laptop down and take a sip out of your coffee. What was the next meeting about?
   <br/><br/>
-  It’s time to put on the headphones and join the Zoom meeting for this room, which you can access at any time during the conference. (Passcode 753544)
+  It’s time to put on the headphones and join the <a href="https://cognizantcorp.webex.com/cognizantcorp/j.php?MTID=md0de572ffbf25250a1c7f7b13b85a36c" target="_blank">Webex</a> meeting for this room, which you can access at any time until Christmas.
   <br/><br/>
-  You can always head back into Support area or into Bran, and join the rest of your team.`,
+  You can always head back to the [[Support area->oracle]], [[phone booth 1->phoneBooth1]] or into [[Bran->bran]], and join the rest of your team.`,
   hasNoteWall: true
 }
 
@@ -134,8 +134,8 @@ export const bran = {
   id: 'bran',
   displayName: 'Bran',
   shortName: 'Bran',
-  description: `You briefly check the calendar and you feel instantly relieved - you did book the conference room! As you gently nudge the previous occupants to leave, you sit down with your laptop, turn on the TV, and join the meeting. Just 2 minutes late, no one will notice (smile)
+  description: `You briefly check the calendar and you feel instantly relieved - you did book the conference room! As you gently nudge the previous occupants to leave, you sit down with your laptop, turn on the TV, and join the <a href="https://cognizantcorp.webex.com/cognizantcorp/j.php?MTID=m240552329383034691e9a3e99f11cbed" target="_blank">meeting</a>. Just 2 minutes late, no one will notice (smile).
   <br/><br/>
-  When your call is over, you check your calendar again, unsure about your next item - is that the 1on1 PSL touchpoint you had in Phone booth 1? Or was it the badge interview in Phone Booth 2? While you make up your mind, loud discussions start in the Acvariu, and you feel more than tempted to join them for a chat instead.`,
+  When your call is over, you check your calendar again, unsure about your next item - is that the 1on1 PSL touchpoint you had in [[Phone booth 1->phoneBooth1]]? Or was it the badge interview in [[Phone Booth 2->phoneBooth2]]? While you make up your mind, loud discussions start in the [[Acvariu->castle]], and you feel more than tempted to join them for a chat instead.`,
   hasNoteWall: true
 }

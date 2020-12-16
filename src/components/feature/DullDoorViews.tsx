@@ -21,7 +21,7 @@ export const DullDoorRoomView = () => {
   }
 
   return <div id="dull-door-div" className="feature-room-view">
-    <p>You look to your right and see the door to Peles meeting room and all its glass walls covered. <button id="dull-door-button" className='link-styled-button' onClick={walkThroughDoor}>Walk through the door</button>.</p>
+    <p>You look to your right and see the door to Peleș meeting room and all its glass walls covered. <button id="dull-door-button" className='link-styled-button' onClick={walkThroughDoor}>Walk through the door</button>.</p>
   </div>
 }
 
@@ -47,7 +47,7 @@ export default function DullDoorModalView () {
   if (!wasColoredEntering) {
     return (
       <div>
-        <h1>You see a very, very bored Dan Beldiman, dressed as a Christmas elf, sitting in Peles.</h1>
+        <h1>You see a very, very bored Dan Beldiman, dressed as a Christmas elf, sitting in Peleș.</h1>
         <p>He&apos;s poking unenthusiastically at his computer with his Christmas Elf gloves and eating his lunch with the rest. He
           looks very tired. You wave to catch his attention, and he glances over at you. You can see him trying to muster some
           effort for a greeting, but then he sighs and sinks into his seat. &quot;I&apos;m sorry,&quot; he says, &quot;these reports were due two
@@ -59,7 +59,7 @@ export default function DullDoorModalView () {
   } else {
     return (
       <div>
-        <h1>You see a very, very bored Dan Beldiman, dressed as a Christmas elf, sitting in Peles.</h1>
+        <h1>You see a very, very bored Dan Beldiman, dressed as a Christmas elf, sitting in Peleș.</h1>
         <p>He&apos;s poking unenthusiastically at his computer with his Christmas Elf gloves and eating his lunch with the rest. As he spots you, his eyes go wide. A coffee mug in one of his hands drops to his desk with a loud thump, and a fork in another clatters to the ground.
         </p>
         <p>&quot;Oh!&quot; he shouts, &quot;Stay right where you are!&quot;. Before you can even turn to the door, Dan jets in front of you

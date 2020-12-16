@@ -10,6 +10,6 @@ export default {
   <br/><br/>
   <div id="gesuido-entry" style="display: flex; align-items: center; justify-content: center;"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rh5vFhgl0Kg?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
   <br/><br/>
-  You can leave to the [[kitchen]], the [[bar]], the [[foyer]], the [[@-sign statue->statue]], the [[unconferencing rooms->unconference]], or clamber into the [[shipping container->shippingContainer]].`,
+  From here, you can head towards the [[MM area->unconference]], the [[reception->foyer]] or pay a visit to [[TM area->astralPlane]].`,
   allowsMedia: true
 }

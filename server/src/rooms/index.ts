@@ -99,10 +99,19 @@ const indexRoomData: { [name: string]: Room } = {
     id: 'kitchenTableB',
     displayName: 'Kitchen Fußball Table',
     shortName: 'fußball table in the kitchen',
-    description: `As you aproach the table the only thing you can hear is a never-ending sequence of bangs and from time to time "Damn this ball is not round anymore". You can't really see what is happening because some unknown individuals are there and they are closely looking at 8 guys how they professionaly maneuver the mini football players and make the ball reach the goal.
-    <br/><br/>
-    <a href="https://www.haxball.com/" target="_blank">Haxball</a> is the online version of the old childhood game 'Fotbal cu nasturi'. Create a private room, share its name and password in the chat and play with your fellow friends and have fun. It's not exacly <a href="https://ncchat.slack.com/archives/CB8S5V2M7" target="_blank">Fußball</a> but it comes pretty close.
-    <br/><br/>
+    description: `
+    <div id="fussbal-text" class="showcase-container" style="display: flex; width: 100%;">
+        <div id="discord-entry" class="showcase-entry" style="display: inline-flex; width: 100%;">
+          <div id="discord-text" style="width: 50%;">
+          As you aproach the table the only thing you can hear is a never-ending sequence of bangs and from time to time "Damn this ball is not round anymore". You can't really see what is happening because some unknown individuals are there and they are closely looking at 8 guys how they professionaly maneuver the mini football players and make the ball reach the goal.
+          <br/><br/>
+          <a href="https://www.haxball.com/" target="_blank">Haxball</a> is the online version of the old childhood game 'Fotbal cu nasturi'. Create a private room, share its name and password in the chat and play with your fellow friends and have fun. It's not exacly <a href="https://ncchat.slack.com/archives/CB8S5V2M7" target="_blank">Fußball</a> but it comes pretty close.
+          <br/><br/>Join the Discord Fußball channel to talk to the guys while you play!
+          </div>
+          <div style="width: 50%;"><iframe src="https://discord.com/widget?id=786890516183777280&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" align="right"></iframe></div>
+        </div>
+    </div>
+  <br/><br/>
       From here, you can see tables [[A->kitchenTableA]] or [[B->kitchenTableC]], and the [[general kitchen area->kitchen]].`,
     allowsMedia: true
   },
@@ -197,7 +206,7 @@ const indexRoomData: { [name: string]: Room } = {
     id: 'entryway',
     displayName: 'Downstairs Registration Desk',
     shortName: 'the registration desk',
-    description: 'A big banner reads \'Welcome back to the Bucharest Netcentric office!\' Once you\'ve got your bearings about you, you can move to the [[Reception->foyer]].',
+    description: 'A big banner reads \'Welcome back to the Bucharest Netcentric office!\' Once you\'ve got your bearings about you, you can move to the [[reception->foyer]].',
     hidden: true
   },
   foyer: {
@@ -209,7 +218,7 @@ const indexRoomData: { [name: string]: Room } = {
     <br/><br/>
     <div style='display: flex; align-items: center; justify-content: center;'><iframe width="400" height="225" src="https://www.youtube.com/embed/3uycy7s-kvc?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align='center' style="display: block;"></iframe></div>
     <br/><br/>
-    You can see the coffee machine sitting on the [[reception bar->swag]] in the corner, and can also leave towards the HR area, join the main party in Ateneu, or the guys in Coltul Vesel for a chat. Or take [[elevator A->shippingContainer]] or [[elevator B->lounge]] to get outside.<br/><br/>`,
+    You can see the coffee machine sitting on the [[reception bar->swag]] in the corner, and can also leave towards the [[TM area->astralPlane]], join the main party in [[Ateneu->theater]], or the guys in [[Coltul Vesel->workbench]] for a chat. Or take [[elevator A->shippingContainer]] or [[elevator B->lounge]] to get outside.<br/><br/>`,
     specialFeatures: [SpecialFeature.RainbowDoor, SpecialFeature.DullDoor]
   },
   swag: {
@@ -219,7 +228,7 @@ const indexRoomData: { [name: string]: Room } = {
     description: `The well-known bar covered in a giant messy pile of mismatched swag. At the top of the pile, you see items such as [[a purple Netcentric t-shirt->item]], [[a purple Christmas tree decoration->item]], [[a #makeNetcentricAFunPlanceToWork sticker->item]], [[a 'Keep Calm and Do Your Tempo' sticker->item]], and (surprisingly!) [[an unidentified piece of candy->item]].<br/><br/>
     The coffee machine is also working and you can prepare yourself [[a cup of the good coffee->item]] or [[a tasty latte->item]]. 
     <br/><br/>
-    From here, you can walk back to the rest of the [[Reception->foyer]].`
+    From here, you can walk back to the rest of the [[reception->foyer]].`
   },
   atelier: {
     id: 'atelier',
@@ -235,18 +244,18 @@ const indexRoomData: { [name: string]: Room } = {
     id: 'study',
     displayName: 'Christmas Tree',
     shortName: 'the Christmas tree',
-    description: `A comfy and cozy couch awaits you, to sit back, listen to some tradional romanian Christmas carols and admire the talent of your colleagues who decorated the tree. Even if it's not yet finished. 
-    <br/><br/>Or you could pick up the tinsel from the floor and <a href="https://www.abcya.com/games/make-a-christmas-tree" target="_blank" rel="noreferrer">show</a> them what you've got. If you're feeling particularly inspired, you could even add your final work-of-art to the <a href="https://photos.app.goo.gl/9r7SbhgQstsJioGH7" target="_blank" rel="noreferrer">Christmas tree collection</a>. <br/><br/>
+    description: `A comfy and cozy couch awaits you, to sit back, listen to some tradional romanian Christmas carols and admire the talent of your colleagues who decorated the tree. Even if it's not yet finished. Or you could pick up the tinsel from the floor and <a href="https://www.abcya.com/games/make-a-christmas-tree" target="_blank" rel="noreferrer">show</a> them what you've got.
+    <br/><br/> When you're finished, share with us photos of your own Christmas tree, of you wearing some festive Christmas sweater or anything else that you think would make us smile <a href="https://photos.app.goo.gl/9r7SbhgQstsJioGH7" target="_blank" rel="noreferrer">here</a>. <br/><br/>
     <div style="display: flex; align-items: center; justify-content: center;"><iframe width="400" height="225" src="https://www.youtube.com/embed/3HXk4rRa09o?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
     <br/><br/>
-    From here, you can walk back to the rest of the [[Reception->foyer]].`
+    From here, you can walk back to the rest of the [[reception->foyer]].`
   },
   workbench: {
     id: 'workbench',
     displayName: 'Coltul Vesel',
     shortName: 'the happy corner',
     description: `A cluttered workspace that clearly belongs to a cheerful bunch of people. A soft light fills this corner of the office from the ceiling high windows, while giggly voices discuss the latest news from behind one of the computer screens. A cute stuffed tiger sits on one of the desks, a reminder from last year’s summit - someone won the arcade games for sure!
-    From here, you can get to the MOPS area to say “Hi” or go to the Reception for a cup of coffee.
+    From here, you can get to the MOPS area to say “Hi” or go to the reception for a cup of coffee.
     <br/><br/>
   We encourage you to use this space to talk 'face-to-face' using the <a href="" target="_blank">Webex</a> meeting for this room, which you can access at any time until Christmas. 
   <br/><br/>If you have some memories you want to share with the others, add them <a href="https://photos.app.goo.gl/Gd4xcbEsTYvcWD267" target="_blank">here</a> and have a good laugh (or cry). Or you could just leave a note on the wall.
