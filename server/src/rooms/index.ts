@@ -122,8 +122,8 @@ const indexRoomData: { [name: string]: Room } = {
     description: `You approach the bar. There is atmospheric dim lighting and smooth music in the background. The bartender has tattooed forearms, a checkered shirt and a long, exquisitely groomed beard. 
     <br/>You feel like this is the place where elegant people go to relax and savor a sophisticated drink. You get a little bit closer. The bartender smiles and greets you with a “Ho Ho Ho!”. 
     <br/><br/>
-    He'll happily make you whatever you want. A laminated sign on the bartop advertises tonight's specials: [[a Naughty Rudolph Cocktail->item]], [[a Berry Merry Christmas Cocktail->item]], [[a gin and tonic with cinnamon infused syrup->item]] or [[a Japanese whisky on the rocks->item]].
-    <br/>A self-serve table behind the bartender has two cauldrons. One is loaded with [[a bubbling purple goo->drinkPolymorph]], and the other with [[plain hot chocolate->drinkCancellation]]<br/><br/>
+    He'll happily make you whatever you want. A laminated sign on the bartop advertises tonight's specials: [[a Naughty Rudolph Cocktail->item]], [[a Berry Merry Christmas Cocktail->item]], [[a gin and tonic with cinnamon infused syrup->item]] or [[a Japanese whisky on the rocks->item]]. Or you can just go for [[a hot mug of mulled wine->item]] or [[a plain lager->item]].
+    <br/><br/>A self-serve table behind the bartender has two cauldrons. One is loaded with [[a bubbling purple goo->drinkPolymorph]], and the other with [[plain hot chocolate->drinkCancellation]].<br/><br/>
     You whisper to the bartender that you’re looking for an 'investment opportunity'. The bartender’s eyes light up and he gives you a mischievous smirk. 'Of course, please come with me'. He takes you to a quiet corner of the office, and there you see them. The slot machines, the păcănele. The bartender opens a sack of tokens. You pull out your wallet. It's <a href="https://www.freeslots.com/" target="_blank">party time</a>.
     <br/><br/>Go back to the [[dance floor->danceFloor]] or the [[MM area->unconference]]. The bar will probably be there next time you appear.`,
     allowsMedia: true
@@ -152,19 +152,23 @@ const indexRoomData: { [name: string]: Room } = {
     id: 'danceFloor',
     displayName: 'Dance Floor',
     shortName: 'the dance floor',
-    description: `Unexpectedly once you step into this room the rythm starts pumping in your veins and your limbs seem to move on their own. You glance from side to side and notice the DJ booth near the wall and from it curiously hang face masks - it must be the Covid effect.
+    description: `Unexpectedly once you step into this room the rhythm starts pumping in your veins and your limbs seem to move on their own. You glance from side to side and notice the DJ booth near the wall and from it curiously hang face masks - it must be the Covid effect.
     <br/><br/>
     <div id="dance-floor-showcase" class="showcase-container" style="display: flex; width: 100%;">
         <div id="discord-entry" class="showcase-entry" style="display: inline-flex; width: 100%;">
           <div id="discord-text" style="width: 50%;">
-            <p>Instructions for using Discord bot
+            <p>Come listen  or request your favourite songs in the Dance Floor Discord channel!</strong>
             </p>
-            <p>Steps for using Discord:
+            <p>In case you haven't used a Discord channel or bot before, here are some instructions:
             <ul>
-              <li>step 1</li>
-              <li>step 2</li>
+              <li>Click on the widget and follow the steps to join our server</li>
+              <li>In case of troubleshooting, see <a href="https://support.discord.com/hc/en-us/articles/360045138471-Discord-Voice-and-Video-Troubleshooting-Guide" target="_blank">here</a></li>
+              <li>To easily get started, enter <em>-play &lt;song name/video link/playlist link&gt;</em> in the <em>#general-text-channel</em></li>
+              <li>It supports Spotify, YouTube, Soundcloud and more!</em></li>
+              <li>For a full list of commands, enter <em>-help</em> in the Discord text channel</li>
             </ul>
             </p>
+            <p>Happy listening!</p>
           </div>
           <div style="width: 50%;"><iframe src="https://discord.com/widget?id=786890516183777280&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" align="right"></iframe></div>
         </div>
@@ -173,11 +177,11 @@ const indexRoomData: { [name: string]: Room } = {
     From here, you can reach the [[Nostalgia Dance Floor->westShowcaseHall]], grab a drink from the [[bar]] or head back to [[the MM area->unconference]].`,
     hasNoteWall: true,
     noteWallData: {
-      roomWallDescription: 'There is a board next to the DJ that says "PLAYLISTS" on the top.',
-      noteWallButton: 'Add a playlist link',
+      roomWallDescription: 'Do you think you can be a better DJ? Add your playlist to our \'PLAYLISTS\' board.',
+      noteWallButton: 'Add a playlist',
       addNoteLinkText: 'add a playlist link',
-      addNotePrompt: 'What would you like to link to?',
-      noteWallDescription: 'Links to people\'s playlists.'
+      addNotePrompt: 'What would you like to add?',
+      noteWallDescription: 'Add a link to your playlist.'
     }
   },
   shippingContainer: {
@@ -242,7 +246,11 @@ const indexRoomData: { [name: string]: Room } = {
     displayName: 'Coltul Vesel',
     shortName: 'the happy corner',
     description: `A cluttered workspace that clearly belongs to a cheerful bunch of people. A soft light fills this corner of the office from the ceiling high windows, while giggly voices discuss the latest news from behind one of the computer screens. A cute stuffed tiger sits on one of the desks, a reminder from last year’s summit - someone won the arcade games for sure!
-    From here, you can get to the MOPS area to say “Hi” or go to the Reception for a cup of coffee.`
+    From here, you can get to the MOPS area to say “Hi” or go to the Reception for a cup of coffee.
+    <br/><br/>
+  We encourage you to use this space to talk 'face-to-face' using the <a href="" target="_blank">Webex</a> meeting for this room, which you can access at any time until Christmas. 
+  <br/><br/>If you have some memories you want to share with the others, add them <a href="https://photos.app.goo.gl/Gd4xcbEsTYvcWD267" target="_blank">here</a> and have a good laugh (or cry). Or you could just leave a note on the wall.
+  <br/><br/>From here, you can walk away towards the [[reception->foyer]], [[kitchen->kitchen]] or join in the conversation in [[MOPS->tower]].`
   },
   hiddenPortalRoom: {
     id: 'hiddenPortalRoom',

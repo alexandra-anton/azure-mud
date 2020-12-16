@@ -50,9 +50,9 @@ export const tower = {
   shortName: 'MOPS',
   description: `Soft blankets and piles of books give a homey ambiance to this corner of the office, as you stand by the desks, looking around. You can hear a couple of giggly voices from behind the computer screens, as they cheerfully talk about their colour-coded spreadsheets.
   <br/><br/>
-  We encourage you to use this space to talk 'face-to-face' using the Webex meeting for this room, which you can access at any time until Christmas.
-  <br/><br/>
-  You can walk away towards the Kitchen or join in the conversation in Coltul Vesel.`,
+  We encourage you to use this space to talk 'face-to-face' using the <a href="https://cognizantcorp.webex.com/cognizantcorp/j.php?MTID=mdcae9f0bda2ca464158ddcc21693160b" target="_blank">Webex</a> meeting for this room, which you can access at any time until Christmas. 
+  <br/><br/>If you have some memories you want to share with the others, add them <a href="https://photos.app.goo.gl/xYkiSs9bKcan2ijb7" target="_blank">here</a> and have a good laugh (or cry). Or you could just leave a note on the wall.
+  <br/><br/>From here, you can walk away towards the [[kitchen->kitchen]] or join in the conversation in [[Coltul Vesel->workbench]].`,
   hasNoteWall: true
 }
 
@@ -99,7 +99,10 @@ export const astralPlane = {
   shortName: 'the TM area',
   description: `As you enter, the hustle and bustle of this busy office corner becomes apparent. The printer's constant hum lingers in the air, with people coming over all day, picking up their paperwork, then going back to their desks to install the latest drivers (sigh!). As you take a look around, you notice some familiar faces on the Peretele de Pluta, and you reminisce about last year's Christmas party.
   <br/><br/>
-  Unphased by the constant commotion, the team is ready to answer never-ending "How do I... ?" questions with a smile, point us in the right direction, or just lend you a stapler - whatever you need! Always happy for a quick chat over a steaming cup of coffee, you can join them in the conference call, or you can just say Hi! as you step into Tineretului for your next meeting. `,
+  Unphased by the constant commotion, the team is ready to answer never-ending "How do I... ?" questions with a smile, point us in the right direction, or just lend you a stapler - whatever you need! Always happy for a quick chat over a steaming cup of coffee, you can join them in the conference call, or you can just say Hi! as you step into Tineretului for your next meeting. <br/><br/>
+  We encourage you to use this space to talk 'face-to-face' using the <a href="https://cognizantcorp.webex.com/cognizantcorp/j.php?MTID=mae737937623abe23bf87d1debbca72f9" target="_blank">Webex</a> meeting for this room, which you can access at any time until Christmas. 
+  <br/><br/>If you have some memories you want to share with the others, add them <a href="https://photos.app.goo.gl/RMKSXJ1xXbfhxHah9" target="_blank">here</a> and have a good laugh (or cry). Or you could just leave a note on the wall.
+  <br/><br/>From here, you can take a look at [[Peretele de pluta->southShowcaseHall]], walk towards [[MM Area->unconference]] or enter [[Tineretului->eastShowcaseHall]] or [[Ateneu->theater]].`,
   hasNoteWall: true
 }
 

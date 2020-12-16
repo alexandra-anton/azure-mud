@@ -22,5 +22,7 @@ export default [
   'green toy snake',
   'a pair of Christmassy pyjamas',
   'a halfway done cigarette',
-  'an iqos with no battery'
+  'an iqos with no battery',
+  'a hot mug of mulled wine',
+  'a plain lager'
 ]

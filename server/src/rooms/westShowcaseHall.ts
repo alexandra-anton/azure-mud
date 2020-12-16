@@ -7,15 +7,25 @@ export default {
     <div id="discord-text" style="width: 50%;">
       You would have never guessed that this kind of room exists - but hey, here you are in the Nostalgia Dance Room when you notice a white guy with mad smile on his face and strange haircut coming over to you and saying "I'm gonna Ice you out!". As he snaps his fingers the tune is changing and you can loudly hear "Ice Ice baby!!" and you think - was that Vanilla ICE?!<br/><br/>
       Feel free to listen to any of the streams in this page or head on to the Discord Nostalgia channel for some vintage memories.
-      <div style="width: 100%">
-        <video class="showcase-video" controls style="margin: auto; width: 420px; height: 50px;">
-            <source src="https://str2b.openstream.co/1421" type="audio/mpeg">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <p>Instructions for using Discord:
+        <ul>
+          <li>Click on the widget and follow the steps to join our server</li>
+          <li>In case of troubleshooting, see <a href="https://support.discord.com/hc/en-us/articles/360045138471-Discord-Voice-and-Video-Troubleshooting-Guide" target="_blank">here</a></li>
+          <li>To easily get started, enter <em>.play &lt;song name&gt;</em> in the <em>#general-text-channel</em></li>
+          <li>For a full list of commands, enter <em>.help</em> in the Discord text channel</li>
+        </ul>
+      </p>
+      <p>Happy listening!</p>
     </div>
     <div style="width: 50%;"><iframe src="https://discord.com/widget?id=786890516183777280&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" align="right"></iframe></div>
-  </div><p></p>
+  </div>
+  <br/><br/><br/>
+  <div style="width: 100%">
+            <video class="showcase-video" controls style="margin: auto; width: 420px; height: 50px;">
+                <source src="https://str2b.openstream.co/1421" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+      </div>
   <br/><br/>
       <div class="showcase-container">
         <div id="80s-entry" class="showcase-entry" style="width: 100%">
