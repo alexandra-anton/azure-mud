@@ -59,12 +59,15 @@ export const castle = {
   displayName: 'Acvariu',
   shortName: 'the aquarium',
   description: `The moment you step through the glass doors, cheerful voices overlap with this strange music. Where is this coming from?
-  <br/>
+  <br/><br/>
   Around you, the desks are littered with abandoned notebooks, pens, and last year’s tree decorations. Someone should really put these away in January! A [[green toy snake->item]] is on the floor, chairs and backpacks spread chaotically around.
-  <br/>
+  <br/><br/>
   A Christmas tree has been set up in the corner, and crumpled wrapping paper reminds us of last week’s party.
+  <br/><br/>
+  We encourage you to use this space to talk 'face-to-face' using the <a href="https://cognizantcorp.webex.com/cognizantcorp/j.php?MTID=md6bf64098696e9285f0e71859a292c7d">Webex</a> meeting for this room, which you can access at any time until Christmas. 
+  <br/><br/>If you have some memories you want to share with the others, add them <a href="https://photos.app.goo.gl/vNLf97TfNW3A4Sex5">here</a> and have a good laugh (or cry). Or you could leave a note on the wall for them.
   <br/>
-  If you really have to leave this cosy place, you can head over to [[elevator A->shippingContainer]], [[elevator B->lounge]], [[bran]], or join the rest of the team in the [[MM area->unconference]].`,
+  If you really have to leave this cosy place, you can head over to [[elevator B->lounge]], [[Bran->bran]], [[TNB->statue]], [[pets zone->atelier]] or join the rest of the team in the [[MM area->unconference]].`,
   hasNoteWall: true
 }
 
