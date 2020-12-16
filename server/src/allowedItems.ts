@@ -20,5 +20,7 @@ export default [
   'a cup of the good coffee',
   'a tasty latte',
   'green toy snake',
-  'a pair of Christmassy pyjamas'
+  'a pair of Christmassy pyjamas',
+  'a halfway done cigarette',
+  'an iqos with no battery'
 ]
