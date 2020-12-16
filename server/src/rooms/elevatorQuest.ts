@@ -6,6 +6,7 @@ export const elevatorQuestRoomData = {
     displayName: 'Parking Lot',
     shortName: 'the parking lot',
     description: `
+    <img src="images/quest/spawn.jpeg" align="center" /><br/>
     You awake lying in the bracken of a dark, twisted forest. Your back and head are killing you. Reaching up to touch your temple, you wince with pain and your fingertips come away bloody.
     <br/><br/>
     You see faint, flickering light to the East of you. There's a frenzied stomping and snorting coming from the North. To the West there's nothing but more black, twisted forest. Suddenly, you hear rustling coming from the underbrush to the South.
