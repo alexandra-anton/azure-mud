@@ -1,4 +1,4 @@
-name: Linting and Validation Checks Customised
+name: Linting and Validation Checks
 
 on:
   push:
