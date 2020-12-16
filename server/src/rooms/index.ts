@@ -249,7 +249,7 @@ const indexRoomData: { [name: string]: Room } = {
     displayName: 'Portal Room',
     shortName: 'the portal room',
     description: `In the center of the room is a shimmering portal. Next to the portal is a pedestal with an open book. To your right is a table with a sign hung behind it, reading "Lending Table" in flowery wizard script. On the table you can see [[a wand of digging->item]], [[a Proof of Stremf->item]], [[a pair of seven league boots->item]], and [[Planepacked->item]], the legendary limestone statue.<br/><br/>
-      Once you've finished here, you can [[leap into the shimmering portal->statue]]`,
+      Once you've finished here, you can [[leap into the shimmering portal->southShowcaseHall]].`,
     specialFeatures: [SpecialFeature.FullRoomIndex],
     hidden: true
   }
