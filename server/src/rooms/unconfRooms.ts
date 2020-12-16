@@ -1,31 +1,29 @@
 export const unconference = {
   id: 'unconference',
-  displayName: 'MM Area',
+  displayName: 'Monthly Meeting Area',
   shortName: 'the MM area',
-  description: `You enter the Monthly Meeting area. As you take a look around the empty space and the scattered desks, you quickly notice that the meeting has already started! Still holding a slice of pizza, you can pull up the nearest chair and join the conference call.
+  description: `You enter the Monthly Meeting area. As you take a look around the empty space and the scattered desks, you quickly notice that the meeting has already started! Still holding a slice of pizza, you hurry up to join everybody <a href="https://www.wonder.me/r?id=ab6899c6-21e1-409f-9b5e-7a32719ad683" target="_blank">here</a> (use the password <em>xmasstory</em>).
   <br/><br/>
-  A whiteboard has been set up in the corner, so please remember to share your ideas and comments! 
+  A whiteboard has been set up in the corner, so please remember to share your ideas and comments! For more detailed feedback, you can also fill out <a href="https://forms.gle/2VnpxShj4ei8pxqA6" target="_blank" rel="noreferrer">this form</a>!
   <br/><br/>
-  From here, if you’re anxious to get the party started, you can grab a drink at the bar, or show us your moves on the dancefloor.`,
+  From here, if you’re anxious to get the party started, you can grab a drink at the [[bar->bar]], or show us your moves on the [[dance floor->danceFloor]]. You can also go to [[Sys Eng corner->sokoban]], [[TM area->astralPlane]], [[pets zone->atelier]] or [[TNB->statue]].`,
   allowsMedia: true,
   hasNoteWall: true,
   noteWallData: {
-    roomWallDescription: 'Ideas and Comments about A Christmas Story - Netcentric Bucharest Studio Edition!',
-    noteWallButton: 'Ideas and Comments',
-    addNoteLinkText: 'add a comment',
-    addNotePrompt: 'What would you like to comment?',
-    noteWallDescription: `How did you like our virtual event? If you’d like, you can add an impression on this wall! 
-    For more detailed feedback, you can fill out <a href="https://forms.gle/2VnpxShj4ei8pxqA6" target="_blank" rel="noreferrer">this form</a> and share your ideas!`
+    roomWallDescription: `Ideas and comments about A Christmas Story in Covid times - Netcentric Bucharest Studio Edition!`,
+    noteWallButton: 'Impressions Board',
+    addNoteLinkText: 'add an impression',
+    addNotePrompt: 'What would you like to say?',
+    noteWallDescription: `How did you like our virtual event? Add you impression here. 
+    `
   }
 }
 
 export const minetown = {
   id: 'minetown',
   displayName: 'Afara la Tigara',
-  shortName: 'Afara la Tigara',
-  description: `<p>You notice a lot of people either walking in circles while being in conf calls on bluetooth or frenetically tapping emails on their mobile phones. Some of them are here since your first break in the morning, they seem to be the definition of mobile office and probably already sub-rented their desk upstairs.<br /><br />You decide to light up [[a halfway done cigarette->item]] or try to revive [[an iqos with no battery->item]].</p>
-  Usual gossip / complaining chats go <a href="https://www.wonder.me/r?id=82bd1aea-acd3-4133-93e8-c7ae7c73500d" target="_blank" rel="noreferrer">&lt;here&gt;</a> (pass: <em>xmasstory</em>)
-  <br/><br/>From here, you can go back to the [[Elevator B->lounge]] or take the stairs directly to [[Reception->foyer]]`,
+  shortName: 'minetown',
+  description: 'The clink of picks and sound of distant crashing rock forms a percussive backbeat to this underground town square. Dozens of candles are set into the walls, casting the space in a warm glow. A fountain stands in the center of the square, along with a large sign reading "NO SPLASHING"<br/><br/>We encourage you to use this space to talk "face-to-face" using <a href="https://us02web.zoom.us/j/87156694099?pwd=bVN4WHZTeG9NREk0VFMwQk9DRExaZz09" target="_blank">the Zoom meeting for this room</a>, which you can access at any time during the conference. (Passcode 302165)<br/><br/>This is a room for unconferencing! The other unconferencing rooms are [[Oracle->oracle]], [[Castle->castle]], [[Vlad\'s Tower->tower]], [[Sokoban->sokoban]], and [[Astral Plane->astralPlane]]. Or you can climb the stairs back up to the [[unconferencing lobby->unconference]].',
   hasNoteWall: true
 }
 
