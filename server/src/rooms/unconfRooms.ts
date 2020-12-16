@@ -10,11 +10,11 @@ export const unconference = {
   allowsMedia: true,
   hasNoteWall: true,
   noteWallData: {
-    roomWallDescription: '',
-    noteWallButton: 'Add Game Ideas',
-    addNoteLinkText: 'add a game idea',
-    addNotePrompt: 'What would you like to recommend?',
-    noteWallDescription: `What online board games are you playing or would like to play? 
+    roomWallDescription: 'Ideas and comments about A Christmas Story in Covid times - Netcentric Bucharest Studio Edition!',
+    noteWallButton: 'Impressions Board',
+    addNoteLinkText: 'add an impression',
+    addNotePrompt: 'What would you like to say?',
+    noteWallDescription: `How did you like our virtual event? Add you impression here.
     `
   }
 }
@@ -25,8 +25,7 @@ export const minetown = {
   shortName: 'Afara la Tigara',
   description: `<p>You notice a lot of people either walking in circles while being in conf calls on bluetooth or frenetically tapping emails on their mobile phones. Some of them are here since your first break in the morning, they seem to be the definition of mobile office and probably already sub-rented their desk upstairs.<br /><br />You decide to light up [[a halfway done cigarette->item]] or try to revive [[an iqos with no battery->item]].</p>
   Usual gossip / complaining chats go <a href="https://www.wonder.me/r?id=82bd1aea-acd3-4133-93e8-c7ae7c73500d" target="_blank">&lt;here&gt;</a> (pass: <em>xmasstory</em>)
-  <br/><br/>From here, you can go back to the [[Elevator B->lounge]] or take the stairs directly to [[Reception->foyer]]`,
-  hasNoteWall: true
+  <br/><br/>From here, you can go back to the [[Elevator B->lounge]] or take the stairs directly to [[Reception->foyer]]`
 }
 
 export const oracle = {
@@ -64,10 +63,10 @@ export const castle = {
   <br/><br/>
   A Christmas tree has been set up in the corner, and crumpled wrapping paper reminds us of last week’s party.
   <br/><br/>
-  We encourage you to use this space to talk 'face-to-face' using the <a href="https://cognizantcorp.webex.com/cognizantcorp/j.php?MTID=md6bf64098696e9285f0e71859a292c7d">Webex</a> meeting for this room, which you can access at any time until Christmas. 
-  <br/><br/>If you have some memories you want to share with the others, add them <a href="https://photos.app.goo.gl/vNLf97TfNW3A4Sex5">here</a> and have a good laugh (or cry). Or you could leave a note on the wall for them.
-  <br/>
-  If you really have to leave this cosy place, you can head over to [[elevator B->lounge]], [[Bran->bran]], [[TNB->statue]], [[pets zone->atelier]] or join the rest of the team in the [[MM area->unconference]].`,
+  We encourage you to use this space to talk 'face-to-face' using the <a href="https://cognizantcorp.webex.com/cognizantcorp/j.php?MTID=md6bf64098696e9285f0e71859a292c7d" target="_blank">Webex</a> meeting for this room, which you can access at any time until Christmas. 
+  <br/><br/>If you have some memories you want to share with the others, add them <a href="https://photos.app.goo.gl/vNLf97TfNW3A4Sex5" target="_blank">here</a> and have a good laugh (or cry). Or you could just leave a note on the wall.
+  <br/><br/>
+  And if you really have to leave this cosy place, you can head over to [[elevator B->lounge]], [[Bran->bran]], [[TNB->statue]], [[pets zone->atelier]] or join the rest of the team in the [[MM area->unconference]].`,
   hasNoteWall: true
 }
 

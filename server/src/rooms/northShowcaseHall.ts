@@ -6,7 +6,7 @@ export default {
   <div style="display: inline-flex; width: 100%;">
     <div id="discord-text" style="width: 50%;">
       <p>You enter a small room where a conference table quickly differentiates itself as the centre-piece of the space. No conferences are ever held here and the table isn't even yellow. Is this some kind of joke? Are you in the right place? You knew there was something here but you never actually walked in to check.</p>
-      <p>In case you enjoy games - and I mean serious digital games not offline board games <span role="img" aria-label="wink">😉</span> - this is the place to be. If you want to have a fight with your colleagues, play a game of DOTA2. If you want to remember the good old days, jump in for some CS. I hear kids these days play Valorant...</p><p>Join one of the dedicated Discord channels to communicate with other gamers</p>
+      <p>In case you enjoy games - and I mean serious digital games not offline board games <span role="img" aria-label="wink">😉</span> - this is the place to be. If you want to have a fight with your colleagues, play a game of DOTA2. If you want to remember the good old days, jump in for some CS. I hear kids these days play Valorant...</p><p>Join one of the dedicated Discord channels to communicate with other gamers.</p>
     </div>
     <div style="width: 50%;"><iframe src="https://discord.com/widget?id=786890516183777280&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" align="right"></iframe></div>
   </div><p></p>
@@ -28,5 +28,14 @@ export default {
 
 
       You can head to the [[Kitchen->kitchen]], [[MOPS->tower]], [[Coltul Vesel->workbench]], or head up to the [[Reception->foyer]].`,
-  allowsMedia: true
+  allowsMedia: true,
+  hasNoteWall: true,
+  noteWallData: {
+    roomWallDescription: '',
+    noteWallButton: 'Add Game Ideas',
+    addNoteLinkText: 'add a game idea',
+    addNotePrompt: 'What would you like to recommend?',
+    noteWallDescription: `What other online games are you playing or would like to play? 
+    `
+  }
 }

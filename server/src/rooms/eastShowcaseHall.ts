@@ -41,11 +41,11 @@ You can exit to the [[TM area->astralPlane]].`,
   allowsMedia: true,
   hasNoteWall: true,
   noteWallData: {
-    roomWallDescription: 'Ideas and comments about A Christmas Story in Covid times - Netcentric Bucharest Studio Edition!',
-    noteWallButton: 'Impressions Board',
-    addNoteLinkText: 'add an impression',
-    addNotePrompt: 'What would you like to say?',
-    noteWallDescription: `How did you like our virtual event? Add you impression here.
+    roomWallDescription: '',
+    noteWallButton: 'Add Game Ideas',
+    addNoteLinkText: 'add a game idea',
+    addNotePrompt: 'What would you like to recommend?',
+    noteWallDescription: `What other online board games are you playing or would like to play? 
     `
   }
 }
