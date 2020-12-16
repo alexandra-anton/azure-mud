@@ -1,30 +1,31 @@
 export const unconference = {
   id: 'unconference',
-  displayName: 'MM Area',
+  displayName: 'Monthly Meeting Area',
   shortName: 'the MM area',
-  description: `You enter the Monthly Meeting area. As you take a look around the empty space and the scattered desks, you quickly notice that the meeting has already started! Still holding a slice of pizza, you can pull up the nearest chair and join the conference call.
+  description: `You enter the Monthly Meeting area. As you take a look around the empty space and the scattered desks, you quickly notice that the meeting has already started! Still holding a slice of pizza, you hurry up to join everybody <a href="https://www.wonder.me/r?id=ab6899c6-21e1-409f-9b5e-7a32719ad683" target="_blank">⭐here⭐</a> (use the password <em>xmasstory</em>).
   <br/><br/>
-  A whiteboard has been set up in the corner, so please remember to share your ideas and comments! 
+  A whiteboard has been set up in the corner, so please remember to share your ideas and comments! For more detailed feedback, you can also fill out <a href="https://forms.gle/2VnpxShj4ei8pxqA6" target="_blank" rel="noreferrer">this form</a>!
   <br/><br/>
-  From here, if you’re anxious to get the party started, you can grab a drink at the bar, or show us your moves on the dancefloor.`,
+  From here, if you’re anxious to get the party started, you can grab a drink at the [[bar->bar]], or show us your moves on the [[dance floor->danceFloor]]. You can also go to [[Sys Eng corner->sokoban]], [[TM area->astralPlane]], [[pets zone->atelier]] or [[TNB->statue]].`,
   allowsMedia: true,
   hasNoteWall: true,
   noteWallData: {
-    roomWallDescription: `Ideas and Comments about A Christmas Story - Netcentric Bucharest Studio Edition!`,
-    noteWallButton: 'Ideas and Comments',
-    addNoteLinkText: 'add a comment',
-    addNotePrompt: 'What would you like to comment?',
-    noteWallDescription: `How did you like our virtual event? If you’d like, you can add an impression on this wall! 
-    For more detailed feedback, you can fill out <a href="https://forms.gle/2VnpxShj4ei8pxqA6" target="_blank" rel="noreferrer">this form</a> and share your ideas!`
+    roomWallDescription: 'Ideas and comments about A Christmas Story in Covid times - Netcentric Bucharest Studio Edition!',
+    noteWallButton: 'Impressions Board',
+    addNoteLinkText: 'add an impression',
+    addNotePrompt: 'What would you like to say?',
+    noteWallDescription: `How did you like our virtual event? Add you impression here.
+    `
   }
 }
 
 export const minetown = {
   id: 'minetown',
   displayName: 'Afara la Tigara',
-  shortName: 'minetown',
-  description: 'The clink of picks and sound of distant crashing rock forms a percussive backbeat to this underground town square. Dozens of candles are set into the walls, casting the space in a warm glow. A fountain stands in the center of the square, along with a large sign reading "NO SPLASHING"<br/><br/>We encourage you to use this space to talk "face-to-face" using <a href="https://us02web.zoom.us/j/87156694099?pwd=bVN4WHZTeG9NREk0VFMwQk9DRExaZz09" target="_blank">the Zoom meeting for this room</a>, which you can access at any time during the conference. (Passcode 302165)<br/><br/>This is a room for unconferencing! The other unconferencing rooms are [[Oracle->oracle]], [[Castle->castle]], [[Vlad\'s Tower->tower]], [[Sokoban->sokoban]], and [[Astral Plane->astralPlane]]. Or you can climb the stairs back up to the [[unconferencing lobby->unconference]].',
-  hasNoteWall: true
+  shortName: 'Afara la Tigara',
+  description: `<p>You notice a lot of people either walking in circles while being in conf calls on bluetooth or frenetically tapping emails on their mobile phones. Some of them are here since your first break in the morning, they seem to be the definition of mobile office and probably already sub-rented their desk upstairs.<br /><br />You decide to light up [[a halfway done cigarette->item]] or try to revive [[an iqos with no battery->item]].</p>
+  Usual gossip / complaining chats go <a href="https://www.wonder.me/r?id=82bd1aea-acd3-4133-93e8-c7ae7c73500d" target="_blank">⭐here⭐</a> (pass: <em>xmasstory</em>)
+  <br/><br/>From here, you can go back to the [[Elevator B->lounge]] or take the stairs directly to [[Reception->foyer]]`
 }
 
 export const oracle = {
@@ -32,11 +33,14 @@ export const oracle = {
   displayName: 'Support Area',
   shortName: 'the support area',
   description: `You enter the support area. Your colleagues that normally inhabit this space might or might not be around here (unless you’re one of them, hello!), as they are human beings that can move around the party too. Yet their energy still permeates this space. If you close your eyes, you can almost hear the faint echo of an accordion riff or the sudden shouting of a bad word. You also feel the sudden urge to burst into laughter.
+  <br/><br/>
   Here, you can try to shout 'Milioane!'. The mystical energy of the support area will answer you. “De lumini pe stradă! Milioane! De tălpi pe zăpadă! Magaziiiine pliiiine de jucăăăăăriiiii!”.
   <br/><br>
   Congratulations, now you will have this song stuck in you head all day.
   <br/><br/>
-  We encourage you to use this space to talk 'face-to-face' using the Webex meeting for this room, which you can access at any time until Christmas.`,
+  We encourage you to use this space to talk 'face-to-face' using the <a href="https://cognizantcorp.webex.com/cognizantcorp/j.php?MTID=m268b61a60a66bacafc5606b9bf5d8408" target="_blank">Webex</a> meeting for this room, which you can access at any time until Christmas. 
+  <br/><br/>If you have some memories you want to share with the others, add them <a href="https://photos.app.goo.gl/dqboZ56SYbyyvfg78" target="_blank">here</a> and have a good laugh (or cry). Or you could just leave a note on the wall.
+  <br/><br/>From here, you can go back to the [[kitchen->kitchen]] or go to [[phone booth 1->phoneBooth1]], [[phone booth 2->phoneBooth2]] or [[Bran->bran]]`,
   hasNoteWall: true
 }
 
@@ -57,12 +61,15 @@ export const castle = {
   displayName: 'Acvariu',
   shortName: 'the aquarium',
   description: `The moment you step through the glass doors, cheerful voices overlap with this strange music. Where is this coming from?
-  <br/>
+  <br/><br/>
   Around you, the desks are littered with abandoned notebooks, pens, and last year’s tree decorations. Someone should really put these away in January! A [[green toy snake->item]] is on the floor, chairs and backpacks spread chaotically around.
-  <br/>
+  <br/><br/>
   A Christmas tree has been set up in the corner, and crumpled wrapping paper reminds us of last week’s party.
-  <br/>
-  If you really have to leave this cosy place, you can head over to [[elevator A->shippingContainer]], [[elevator B->lounge]], [[bran]], or join the rest of the team in the [[MM area->unconference]].`,
+  <br/><br/>
+  We encourage you to use this space to talk 'face-to-face' using the <a href="https://cognizantcorp.webex.com/cognizantcorp/j.php?MTID=md6bf64098696e9285f0e71859a292c7d" target="_blank">Webex</a> meeting for this room, which you can access at any time until Christmas. 
+  <br/><br/>If you have some memories you want to share with the others, add them <a href="https://photos.app.goo.gl/vNLf97TfNW3A4Sex5" target="_blank">here</a> and have a good laugh (or cry). Or you could just leave a note on the wall.
+  <br/><br/>
+  And if you really have to leave this cosy place, you can head over to [[elevator B->lounge]], [[Bran->bran]], [[TNB->statue]], [[pets zone->atelier]] or join the rest of the team in the [[MM area->unconference]].`,
   hasNoteWall: true
 }
 
@@ -70,7 +77,19 @@ export const sokoban = {
   id: 'sokoban',
   displayName: 'Sys Eng Corner',
   shortName: 'the sys eng corner',
-  description: 'This strange room is made up of blue walls with large circular pits dotting the floor, accompanied by many boulders of matching size. The boulders are strangely easy to roll from place to place - and even stranger is how often moving a boulder reveals a flattened snack underneath. Something about being in this room fills you with a subtle feeling of frustration.<br/><br/>We encourage you to use this space to talk "face-to-face" using <a href="https://us02web.zoom.us/j/88300705663?pwd=ZTZ6N2x0Sks4a21qTTlSREt5NGJhQT09" target="_blank">the Zoom meeting for this room</a>, which you can access at any time during the conference. (Passcode 418594)<br/><br/>This is a room for unconferencing! The other unconferencing rooms are [[Minetown->minetown]], [[Oracle->oracle]], [[Castle->castle]], [[Vlad\'s Tower-> tower]], and [[Astral Plane-> astralPlane]].Or you can go back to the[[unconferencing lobby -> unconference]].',
+  description: `Your curiosity pushed you to enter this dimly lit room. You can see various people roaming around struggling with systems here and there.
+  <br/>
+  Nobody seems to notice that you entered the room but you dare to move forward between these people. As you look left and right you catch a glimpse of somebody's screen - something looking like a Tempo page and you wonder why is that guy looking so tense with only a <a href="http://ncgo.to/tempo" target="_blank">Tempo</a> in his span of attention.<br/><br/>
+  You turn around and one of the guys seems to pay more attention to you and you start a conversation by asking:
+  <br/>You: Did I end up in the funny Sys Eng room?
+  <br/>Sys Eng replies: Depends, what do you need?
+  <br/>You: I know this is a Christmas Party and I think this room is part of the scenery so I guess you are having a party here also - right?
+  <br/>Sys Eng replies: No, no, no, no - we are celebrating through work, my fellow.
+  <br/><br/>
+  We encourage you to use this space to talk 'face-to-face' using the <a href="https://cognizantcorp.webex.com/cognizantcorp/j.php?MTID=macc5607340030d3aedd4d2d52dd83b13" target="_blank">Webex</a> meeting for this room, which you can access at any time until Christmas. 
+  <br/><br/>If you have some memories you want to share with the others, add them <a href="https://photos.app.goo.gl/XGqQpD7JU21MzbKj6" target="_blank">here</a> and have a good laugh (or cry). Or you could just leave a note on the wall.
+  <br/><br/>From here, you slowly move towards the [[MM area->unconference]] or to [[Peretele de pluta->southShowcaseHall]].
+  `,
   hasNoteWall: true
 }
 

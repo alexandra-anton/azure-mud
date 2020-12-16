@@ -15,7 +15,7 @@ interface Props {
 }
 
 // shep: issue #45. Turns ' ' into '-'
-function crushSpaces (s: string) : string {
+function crushSpaces(s: string): string {
   if (s.includes(' ')) {
     console.log('spaces detected ' + s)
     while (s.includes(' ')) {
@@ -26,7 +26,7 @@ function crushSpaces (s: string) : string {
   return s
 }
 
-export default function ProfileEditView (props: Props) {
+export default function ProfileEditView(props: Props) {
   const dispatch = useContext(DispatchContext)
 
   const { defaultHandle, user, prepopulateTwitterWithDefaultHandle } = props
@@ -60,15 +60,15 @@ export default function ProfileEditView (props: Props) {
       twitterHandle: twitter,
       url
     },
-    props.isFTUE)
+      props.isFTUE)
   }
   return (
     <div id='profile-edit' className={`container ${props.isFTUE ? 'ftue' : ''}`}>
       <div className="form">
         <h1>{`${props.isFTUE ? 'Create' : 'Edit'} Name Badge`}</h1>
         <div style={{ marginTop: '2em', marginBottom: '2em' }}>
-          This is your virtual conference badge!<br/>
-        Whatever you enter will be visible to other attendees.<br/>
+          This is your virtual conference badge!<br />
+        Whatever you enter will be visible to other attendees.<br />
         You can come back and change this at any time.
         </div>
         <div className="grid">
@@ -129,7 +129,7 @@ export default function ProfileEditView (props: Props) {
               onChange={(e) => setUrl(e.currentTarget.value)}
             />
           </div>
-          <div className="field">
+          {/* <div className="field">
             <label htmlFor="twitter">Twitter Handle</label>
             <em>You don't need to include the @</em>
             <input
@@ -138,7 +138,7 @@ export default function ProfileEditView (props: Props) {
               value={twitter}
               onChange={(e) => setTwitter(e.currentTarget.value)}
             />
-          </div>
+          </div> */}
           <div className="field">
             <label htmlFor="ask-me-about">Ask Me About</label>
             <em>What are you excited to talk about?</em>
@@ -157,7 +157,7 @@ export default function ProfileEditView (props: Props) {
             submit()
           }}
           className="submit">
-            Save Changes
+          Save Changes
         </button>
       </div>
     </div>

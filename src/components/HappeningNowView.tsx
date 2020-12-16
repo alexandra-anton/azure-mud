@@ -44,7 +44,7 @@ export default function HappeningNowView(props: { roomData: { [roomId: string]: 
     currentlyScheduledElement = <div id='currently-scheduled-div'>
       {currentlyScheduled.text}
       {currentlyScheduled.roomIds ? buildScheduledRoomList(currentlyScheduled.roomIds) : ''}
-    </div>
+      <h2>Other Activities</h2>There is quite a lot going on right now and you will have to explore by yourself. You might want to lookup Dan Beldiman and figure out a way to save him from boredom. Or maybe check out those weird sounds coming from the parking lot. Or even look around for an unusually large closet and stick your head into it. What are you waiting for? Run quickly, do something, go somewhere!</div>
   } else {
     currentlyScheduledElement = <strong>You&apos;re in early! Check the schedule for when the doors officially open.</strong>
   }
@@ -54,7 +54,6 @@ export default function HappeningNowView(props: { roomData: { [roomId: string]: 
       <h1>Happening Now</h1>
       <h2>From The Schedule</h2>
       {currentlyScheduledElement}
-      <h2>Other Live Activities</h2>
       <ul>
         {
           props.entries.map((e) => {

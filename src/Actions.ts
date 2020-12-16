@@ -246,17 +246,19 @@ interface ChatMessageAction {
     messageId: string;
     name: string;
     message: string;
+    roomId: string;
   };
 }
 
 export const ChatMessageAction = (
   messageId: string,
   name: string,
-  message: string
+  message: string,
+  roomId?: string,
 ): ChatMessageAction => {
   return {
     type: ActionType.ChatMessage,
-    value: { messageId, name, message }
+    value: { messageId, name, message, roomId }
   }
 }
 
@@ -363,6 +365,8 @@ interface PlayerEnteredAction {
   type: ActionType.PlayerEntered;
   value: {
     name: string;
+    toId: string;
+    toName: string;
     fromId: string;
     fromName: string;
   };
@@ -370,12 +374,14 @@ interface PlayerEnteredAction {
 
 export const PlayerEnteredAction = (
   name: string,
+  toId: string,
+  toName: string,
   fromId: string,
   fromName: string
 ): PlayerEnteredAction => {
   return {
     type: ActionType.PlayerEntered,
-    value: { name, fromId, fromName }
+    value: { name, toId, toName, fromId, fromName }
   }
 }
 
@@ -385,17 +391,21 @@ interface PlayerLeftAction {
     name: string;
     toId: string;
     toName: string;
+    fromId: string;
+    fromName: string;
   };
 }
 
 export const PlayerLeftAction = (
   name: string,
   toId: string,
-  toName: string
+  toName: string,
+  fromId: string,
+  fromName: string
 ): PlayerLeftAction => {
   return {
     type: ActionType.PlayerLeft,
-    value: { name, toId, toName }
+    value: { name, toId, toName, fromId, fromName }
   }
 }
 

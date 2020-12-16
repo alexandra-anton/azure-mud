@@ -16,7 +16,7 @@ export const FullRoomIndexRoomView = () => {
   </div>
 }
 
-export default function FullRoomIndexModalView (props: { rooms: Room[] }) {
+export default function FullRoomIndexModalView(props: { rooms: Room[] }) {
   return (
     <div>
       <h1>Unerring Teleport</h1>
@@ -28,15 +28,15 @@ export default function FullRoomIndexModalView (props: { rooms: Room[] }) {
       <ul>
         <li key='example-0'><em>/go hiddenPortalRoom</em> utilizes the true name to return here</li>
         <li key='example-1'><em>/move leap into the shimmering portal</em> utilizes the name of the destination (&apos;leap into the shimmering portal&apos;) from the adjacent room (here)</li>
-        <li key='example-2'><em>/move Unconferencing: Sokoban</em> utilizes the first common name</li>
-        <li key='example-3'><em>/go the artists&apos; atelier</em> utilizes the second common name</li>
+        <li key='example-2'><em>/move Nostalgia Dance Floor</em> utilizes the first common name</li>
+        <li key='example-3'><em>/go the registration desk</em> utilizes the second common name</li>
       </ul>
       <table>
         <tbody>
           <tr>
-            <th key='common-1-header'>common (first)</th>
-            <th key='common-2-header'>common (second)</th>
-            <th key='true-header'>true</th>
+            <th key='common-1-header' align="left">common (first)</th>
+            <th key='common-2-header' align="left">common (second)</th>
+            <th key='true-header' align="left">true</th>
           </tr>
           {
             props.rooms.map((e) => {
