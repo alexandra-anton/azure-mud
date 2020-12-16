@@ -2,7 +2,7 @@ export const unconference = {
   id: 'unconference',
   displayName: 'Monthly Meeting Area',
   shortName: 'the MM area',
-  description: `You enter the Monthly Meeting area. As you take a look around the empty space and the scattered desks, you quickly notice that the meeting has already started! Still holding a slice of pizza, you hurry up to join everybody <a href="https://www.wonder.me/r?id=ab6899c6-21e1-409f-9b5e-7a32719ad683" target="_blank">here</a> (use the password <em>xmasstory</em>).
+  description: `You enter the Monthly Meeting area. As you take a look around the empty space and the scattered desks, you quickly notice that the meeting has already started! Still holding a slice of pizza, you hurry up to join everybody <a href="https://www.wonder.me/r?id=ab6899c6-21e1-409f-9b5e-7a32719ad683" target="_blank">⭐here⭐</a> (use the password <em>xmasstory</em>).
   <br/><br/>
   A whiteboard has been set up in the corner, so please remember to share your ideas and comments! For more detailed feedback, you can also fill out <a href="https://forms.gle/2VnpxShj4ei8pxqA6" target="_blank" rel="noreferrer">this form</a>!
   <br/><br/>
@@ -24,7 +24,7 @@ export const minetown = {
   displayName: 'Afara la Tigara',
   shortName: 'Afara la Tigara',
   description: `<p>You notice a lot of people either walking in circles while being in conf calls on bluetooth or frenetically tapping emails on their mobile phones. Some of them are here since your first break in the morning, they seem to be the definition of mobile office and probably already sub-rented their desk upstairs.<br /><br />You decide to light up [[a halfway done cigarette->item]] or try to revive [[an iqos with no battery->item]].</p>
-  Usual gossip / complaining chats go <a href="https://www.wonder.me/r?id=82bd1aea-acd3-4133-93e8-c7ae7c73500d" target="_blank">&lt;here&gt;</a> (pass: <em>xmasstory</em>)
+  Usual gossip / complaining chats go <a href="https://www.wonder.me/r?id=82bd1aea-acd3-4133-93e8-c7ae7c73500d" target="_blank">⭐here⭐</a> (pass: <em>xmasstory</em>)
   <br/><br/>From here, you can go back to the [[Elevator B->lounge]] or take the stairs directly to [[Reception->foyer]]`
 }
 
@@ -33,11 +33,14 @@ export const oracle = {
   displayName: 'Support Area',
   shortName: 'the support area',
   description: `You enter the support area. Your colleagues that normally inhabit this space might or might not be around here (unless you’re one of them, hello!), as they are human beings that can move around the party too. Yet their energy still permeates this space. If you close your eyes, you can almost hear the faint echo of an accordion riff or the sudden shouting of a bad word. You also feel the sudden urge to burst into laughter.
+  <br/><br/>
   Here, you can try to shout 'Milioane!'. The mystical energy of the support area will answer you. “De lumini pe stradă! Milioane! De tălpi pe zăpadă! Magaziiiine pliiiine de jucăăăăăriiiii!”.
   <br/><br>
   Congratulations, now you will have this song stuck in you head all day.
   <br/><br/>
-  We encourage you to use this space to talk 'face-to-face' using the Webex meeting for this room, which you can access at any time until Christmas.`,
+  We encourage you to use this space to talk 'face-to-face' using the <a href="https://cognizantcorp.webex.com/cognizantcorp/j.php?MTID=m268b61a60a66bacafc5606b9bf5d8408" target="_blank">Webex</a> meeting for this room, which you can access at any time until Christmas. 
+  <br/><br/>If you have some memories you want to share with the others, add them <a href="https://photos.app.goo.gl/dqboZ56SYbyyvfg78" target="_blank">here</a> and have a good laugh (or cry). Or you could just leave a note on the wall.
+  <br/><br/>From here, you can go back to the [[kitchen->kitchen]] or go to [[phone booth 1->phoneBooth1]], [[phone booth 2->phoneBooth2]] or [[Bran->bran]]`,
   hasNoteWall: true
 }
 
