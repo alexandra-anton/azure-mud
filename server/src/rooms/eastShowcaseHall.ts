@@ -5,7 +5,7 @@ export default {
   description: `
   Once you enter you check again the name of the room "Ti-ne-re-tu-lui" and you think that this is pretty odd for a playroom. You start thinking a bit about this but your attention is caught by the body hanging over what seems to be a word that is missing some letters, and not far from it you can see a screen displaying various questions about general topics. This place reveals more and more recreational options and you find yourself at ease in this place where you can easily reach to your inner child.
   <br/><br/>
-  From this room you can go back to the Reception or advance to TM Area as you like.<br/><br/>
+  From this room you can go back to the [[Reception->foyer]] or advance to TM Area as you like.<br/><br/>
 
   <div id="tineretului-showcase" class="showcase-container">
     <div id="game1-entry" class="showcase-entry">
