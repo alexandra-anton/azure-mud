@@ -185,7 +185,7 @@ const indexRoomData: { [name: string]: Room } = {
     displayName: 'Elevator A',
     shortName: 'the elevator A',
     description: `
-      It's not quite clear what's wrong with this elevator, you push the button and nothing happens. In the past, somebody even fell with it all the way to the main lobby. Seems pretty scary, no?<br/><br/>
+      It's not quite clear what's wrong with this elevator, you push the button and nothing happens. In the past, somebody even fell with it all the way down to the main lobby. Seems pretty scary, no?<br/><br/>
       After you hurry to come out of it, you can wait for [[elevator B->lounge]] or get back to [[Reception->foyer]].`,
     allowsMedia: true
   },
