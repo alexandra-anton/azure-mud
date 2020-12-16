@@ -77,7 +77,19 @@ export const sokoban = {
   id: 'sokoban',
   displayName: 'Sys Eng Corner',
   shortName: 'the sys eng corner',
-  description: 'This strange room is made up of blue walls with large circular pits dotting the floor, accompanied by many boulders of matching size. The boulders are strangely easy to roll from place to place - and even stranger is how often moving a boulder reveals a flattened snack underneath. Something about being in this room fills you with a subtle feeling of frustration.<br/><br/>We encourage you to use this space to talk "face-to-face" using <a href="https://us02web.zoom.us/j/88300705663?pwd=ZTZ6N2x0Sks4a21qTTlSREt5NGJhQT09" target="_blank">the Zoom meeting for this room</a>, which you can access at any time during the conference. (Passcode 418594)<br/><br/>This is a room for unconferencing! The other unconferencing rooms are [[Minetown->minetown]], [[Oracle->oracle]], [[Castle->castle]], [[Vlad\'s Tower-> tower]], and [[Astral Plane-> astralPlane]].Or you can go back to the[[unconferencing lobby -> unconference]].',
+  description: `Your curiosity pushed you to enter this dimly lit room. You can see various people roaming around struggling with systems here and there.
+  <br/>
+  Nobody seems to notice that you entered the room but you dare to move forward between these people. As you look left and right you catch a glimpse of somebody's screen - something looking like a Tempo page and you wonder why is that guy looking so tense with only a <a href="http://ncgo.to/tempo" target="_blank">Tempo</a> in his span of attention.<br/><br/>
+  You turn around and one of the guys seems to pay more attention to you and you start a conversation by asking:
+  <br/>You: Did I end up in the funny Sys Eng room?
+  <br/>Sys Eng replies: Depends, what do you need?
+  <br/>You: I know this is a Christmas Party and I think this room is part of the scenery so I guess you are having a party here also - right?
+  <br/>Sys Eng replies: No, no, no, no - we are celebrating through work, my fellow.
+  <br/><br/>
+  We encourage you to use this space to talk 'face-to-face' using the <a href="https://cognizantcorp.webex.com/cognizantcorp/j.php?MTID=macc5607340030d3aedd4d2d52dd83b13" target="_blank">Webex</a> meeting for this room, which you can access at any time until Christmas. 
+  <br/><br/>If you have some memories you want to share with the others, add them <a href="https://photos.app.goo.gl/XGqQpD7JU21MzbKj6" target="_blank">here</a> and have a good laugh (or cry). Or you could just leave a note on the wall.
+  <br/><br/>From here, you slowly move towards the [[MM area->unconference]] or to [[Peretele de pluta->southShowcaseHall]].
+  `,
   hasNoteWall: true
 }
 
