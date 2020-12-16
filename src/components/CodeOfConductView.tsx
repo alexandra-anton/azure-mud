@@ -1,15 +1,14 @@
 import React from 'react'
 
-export default function CodeOfConductView () {
+export default function CodeOfConductView() {
   return (
     <div id='code-of-conduct'>
-      <p>Our goal is to have a fun and welcoming celebration of roguelike games, so we have a formalized code of conduct that sets these expectations.</p>
-      <p><a href='https://roguelike.club/code.html' target='_blank' rel='noreferrer'>Read our Code of Conduct.</a></p>
+      <p>Our goal is to have a fun and get the studio feeling back into our lives during the WFH temporary situation. Having said that, please act around this virtual studio just as you would do when in the real office. Here is a quick reminder of our <a href='https://projects.netcentric.biz/wiki/display/NETCENTRIC/Core+Values' target='_blank' rel='noreferrer'>Core Values.</a></p>
       <p>If you&apos;re being harassed, notice someone being harassed, or have any other concerns related to the code of conduct, you have a few options:</p>
       <ul>
-        <li>Type <code>/mod</code> into the chat box, followed by a message, to contact all moderators.</li>
-        <li>Email <a href="mailto:contact@roguelike.club">contact@roguelike.club</a>.</li>
-        <li>If you have a report or concern related to an organizer, please contact a different member of the <a href="https://roguelike.club/who.html" target="_blank" rel="noreferrer">organizing team</a> outside of this tool (via email, Twitter DM, Discord, or some other service).</li>
+        <li>Point out the mistake to the offender directly as they might not have bad intentions. You can use <code>/whisper</code> into the chat box, followed by a message, to contact them directly or our Netcentric tools like Slack.</li>
+        <li>Reach out to the respective PSL.</li>
+        <li>Reach out to the <a href="https://app.glassfrog.com/organizations/561/orgnav/roles/10475282" target='_blank' rel='noreferrer'>Local TM</a>.</li>
       </ul>
     </div>
   )
