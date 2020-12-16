@@ -526,6 +526,7 @@ export const elevatorQuestRoomData = {
     "Congratulations! Before you rush off exploring other realms, grab a screenshot including your name and the log mentioning your entry in this room and post it to #l-ro-studios-admin - the first explorer that reaches this end is offered a one time only bounty of 10 bonus.ly. Each Netcentrico is entitled to only one bounty."
     <br/><br/>
     [[Start again->elevatorQuestSpawnPoint]]<br/>
+    [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
     hidden: true,
   },
@@ -759,6 +760,7 @@ export const elevatorQuestRoomData = {
     "Congratulations! Before you rush off exploring other realms, grab a screenshot including your name and the log mentioning your entry in this room and post it to #l-ro-studios-admin - the first explorer that reaches this end is offered a one time only bounty of 10 bonus.ly. Each Netcentrico is entitled to only one bounty."
     <br/><br/>
     [[Start again->elevatorQuestSpawnPoint]]<br/>
+    [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
     hidden: true,
   },
@@ -842,6 +844,7 @@ export const elevatorQuestRoomData = {
     "Congratulations! Before you rush off exploring other realms, grab a screenshot including your name and the log mentioning your entry in this room and post it to #l-ro-studios-admin - the first explorer that reaches this end is offered a one time only bounty of 10 bonus.ly. Each Netcentrico is entitled to only one bounty."
     <br/><br/>
     [[Start again->elevatorQuestSpawnPoint]]<br/>
+    [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
     hidden: true,
   },
