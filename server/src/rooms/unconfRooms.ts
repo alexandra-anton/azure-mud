@@ -24,8 +24,8 @@ export const minetown = {
   displayName: 'Afara la Tigara',
   shortName: 'Afara la Tigara',
   description: `<p>You notice a lot of people either walking in circles while being in conf calls on bluetooth or frenetically tapping emails on their mobile phones. Some of them are here since your first break in the morning, they seem to be the definition of mobile office and probably already sub-rented their desk upstairs.<br /><br />You decide to light up [[a halfway done cigarette->item]] or try to revive [[an iqos with no battery->item]].</p>
-  Usual gossip / complaining chats go <a href="https://www.wonder.me/r?id=82bd1aea-acd3-4133-93e8-c7ae7c73500d" target="_blank">⭐here⭐</a> (pass: <em>xmasstory</em>)
-  <br/><br/>From here, you can go back to the [[Elevator B->lounge]] or take the stairs directly to [[Reception->foyer]]`
+  Usual gossip / complaining chats go <a href="https://www.wonder.me/r?id=82bd1aea-acd3-4133-93e8-c7ae7c73500d" target="_blank">⭐here⭐</a> (pass: <em>xmasstory</em>).
+  <br/><br/>From here, you can go back to the [[Elevator B->lounge]] or take the stairs directly to [[Reception->foyer]].`
 }
 
 export const oracle = {

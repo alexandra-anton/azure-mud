@@ -255,11 +255,10 @@ const indexRoomData: { [name: string]: Room } = {
     displayName: 'Coltul Vesel',
     shortName: 'the happy corner',
     description: `A cluttered workspace that clearly belongs to a cheerful bunch of people. A soft light fills this corner of the office from the ceiling high windows, while giggly voices discuss the latest news from behind one of the computer screens. A cute stuffed tiger sits on one of the desks, a reminder from last year’s summit - someone won the arcade games for sure!
-    From here, you can get to the MOPS area to say “Hi” or go to the reception for a cup of coffee.
     <br/><br/>
   We encourage you to use this space to talk 'face-to-face' using the <a href="" target="_blank">Webex</a> meeting for this room, which you can access at any time until Christmas. 
   <br/><br/>If you have some memories you want to share with the others, add them <a href="https://photos.app.goo.gl/Gd4xcbEsTYvcWD267" target="_blank">here</a> and have a good laugh (or cry). Or you could just leave a note on the wall.
-  <br/><br/>From here, you can walk away towards the [[reception->foyer]], [[kitchen->kitchen]] or join in the conversation in [[MOPS->tower]].`
+  <br/><br/>From here, you can get to the [[MOPS->tower]] area to say “Hi”, head towards the [[kitchen->kitchen]] or go to the [[reception->foyer]] for a cup of coffee.`
   },
   hiddenPortalRoom: {
     id: 'hiddenPortalRoom',
