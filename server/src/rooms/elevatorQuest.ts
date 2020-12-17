@@ -1,4 +1,4 @@
-import { SpecialFeature } from ".";
+import { SpecialFeature } from '.'
 
 export const elevatorQuestRoomData = {
   elevatorQuestSpawnPoint: {
@@ -78,7 +78,7 @@ export const elevatorQuestRoomData = {
     displayName: 'Go West',
     shortName: 'go West',
     description: `
-    <img src="images/quest/go-west.jpeg" style="display:block;margin-left:auto;margin-right:auto" /><br/>
+    <img src="images/quest/go-west.jpg" style="display:block;margin-left:auto;margin-right:auto" /><br/>
     You get to your feet, wincing in pain. It feels like you're bruised all over. What were you even doing on the ground, anyway...? A roar from the east cuts through the night. Oh yeah.
     <br/><br/>
     You decide the safest direction to go right now is away from that thing. You head west. A glint in the moonlight catches your eye. Yes! It's your sword! It must have been knocked out of your hand when you were attacked earlier! You pick it up.
@@ -103,7 +103,7 @@ export const elevatorQuestRoomData = {
     <br/><br/>
     [[Keep running->elevatorQuestKeepRunning]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestKeepTrying: {
     id: 'elevatorQuestKeepTrying',
@@ -116,7 +116,7 @@ export const elevatorQuestRoomData = {
     [[Gallop towards the smoke and noise->elevatorQuestGallopTowardsTheSmokeAndNoise]]<br/>
     [[Run away->elevatorQuestRunAway]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestHideBehindATree: {
     id: 'elevatorQuestHideBehindATree',
@@ -133,7 +133,7 @@ export const elevatorQuestRoomData = {
     [[Attack!!!->elevatorQuestAttack]]<br/>
     [[Do nothing->elevatorQuestDoNothing]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestStayPut: {
     id: 'elevatorQuestStayPut',
@@ -155,7 +155,7 @@ export const elevatorQuestRoomData = {
     <br/><br/>
     [[Try to make conversation->elevatorQuestTryToMakeConversation]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestRUN: {
     id: 'elevatorQuestRUN',
@@ -174,7 +174,7 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestDontMoveAMuscle: {
     id: 'elevatorQuestDontMoveAMuscle',
@@ -191,7 +191,7 @@ export const elevatorQuestRoomData = {
     [[Hit it with the rock->elevatorQuestHitItWithTheRock]]<br/>
     [[Run->elevatorQuestRun]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestGoTowardsTheWhinnying: {
     id: 'elevatorQuestGoTowardsTheWhinnying',
@@ -210,7 +210,7 @@ export const elevatorQuestRoomData = {
     [[Abandon Freneculon->elevatorQuestAbandonFreneculonNE]]<br/>
     [[Use the sword to cut him free->elevatorQuestUseTheSwordToCutHimFree]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestGoTowardsTheFire: {
     id: 'elevatorQuestGoTowardsTheFire',
@@ -227,7 +227,7 @@ export const elevatorQuestRoomData = {
     [[Fight! Fight! Fight!->elevatorQuestFightFightFight]]<br/>
     [[Try diplomacy->elevatorQuestTryDiplomacy]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestGoTowardsTheGetMeTheHeckOutOfHere: {
     id: 'elevatorQuestGoTowardsTheGetMeTheHeckOutOfHere',
@@ -250,7 +250,7 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestKeepRunning: {
     id: 'elevatorQuestKeepRunning',
@@ -267,7 +267,7 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestGallopTowardsTheSmokeAndNoise: {
     id: 'elevatorQuestGallopTowardsTheSmokeAndNoise',
@@ -284,7 +284,7 @@ export const elevatorQuestRoomData = {
     [[Dodge right->elevatorQuestDodgeRight]]<br/>
     [[Dodge left->elevatorQuestDodgeLeft]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestRunAway: {
     id: 'elevatorQuestRunAway',
@@ -299,7 +299,7 @@ export const elevatorQuestRoomData = {
     [[Fuck this, I'm out!->elevatorQuestFuckThisImOut]]<br/>
     [[Turn back and fight->elevatorQuestTurnBackAndFight]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestAttack: {
     id: 'elevatorQuestAttack',
@@ -322,7 +322,7 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestDoNothing: {
     id: 'elevatorQuestDoNothing',
@@ -347,7 +347,7 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestTryToMakeConversation: {
     id: 'elevatorQuestTryToMakeConversation',
@@ -364,7 +364,7 @@ export const elevatorQuestRoomData = {
     [[Continue onwards->elevatorQuestContinueOnwards]]<br/>
     [[Stop to catch your breath->elevatorQuestStopToCatchYourBreath]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestHitItWithTheRock: {
     id: 'elevatorQuestHitItWithTheRock',
@@ -391,7 +391,7 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestRun: {
     id: 'elevatorQuestRun',
@@ -418,7 +418,7 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestAbandonFreneculonNE: {
     id: 'elevatorQuestAbandonFreneculonNE',
@@ -432,7 +432,7 @@ export const elevatorQuestRoomData = {
     <br/><br/>
     [[Keep running->elevatorQuestKeepRunningAbandon]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestUseTheSwordToCutHimFree: {
     id: 'elevatorQuestUseTheSwordToCutHimFree',
@@ -447,7 +447,7 @@ export const elevatorQuestRoomData = {
     [[Gallop towards the smoke and noise->elevatorQuestGallopTowardsTheSmokeAndNoiseSword]]<br/>
     [[Run away->elevatorQuestRunAwaySword]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestFightFightFight: {
     id: 'elevatorQuestFightFightFight',
@@ -464,7 +464,7 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestTryDiplomacy: {
     id: 'elevatorQuestTryDiplomacy',
@@ -480,7 +480,7 @@ export const elevatorQuestRoomData = {
     [["Hey, don't you like gold?"->elevatorQuestHeyDontYouLikeGold]]<br/>
     [["How about that weather?"->elevatorQuestHowAboutThatWeather]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestDodgeRight: {
     id: 'elevatorQuestDodgeRight',
@@ -499,7 +499,7 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestDodgeLeft: {
     id: 'elevatorQuestDodgeLeft',
@@ -528,7 +528,7 @@ export const elevatorQuestRoomData = {
     [[Start again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestTurnBackAndFight: {
     id: 'elevatorQuestTurnBackAndFight',
@@ -547,7 +547,7 @@ export const elevatorQuestRoomData = {
     [[Dodge right->elevatorQuestDodgeRightTurn]]<br/>
     [[Dodge left->elevatorQuestDodgeLeftTurn]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestFuckThisImOut: {
     id: 'elevatorQuestFuckThisImOut',
@@ -568,7 +568,7 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestContinueOnwards: {
     id: 'elevatorQuestContinueOnwards',
@@ -587,7 +587,7 @@ export const elevatorQuestRoomData = {
     [[Bite Thomas->elevatorQuestBiteThomas]]<br/>
     [[Resist the urge to bite Thomas->elevatorQuestResistTheUrgeToBiteThomas]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestStopToCatchYourBreath: {
     id: 'elevatorQuestStopToCatchYourBreath',
@@ -608,7 +608,7 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestKeepRunningAbandon: {
     id: 'elevatorQuestKeepRunningAbandon',
@@ -625,7 +625,7 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestGallopTowardsTheSmokeAndNoiseSword: {
     id: 'elevatorQuestGallopTowardsTheSmokeAndNoiseSword',
@@ -644,7 +644,7 @@ export const elevatorQuestRoomData = {
     [[Dodge right->elevatorQuestDodgeRightSmoke]]<br/>
     [[Dodge left->elevatorQuestDodgeLeftSmoke]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestRunAwaySword: {
     id: 'elevatorQuestRunAwaySword',
@@ -665,7 +665,7 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestWhensTheBestTimeToGoToTheDentist: {
     id: 'elevatorQuestWhensTheBestTimeToGoToTheDentist',
@@ -684,7 +684,7 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestHeyDontYouLikeGold: {
     id: 'elevatorQuestHeyDontYouLikeGold',
@@ -697,7 +697,7 @@ export const elevatorQuestRoomData = {
     [["Yeah well, I hate it!"->elevatorQuestYeahWellIHateIt]]<br/>
     [["I love gold too!"->elevatorQuestILoveGoldToo]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestHowAboutThatWeather: {
     id: 'elevatorQuestHowAboutThatWeather',
@@ -714,7 +714,7 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestDodgeRightTurn: {
     id: 'elevatorQuestDodgeRightTurn',
@@ -733,7 +733,7 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestDodgeLeftTurn: {
     id: 'elevatorQuestDodgeLeftTurn',
@@ -762,7 +762,7 @@ export const elevatorQuestRoomData = {
     [[Start again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestBiteThomas: {
     id: 'elevatorQuestBiteThomas',
@@ -777,7 +777,7 @@ export const elevatorQuestRoomData = {
     [[Go on rampage->elevatorQuestGoOnRampage]]<br/>
     [[Run away->elevatorQuestRunAwayBite]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestResistTheUrgeToBiteThomas: {
     id: 'elevatorQuestResistTheUrgeToBiteThomas',
@@ -798,7 +798,7 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestDodgeRightSmoke: {
     id: 'elevatorQuestDodgeRightSmoke',
@@ -817,7 +817,7 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestDodgeLeftSmoke: {
     id: 'elevatorQuestDodgeLeftSmoke',
@@ -846,7 +846,7 @@ export const elevatorQuestRoomData = {
     [[Start again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestYeahWellIHateIt: {
     id: 'elevatorQuestYeahWellIHateIt',
@@ -863,7 +863,7 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestILoveGoldToo: {
     id: 'elevatorQuestILoveGoldToo',
@@ -876,7 +876,7 @@ export const elevatorQuestRoomData = {
     [["No!"->elevatorQuestNo]]<br/>
     [["Yes!"->elevatorQuestYes]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestGoOnRampage: {
     id: 'elevatorQuestGoOnRampage',
@@ -899,7 +899,7 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestRunAwayBite: {
     id: 'elevatorQuestRunAwayBite',
@@ -922,7 +922,7 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestNo: {
     id: 'elevatorQuestNo',
@@ -939,7 +939,7 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
+    hidden: true
   },
   elevatorQuestYes: {
     id: 'elevatorQuestYes',
@@ -958,6 +958,6 @@ export const elevatorQuestRoomData = {
     [[Try again->elevatorQuestSpawnPoint]]<br/>
     [[Get me out of this nightmare!?!?!->lounge]]<br/>
     `,
-    hidden: true,
-  },
+    hidden: true
+  }
 }
