@@ -18,7 +18,6 @@ import { FullRoomIndexRoomView } from './feature/FullRoomIndexViews'
 import { linkActions } from '../linkActions'
 import { useContext } from 'react'
 
-import {isSeriousFood} from '../../server/src/generators/seriousFood'
 import { v4 as uuidv4 } from 'uuid'
 
 const VIDEO_CHAT_MAX_SIZE = 8
@@ -140,10 +139,29 @@ const HeldItemView = () => {
     dropItem()
   }
 
-const eatHeldFood = () => {
-  eatItem()
-  sendChatMessage(uuidv4(), '/get fortune cookie')
-}
+  const eatHeldFood = () => {
+    eatItem()
+    sendChatMessage(uuidv4(), '/get fortune cookie')
+  }
+
+  const seriousFoodList = [
+    'an assortment of tobă, lebăr and caltaboș, with a bit of mustard on the side',
+    'vegetarian sarmale, with mushrooms, lentils and rice',
+    'two fat papanași swimming in sour cream and cranberry jam',
+    'a shaorma',
+    'some pork roast, marinated in a little bit of chilli and smoked paprika',
+    'some pork roast that was left way too much in the oven',
+    'șorici',
+    'some slices of vegetarian nutloaf, with walnuts, sweet potatoes and mushrooms caramelized in soy sauce',
+    'Stollen cake',
+    'a wonderfully sour ciorbă, with fresh tăiței',
+    'pasta from downstairs',
+    'cozonaaaaaac :partyparrot:'
+  ]
+  
+  const isSeriousFood = (item: string) => {
+    return seriousFoodList.includes(item);
+  }
 
   if (user.item) {
     const customButtonAction = user.item.includes('green toy snake') ? 'Throw it against the floor' : 'Drop it'

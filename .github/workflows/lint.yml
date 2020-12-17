@@ -2,9 +2,9 @@ name: Linting and Validation Checks
 
 on:
   push:
-    branches: [main]
+    branches: [main-hidden-quest]
   pull_request:
-    branches: [main]
+    branches: [main-hidden-quest]
 
 jobs:
   build:
