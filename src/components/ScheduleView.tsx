@@ -27,8 +27,9 @@ function ScheduleEntry(time: string, day: number, text: string, description: str
 // Including these here to be swapped in Saturday to Sunday.
 export const ScheduleEntries = [
   ScheduleEntry('08:00', 2, 'Exploring time', 'Go wild and check every corner of the studio', ['foyer']),
-  ScheduleEntry('09:00', 2, 'Games mania', 'Gamers all over the world - assemble! Pick whatever suits your gamer within and join the dedicated rooms (Kitchen Fussball, Yellow Table or Tineretului)', ['kitchenTableB', 'northShowcaseHall', 'eastShowcaseHall']),
-  ScheduleEntry('09:45', 2, 'Break', 'Have a break, have a Kit Kat.. Or join others "Afara la tigara"', ['minetown']),
+  ScheduleEntry('08:30', 2, 'Games mania', 'Gamers all over the world - assemble! Pick whatever suits your gamer within and join the dedicated rooms (Kitchen Fussball, Yellow Table or Tineretului)', ['kitchenTableB', 'northShowcaseHall', 'eastShowcaseHall']),
+  ScheduleEntry('09:15', 2, 'Break', 'Have a break, have a Kit Kat.. Or join others "Afara la tigara"', ['minetown']),
+  ScheduleEntry('09:30', 2, 'Social time', 'Head over to the Monthly Meeting area and say hi to people', ['unconference']),
   ScheduleEntry('10:00', 2, 'Paaaarty \\:D/', 'Bring on your best shoes and head on to the Dance floor to show off your best skills', ['danceFloor'])
   // ScheduleEntry('08:00', 2, 'Intro / Housekeeping', ['theater']),
   // ScheduleEntry('09:30', 2, 'Lightning Talks 2: Xalavier Nelson Jr., Max Kreminski, Clarissa Littler, Nicholas Feinberg, Tanya X. Short', ['theater']),
@@ -85,4 +86,3 @@ export default function ScheduleView() {
     </div>
   )
 }
-
